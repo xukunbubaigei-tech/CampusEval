@@ -1,0 +1,37 @@
+{
+  "counts": {
+    "benchmark": 128,
+    "training": 1000,
+    "objective_70": 70,
+    "subjective_50": 50,
+    "approved_rubrics": 50,
+    "images": 23
+  },
+  "files": {
+    "benchmark": {
+      "path": "datasets/main/benchmark.jsonl",
+      "sha256": "cdd830bc353346c56b6ab69aa7014ff4d43f1ac3949e2f02c75e09c1da36d43f",
+      "bytes": 131483
+    },
+    "training": {
+      "path": "datasets/main/training.jsonl",
+      "sha256": "d2d4b9f538dc1db0f95500b13589f5e76cbb94cdab150213a6822c8baa4016dd",
+      "bytes": 1108518
+    },
+    "objective_70": {
+      "path": "datasets/objective_70/questions.jsonl",
+      "sha256": "42f5bae65e8547fc980b5c25b025bee525e92403852d9129b1eab526746231b5",
+      "bytes": 58046
+    },
+    "subjective_50": {
+      "path": "datasets/subjective_50/questions.jsonl",
+      "sha256": "1c74acca86bd579a997487518c288d16ebdf318a16273af6a738bf9cd96535ba",
+      "bytes": 72521
+    },
+    "rubrics": {
+      "path": "datasets/subjective_50/rubrics.jsonl",
+      "sha256": "8fe2544f2ae3324b13db725da80d706cf3fe8b949b6c058a225b580df5add5af",
+      "bytes": 189720
+    }
+  }
+}

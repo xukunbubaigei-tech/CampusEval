@@ -1,0 +1,9 @@
+{
+  "answers": 50,
+  "usable_rubrics": 50,
+  "allow_pending_rubrics": false,
+  "missing_or_unapproved_rubric_ids": [],
+  "configured_judges": 3,
+  "planned_requests": 150,
+  "network_requests": 0
+}

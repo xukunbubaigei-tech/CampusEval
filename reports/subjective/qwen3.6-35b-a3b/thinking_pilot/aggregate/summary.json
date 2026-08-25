@@ -1,0 +1,213 @@
+{
+  "answers": 10,
+  "average_score_rate": 0.680000005,
+  "full_score_rate": 0.3,
+  "human_review_rate": 0.4,
+  "judge_consistency": {
+    "mean_score_range_ratio": 0.185
+  },
+  "by_question": {
+    "gaokao_math_2021_henan_53_17": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2021_henan_53_18": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2021_henan_53_19": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2022_henan_62_21": {
+      "score_rate": 0.333333,
+      "needs_human_review": false
+    },
+    "gaokao_math_2023_henan_604_17": {
+      "score_rate": 0.683333,
+      "needs_human_review": false
+    },
+    "gaokao_math_2024_henan_719_19": {
+      "score_rate": 0.3,
+      "needs_human_review": true
+    },
+    "gaokao_math_2025_henan_874_19": {
+      "score_rate": 0.85,
+      "needs_human_review": true
+    },
+    "gaokao_math_2026_henan_1032_19": {
+      "score_rate": 0.25,
+      "needs_human_review": false
+    },
+    "gaokao_math_2024_henan_719_17": {
+      "score_rate": 0.65,
+      "needs_human_review": true
+    },
+    "gaokao_math_2025_henan_874_15": {
+      "score_rate": 0.733333,
+      "needs_human_review": true
+    }
+  },
+  "by_knowledge_point": {
+    "三角恒等变换": {
+      "count": 1,
+      "score_rate": 0.85
+    },
+    "不等式判断": {
+      "count": 1,
+      "score_rate": 0.6833333500000001
+    },
+    "临界值比较": {
+      "count": 1,
+      "score_rate": 0.73333335
+    },
+    "二面角及其法向量求法": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "二面角的向量求法": {
+      "count": 1,
+      "score_rate": 0.65
+    },
+    "余弦函数性质与不等式": {
+      "count": 1,
+      "score_rate": 0.85
+    },
+    "函数单调性证明": {
+      "count": 1,
+      "score_rate": 0.25
+    },
+    "函数最值与参数范围": {
+      "count": 1,
+      "score_rate": 0.85
+    },
+    "分段函数与指数函数性质": {
+      "count": 1,
+      "score_rate": 0.25
+    },
+    "利用导数研究函数零点": {
+      "count": 1,
+      "score_rate": 0.33333335000000003
+    },
+    "反证法": {
+      "count": 2,
+      "score_rate": 0.55
+    },
+    "古典概型的概率估计": {
+      "count": 1,
+      "score_rate": 0.73333335
+    },
+    "向量垂直与数量积": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "含参函数的单调性与零点存在性判定": {
+      "count": 1,
+      "score_rate": 0.33333335000000003
+    },
+    "均值比较与显著性判断": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "奇函数性质": {
+      "count": 1,
+      "score_rate": 0.25
+    },
+    "导数与函数单调性": {
+      "count": 1,
+      "score_rate": 0.85
+    },
+    "导数的几何意义与切线方程": {
+      "count": 1,
+      "score_rate": 0.33333335000000003
+    },
+    "抽象函数与条件推理": {
+      "count": 1,
+      "score_rate": 0.25
+    },
+    "数列前n项和与前n项积的定义": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "数学归纳法": {
+      "count": 1,
+      "score_rate": 0.3
+    },
+    "样本均值": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "样本均值与样本方差计算": {
+      "count": 1,
+      "score_rate": 0.6833333500000001
+    },
+    "样本方差": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "独立性检验（χ²检验）": {
+      "count": 1,
+      "score_rate": 0.73333335
+    },
+    "由和求通项": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "空间向量与立体几何": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "空间直角坐标系与法向量": {
+      "count": 1,
+      "score_rate": 0.65
+    },
+    "空间直角坐标系建立": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "等差数列的性质与下标可分性": {
+      "count": 1,
+      "score_rate": 0.3
+    },
+    "等差数列的证明": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "线面垂直的判定与性质": {
+      "count": 1,
+      "score_rate": 0.65
+    },
+    "线面平行的判定": {
+      "count": 1,
+      "score_rate": 0.65
+    },
+    "组合计数与概率估计": {
+      "count": 1,
+      "score_rate": 0.3
+    },
+    "解方程": {
+      "count": 1,
+      "score_rate": 0.65
+    },
+    "配对样本差值分析": {
+      "count": 1,
+      "score_rate": 0.6833333500000001
+    },
+    "集合的包含关系与不等式求解": {
+      "count": 1,
+      "score_rate": 0.25
+    },
+    "零假设与统计推断": {
+      "count": 1,
+      "score_rate": 0.73333335
+    }
+  },
+  "usage": {
+    "prompt_tokens": 162348,
+    "completion_tokens": 100979,
+    "total_tokens": 263327
+  },
+  "latency_seconds": 1420.411,
+  "estimated_cost": null,
+  "cost_note": "Token usage is measured; configure verified model pricing before estimating cost."
+}

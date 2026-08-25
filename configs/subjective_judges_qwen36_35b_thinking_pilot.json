@@ -1,0 +1,13 @@
+{
+  "protocol_version": "subjective_judge_thinking_pilot_v1",
+  "judges": [
+    {"slot": "judge_a", "model": "deepseek-v4-flash", "family": "deepseek", "base_weight": 1.0, "enable_thinking": true, "thinking_budget": 2048, "max_tokens": 4096},
+    {"slot": "judge_b", "model": "glm-5.2", "family": "glm", "base_weight": 1.0, "enable_thinking": true, "thinking_budget": 2048, "max_tokens": 4096},
+    {"slot": "judge_c", "model": "kimi-k2.6", "family": "kimi", "base_weight": 1.0, "enable_thinking": true, "thinking_budget": 2048, "max_tokens": 4096}
+  ],
+  "weighting": {"same_exact_model_multiplier": 0.5, "same_family_multiplier": 0.75, "normalize_weights": true},
+  "disagreement": {"score_range_ratio_threshold": 0.2, "variance_ratio_threshold": 0.01, "minimum_confidence": 0.6, "any_judge_requests_review": true},
+  "pricing_per_million_tokens": {},
+  "judge_prompt_version": "judge_blind_zh_v1_thinking_pilot",
+  "few_shot_file": "prompts/few_shots/subjective_judge_examples.jsonl"
+}

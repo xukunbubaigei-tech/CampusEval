@@ -1,0 +1,12 @@
+{
+  "title": "Subjective Rubric (plain-text, three-field)",
+  "type": "object",
+  "required": ["question_id", "rubric", "reference_solution_1"],
+  "properties": {
+    "question_id": {"type": "string", "minLength": 1},
+    "rubric": {"type": "string", "minLength": 1},
+    "reference_solution_1": {"type": "string", "minLength": 1},
+    "reference_solution_2": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}

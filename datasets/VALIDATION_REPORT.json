@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "counts": {
+    "benchmark": 128,
+    "training": 1000,
+    "objective_70": 70,
+    "subjective_50": 50,
+    "rubrics": 50
+  },
+  "image_references": 23,
+  "missing_images": [],
+  "unreferenced_images": [],
+  "errors": []
+}

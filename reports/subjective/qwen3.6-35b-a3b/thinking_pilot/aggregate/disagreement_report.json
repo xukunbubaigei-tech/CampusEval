@@ -1,0 +1,182 @@
+{
+  "flagged": 4,
+  "records": [
+    {
+      "question_id": "gaokao_math_2024_henan_719_19",
+      "answer_id": "qwen3.6-35b-a3b:gaokao_math_2024_henan_719_19",
+      "candidate_model": "qwen3.6-35b-a3b",
+      "rubric_version": "1.0.0",
+      "max_score": 20.0,
+      "final_score": 6.0,
+      "score_rate": 0.3,
+      "judge_scores": [
+        5.0,
+        6.0,
+        7.0
+      ],
+      "score_range": 2.0,
+      "score_variance": 0.6666666666666666,
+      "weight_records": [
+        {
+          "judge_slot": "judge_a",
+          "judge_model": "deepseek-v4-flash",
+          "base_weight": 1.0,
+          "effective_weight": 1.0,
+          "adjustment_reason": "base"
+        },
+        {
+          "judge_slot": "judge_b",
+          "judge_model": "glm-5.2",
+          "base_weight": 1.0,
+          "effective_weight": 1.0,
+          "adjustment_reason": "base"
+        },
+        {
+          "judge_slot": "judge_c",
+          "judge_model": "kimi-k2.6",
+          "base_weight": 1.0,
+          "effective_weight": 1.0,
+          "adjustment_reason": "base"
+        }
+      ],
+      "needs_human_review": true,
+      "review_reasons": [
+        "judge_requested_review"
+      ]
+    },
+    {
+      "question_id": "gaokao_math_2025_henan_874_19",
+      "answer_id": "qwen3.6-35b-a3b:gaokao_math_2025_henan_874_19",
+      "candidate_model": "qwen3.6-35b-a3b",
+      "rubric_version": "1.0.0",
+      "max_score": 20.0,
+      "final_score": 17.0,
+      "score_rate": 0.85,
+      "judge_scores": [
+        11.0,
+        20.0,
+        20.0
+      ],
+      "score_range": 9.0,
+      "score_variance": 18.0,
+      "weight_records": [
+        {
+          "judge_slot": "judge_a",
+          "judge_model": "deepseek-v4-flash",
+          "base_weight": 1.0,
+          "effective_weight": 1.0,
+          "adjustment_reason": "base"
+        },
+        {
+          "judge_slot": "judge_b",
+          "judge_model": "glm-5.2",
+          "base_weight": 1.0,
+          "effective_weight": 1.0,
+          "adjustment_reason": "base"
+        },
+        {
+          "judge_slot": "judge_c",
+          "judge_model": "kimi-k2.6",
+          "base_weight": 1.0,
+          "effective_weight": 1.0,
+          "adjustment_reason": "base"
+        }
+      ],
+      "needs_human_review": true,
+      "review_reasons": [
+        "score_range_threshold",
+        "variance_threshold",
+        "judge_requested_review"
+      ]
+    },
+    {
+      "question_id": "gaokao_math_2024_henan_719_17",
+      "answer_id": "qwen3.6-35b-a3b:gaokao_math_2024_henan_719_17",
+      "candidate_model": "qwen3.6-35b-a3b",
+      "rubric_version": "1.0.0",
+      "max_score": 20.0,
+      "final_score": 13.0,
+      "score_rate": 0.65,
+      "judge_scores": [
+        8.0,
+        20.0,
+        11.0
+      ],
+      "score_range": 12.0,
+      "score_variance": 26.0,
+      "weight_records": [
+        {
+          "judge_slot": "judge_a",
+          "judge_model": "deepseek-v4-flash",
+          "base_weight": 1.0,
+          "effective_weight": 1.0,
+          "adjustment_reason": "base"
+        },
+        {
+          "judge_slot": "judge_b",
+          "judge_model": "glm-5.2",
+          "base_weight": 1.0,
+          "effective_weight": 1.0,
+          "adjustment_reason": "base"
+        },
+        {
+          "judge_slot": "judge_c",
+          "judge_model": "kimi-k2.6",
+          "base_weight": 1.0,
+          "effective_weight": 1.0,
+          "adjustment_reason": "base"
+        }
+      ],
+      "needs_human_review": true,
+      "review_reasons": [
+        "score_range_threshold",
+        "variance_threshold",
+        "judge_requested_review"
+      ]
+    },
+    {
+      "question_id": "gaokao_math_2025_henan_874_15",
+      "answer_id": "qwen3.6-35b-a3b:gaokao_math_2025_henan_874_15",
+      "candidate_model": "qwen3.6-35b-a3b",
+      "rubric_version": "1.0.0",
+      "max_score": 20.0,
+      "final_score": 14.666667,
+      "score_rate": 0.733333,
+      "judge_scores": [
+        14.0,
+        18.0,
+        12.0
+      ],
+      "score_range": 6.0,
+      "score_variance": 6.222222222222222,
+      "weight_records": [
+        {
+          "judge_slot": "judge_a",
+          "judge_model": "deepseek-v4-flash",
+          "base_weight": 1.0,
+          "effective_weight": 1.0,
+          "adjustment_reason": "base"
+        },
+        {
+          "judge_slot": "judge_b",
+          "judge_model": "glm-5.2",
+          "base_weight": 1.0,
+          "effective_weight": 1.0,
+          "adjustment_reason": "base"
+        },
+        {
+          "judge_slot": "judge_c",
+          "judge_model": "kimi-k2.6",
+          "base_weight": 1.0,
+          "effective_weight": 1.0,
+          "adjustment_reason": "base"
+        }
+      ],
+      "needs_human_review": true,
+      "review_reasons": [
+        "score_range_threshold",
+        "variance_threshold"
+      ]
+    }
+  ]
+}

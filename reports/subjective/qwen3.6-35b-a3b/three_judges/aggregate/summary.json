@@ -1,0 +1,949 @@
+{
+  "answers": 50,
+  "average_score_rate": 0.905666667,
+  "full_score_rate": 0.78,
+  "human_review_rate": 0.12,
+  "judge_consistency": {
+    "mean_score_range_ratio": 0.06
+  },
+  "by_question": {
+    "gaokao_math_2021_henan_53_17": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2021_henan_53_18": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2021_henan_53_19": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2021_henan_53_20": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2021_henan_53_21": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2021_henan_53_22": {
+      "score_rate": 0.966667,
+      "needs_human_review": false
+    },
+    "gaokao_math_2021_henan_53_23": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2022_henan_62_17": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2022_henan_62_19": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2022_henan_62_20": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2022_henan_62_21": {
+      "score_rate": 0.3,
+      "needs_human_review": false
+    },
+    "gaokao_math_2022_henan_62_22": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2022_henan_62_23": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2023_henan_604_17": {
+      "score_rate": 0.683333,
+      "needs_human_review": true
+    },
+    "gaokao_math_2023_henan_604_18": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2023_henan_604_20": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2023_henan_604_21": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2023_henan_604_22": {
+      "score_rate": 0.6,
+      "needs_human_review": false
+    },
+    "gaokao_math_2023_henan_604_23": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2024_henan_719_15": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2024_henan_719_16": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2024_henan_719_18": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2024_henan_719_19": {
+      "score_rate": 0.35,
+      "needs_human_review": true
+    },
+    "gaokao_math_2025_henan_874_16": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2025_henan_874_18": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2025_henan_874_19": {
+      "score_rate": 0.716667,
+      "needs_human_review": true
+    },
+    "gaokao_math_2026_henan_1032_15": {
+      "score_rate": 0.933333,
+      "needs_human_review": false
+    },
+    "gaokao_math_2026_henan_1032_16": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2026_henan_1032_17": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2026_henan_1032_18": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2026_henan_1032_19": {
+      "score_rate": 0.2,
+      "needs_human_review": true
+    },
+    "train_conic10k_00452": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00449": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00274": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00564": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00351": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00343": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00295": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00641": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00548": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00189": {
+      "score_rate": 0.233333,
+      "needs_human_review": false
+    },
+    "train_conic10k_00521": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00010": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00231": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00211": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2022_henan_62_18": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2023_henan_604_19": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2024_henan_719_17": {
+      "score_rate": 0.6,
+      "needs_human_review": true
+    },
+    "gaokao_math_2025_henan_874_15": {
+      "score_rate": 0.7,
+      "needs_human_review": true
+    },
+    "gaokao_math_2025_henan_874_17": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    }
+  },
+  "by_knowledge_point": {
+    "三角函数关系": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "三角形全等判定与性质": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "三角形内角和与三角函数值": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "三角形外心的性质": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "三角形面积公式": {
+      "count": 5,
+      "score_rate": 1.0
+    },
+    "三角形面积计算": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "三角恒等变换": {
+      "count": 2,
+      "score_rate": 0.8583333249999999
+    },
+    "不等式判断": {
+      "count": 1,
+      "score_rate": 0.6833333500000001
+    },
+    "不等式求范围": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "不等式证明与条件等号分析": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "两点间距离": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "两点间距离公式": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "两直线垂直的条件": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "中位线定理": {
+      "count": 1,
+      "score_rate": 0.9333333500000001
+    },
+    "中点坐标公式与定点证明": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "临界值比较": {
+      "count": 1,
+      "score_rate": 0.7
+    },
+    "二元一次不等式组表示的平面区域": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "二次函数在闭区间上的值域": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "二次函数在闭区间上的最值": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "二次函数最值（配方法）": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "二面角及其平面角": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "二面角及其法向量求法": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "二面角的向量求法": {
+      "count": 1,
+      "score_rate": 0.6
+    },
+    "余弦函数性质与不等式": {
+      "count": 1,
+      "score_rate": 0.71666665
+    },
+    "余弦定理": {
+      "count": 5,
+      "score_rate": 1.0
+    },
+    "余弦定理求异面直线所成角": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "几何分布及其无记忆性": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "函数单调性证明": {
+      "count": 1,
+      "score_rate": 0.2
+    },
+    "函数图象的中心对称性": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "函数定义域与导数": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "函数对称性的判定与参数求解": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "函数最值与参数范围": {
+      "count": 1,
+      "score_rate": 0.71666665
+    },
+    "函数最值（二次函数最值）": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "分段函数与指数函数性质": {
+      "count": 1,
+      "score_rate": 0.2
+    },
+    "切线方程": {
+      "count": 1,
+      "score_rate": 0.96666665
+    },
+    "利用导数判断函数单调性": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "利用导数研究函数不等式": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "利用导数研究函数极值的存在性": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "利用导数研究函数零点": {
+      "count": 1,
+      "score_rate": 0.3
+    },
+    "勾股定理": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "参数方程与普通方程互化": {
+      "count": 2,
+      "score_rate": 0.8
+    },
+    "参数求解与代数式计算": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "双曲线参数关系": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "双曲线右支上点到焦点的距离范围": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "双曲线基本量关系": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "双曲线方程与点的坐标关系": {
+      "count": 1,
+      "score_rate": 0.23333335000000002
+    },
+    "双曲线标准方程与焦点位置": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "双曲线的基本性质（顶点、焦点、离心率、渐近线）": {
+      "count": 1,
+      "score_rate": 0.23333335000000002
+    },
+    "双曲线的定义": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "双曲线的定义（焦半径差为2a）": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "双曲线的标准方程": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "双曲线的渐近线与基本量关系": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "双曲线的渐近线方程": {
+      "count": 2,
+      "score_rate": 1.0
+    },
+    "反证法": {
+      "count": 2,
+      "score_rate": 0.458333325
+    },
+    "古典概型的概率估计": {
+      "count": 1,
+      "score_rate": 0.7
+    },
+    "同角三角函数关系": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "向量共线及数乘运算": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "向量共线条件": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "向量共线条件与模长关系": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "向量坐标运算与线性表示": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "向量垂直与数量积": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "向量相等与坐标运算": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "含参不等式恒成立与参数范围": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "含参不等式恒成立问题的转化": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "含参函数的单调性与零点存在性判定": {
+      "count": 1,
+      "score_rate": 0.3
+    },
+    "含绝对值不等式的解法": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "圆与椭圆上的点距离最值": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "圆的参数方程": {
+      "count": 1,
+      "score_rate": 0.96666665
+    },
+    "圆的性质": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "圆的标准方程与几何性质": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "均值比较与显著性判断": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "垂直关系": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "基本不等式及其变形": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "基本不等式求最值": {
+      "count": 3,
+      "score_rate": 1.0
+    },
+    "多项式求导": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "奇函数性质": {
+      "count": 1,
+      "score_rate": 0.2
+    },
+    "导数与函数单调性": {
+      "count": 1,
+      "score_rate": 0.71666665
+    },
+    "导数与极值": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "导数的几何意义与切线方程": {
+      "count": 2,
+      "score_rate": 0.65
+    },
+    "平行线性质": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "恒成立问题的特殊位置法": {
+      "count": 1,
+      "score_rate": 0.23333335000000002
+    },
+    "抛物线标准方程": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "抛物线标准方程与焦点坐标": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "抛物线标准方程及焦点、准线": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "抛物线焦点坐标": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "抛物线的切线方程与切点弦方程": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "抛物线的参数方程": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "抛物线的定义（焦半径与准线距离关系）": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "抛物线的定义（焦半径与到准线距离的转化）": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "抛物线的标准方程与几何性质": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "抛物线的焦点坐标": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "抛物线的焦点坐标与几何性质": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "抽象函数与条件推理": {
+      "count": 1,
+      "score_rate": 0.2
+    },
+    "换元法与不等式放缩": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "数列前n项和与前n项积的定义": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "数学归纳法": {
+      "count": 1,
+      "score_rate": 0.35
+    },
+    "数形结合求参数范围": {
+      "count": 1,
+      "score_rate": 0.6
+    },
+    "斜率与夹角正切公式": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "斜率公式及斜率关系": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "方程变形与参数识别": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "条件概率公式": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "极坐标与直角坐标互化": {
+      "count": 2,
+      "score_rate": 0.8
+    },
+    "极坐标方程转换": {
+      "count": 1,
+      "score_rate": 0.96666665
+    },
+    "样本均值": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "样本均值与样本方差计算": {
+      "count": 1,
+      "score_rate": 0.6833333500000001
+    },
+    "样本均值计算": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "样本方差": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "样本相关系数公式及计算": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "椭圆参数关系 c^2=a^2-b^2": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "椭圆标准方程": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "椭圆标准方程及参数关系": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "椭圆标准方程及待定系数法": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "椭圆的基本性质（离心率、顶点、标准方程）": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "椭圆的基本量与标准方程": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "椭圆的标准方程与基本量关系": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "正弦定理": {
+      "count": 3,
+      "score_rate": 1.0
+    },
+    "比例估计与总量推算": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "点到直线的距离公式": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "点到直线距离": {
+      "count": 1,
+      "score_rate": 0.96666665
+    },
+    "点到直线距离公式": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "焦点与准线": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "焦点到准线的距离": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "焦点到准线的距离（焦参数 p）": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "焦距计算": {
+      "count": 2,
+      "score_rate": 1.0
+    },
+    "独立性检验（χ²检验）": {
+      "count": 1,
+      "score_rate": 0.7
+    },
+    "球心到球面上各点距离相等": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "由和求通项": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "直三棱柱的性质": {
+      "count": 1,
+      "score_rate": 0.9333333500000001
+    },
+    "直线与圆的位置关系及距离公式": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "直线与圆的位置关系（相交、相切、无公共点）": {
+      "count": 1,
+      "score_rate": 0.6
+    },
+    "直线与坐标轴交点坐标计算": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "直线与抛物线交点求解": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "直线与抛物线联立及韦达定理": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "直线与曲线交点问题转化为方程有解问题": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "直线与椭圆位置关系": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "直线与椭圆的位置关系": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "直线与椭圆的位置关系、韦达定理": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "直线与椭圆的位置关系及韦达定理": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "直线过定点的证明": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "直角三角形中的正切定义": {
+      "count": 1,
+      "score_rate": 0.23333335000000002
+    },
+    "相互独立事件的概率计算": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "离心率定义": {
+      "count": 2,
+      "score_rate": 1.0
+    },
+    "离心率范围的讨论与方程求解": {
+      "count": 1,
+      "score_rate": 0.23333335000000002
+    },
+    "离心率计算": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "离散型随机变量的分布列": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "空间几何体中的面积最值": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "空间向量与立体几何": {
+      "count": 2,
+      "score_rate": 1.0
+    },
+    "空间向量法求异面直线所成角": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "空间向量法求线面角": {
+      "count": 2,
+      "score_rate": 0.9666666750000001
+    },
+    "空间直角坐标系与法向量": {
+      "count": 1,
+      "score_rate": 0.6
+    },
+    "空间直角坐标系与点的坐标": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "空间直角坐标系建立": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "等差数列的定义与判定": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "等差数列的性质与下标可分性": {
+      "count": 1,
+      "score_rate": 0.35
+    },
+    "等差数列的证明": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "等比数列求和公式": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "等腰三角形三线合一": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "算术-几何平均不等式": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "线面垂直判定与面面垂直判定": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "线面垂直的判定与性质": {
+      "count": 2,
+      "score_rate": 0.8
+    },
+    "线面平行判定": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "线面平行的判定": {
+      "count": 2,
+      "score_rate": 0.766666675
+    },
+    "线面距离的转化": {
+      "count": 1,
+      "score_rate": 0.9333333500000001
+    },
+    "组合计数与概率估计": {
+      "count": 1,
+      "score_rate": 0.35
+    },
+    "绝对值三角不等式求最值": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "绝对值不等式的几何意义与分段讨论": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "绝对值函数的分段表示": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "解一元二次方程": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "解三角形": {
+      "count": 2,
+      "score_rate": 1.0
+    },
+    "解方程": {
+      "count": 1,
+      "score_rate": 0.6
+    },
+    "轨迹方程": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "轨迹方程的求解": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "递推数列的变形与通项求解": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "配对样本差值分析": {
+      "count": 1,
+      "score_rate": 0.6833333500000001
+    },
+    "错位相减法求和": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "集合的包含关系与不等式求解": {
+      "count": 1,
+      "score_rate": 0.2
+    },
+    "零假设与统计推断": {
+      "count": 1,
+      "score_rate": 0.7
+    },
+    "面积比与线段比": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "面积计算与比例关系": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "面面垂直判定": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "面面垂直的判定": {
+      "count": 1,
+      "score_rate": 1.0
+    },
+    "韦达定理与弦长公式": {
+      "count": 1,
+      "score_rate": 1.0
+    }
+  },
+  "usage": {
+    "prompt_tokens": 569630,
+    "completion_tokens": 139390,
+    "total_tokens": 709020
+  },
+  "latency_seconds": 2030.731,
+  "estimated_cost": null,
+  "cost_note": "Token usage is measured; configure verified model pricing before estimating cost."
+}

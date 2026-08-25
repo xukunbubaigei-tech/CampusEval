@@ -1,0 +1,102 @@
+{
+  "model": "qwen3.6-27b",
+  "evaluation_scope": "text_only",
+  "dataset_records": 70,
+  "raw_result_rows": 62,
+  "unique_completed": 62,
+  "duplicate_result_rows": 0,
+  "missing_ids": [
+    "gaokao_math_2015_henan_445_06",
+    "gaokao_math_2015_henan_445_14",
+    "gaokao_math_2021_henan_53_16",
+    "gaokao_math_2022_henan_62_06",
+    "gaokao_math_2022_henan_62_07",
+    "gaokao_math_2023_henan_604_03",
+    "gaokao_math_2025_henan_874_06",
+    "gaokao_math_2025_henan_874_07"
+  ],
+  "excluded_ids": [
+    "gaokao_math_2024_henan_719_09",
+    "gaokao_math_2024_henan_719_10",
+    "gaokao_math_2026_henan_1032_10"
+  ],
+  "api_error_ids": [],
+  "api_completed": 62,
+  "api_failed": 0,
+  "primary": {
+    "count": 59,
+    "correct": 56,
+    "accuracy": 0.9491525423728814
+  },
+  "raw_unique_rescored": {
+    "count": 62,
+    "correct": 57,
+    "accuracy": 0.9193548387096774
+  },
+  "score_changed_ids": [
+    "gaokao_math_2021_henan_53_14",
+    "gaokao_math_2022_henan_62_13",
+    "gaokao_math_2022_henan_62_14",
+    "gaokao_math_2022_henan_62_16",
+    "gaokao_math_2023_henan_604_13",
+    "gaokao_math_2024_henan_719_12",
+    "gaokao_math_2024_henan_719_14",
+    "gaokao_math_2025_henan_874_13"
+  ],
+  "by_question_type": {
+    "填空题": {
+      "count": 18,
+      "correct": 16,
+      "accuracy": 0.8888888888888888
+    },
+    "选择题": {
+      "count": 41,
+      "correct": 40,
+      "accuracy": 0.975609756097561
+    }
+  },
+  "by_year": {
+    "2015": {
+      "count": 8,
+      "correct": 8,
+      "accuracy": 1.0
+    },
+    "2021": {
+      "count": 9,
+      "correct": 9,
+      "accuracy": 1.0
+    },
+    "2022": {
+      "count": 8,
+      "correct": 8,
+      "accuracy": 1.0
+    },
+    "2023": {
+      "count": 9,
+      "correct": 9,
+      "accuracy": 1.0
+    },
+    "2024": {
+      "count": 8,
+      "correct": 8,
+      "accuracy": 1.0
+    },
+    "2025": {
+      "count": 8,
+      "correct": 8,
+      "accuracy": 1.0
+    },
+    "2026": {
+      "count": 9,
+      "correct": 6,
+      "accuracy": 0.6666666666666666
+    }
+  },
+  "by_modality": {
+    "text_only": {
+      "count": 59,
+      "correct": 56,
+      "accuracy": 0.9491525423728814
+    }
+  }
+}

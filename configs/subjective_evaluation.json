@@ -1,0 +1,17 @@
+{
+  "protocol_version": "subjective_judge_v2",
+  "judges": [
+    {"slot": "judge_a", "model": "CONFIGURE_ME_A", "max_tokens": 8192},
+    {"slot": "judge_b", "model": "CONFIGURE_ME_B", "max_tokens": 8192},
+    {"slot": "judge_c", "model": "CONFIGURE_ME_C", "max_tokens": 8192}
+  ],
+  "default_judge_mode": "three",
+  "judge_prompt_version": "judge_blind_zh_v1",
+  "few_shot_file": "prompts/few_shots/subjective_judge_examples.jsonl",
+  "disagreement": {
+    "score_range_ratio_threshold": 0.25,
+    "minimum_confidence": 0.6,
+    "high_score_serious_error_ratio": 0.8,
+    "any_judge_requests_review": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "objective_run_directories": 12,
+  "json_files_parsed": 48,
+  "subjective_counts": {
+    "reports/subjective/qwen3.6-35b-a3b/answers.jsonl": 50,
+    "reports/subjective/qwen3.6-35b-a3b/three_judges/judgments.jsonl": 150,
+    "reports/subjective/qwen3.6-35b-a3b/three_judges/aggregate/aggregated_scores.jsonl": 50,
+    "reports/subjective/qwen3.6-35b-a3b/thinking_pilot/judgments.jsonl": 30,
+    "reports/subjective/qwen3.6-35b-a3b/thinking_pilot/aggregate/aggregated_scores.jsonl": 10
+  },
+  "errors": []
+}

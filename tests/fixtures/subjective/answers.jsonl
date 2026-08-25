@@ -1,0 +1,2 @@
+{"answer_id": "ans_1", "question_id": "fixture_q1", "answer": "2x=4，所以x=2。", "candidate_model": "fixture-model-a"}
+{"answer_id": "ans_2", "question_id": "fixture_q2", "answer": "x^2-3x+2=0，所以 x=2。", "candidate_model": "fixture-model-b"}

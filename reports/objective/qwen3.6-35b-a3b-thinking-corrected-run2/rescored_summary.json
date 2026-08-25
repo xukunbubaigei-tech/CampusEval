@@ -1,0 +1,95 @@
+{
+  "model": "qwen3.6-35b-a3b",
+  "evaluation_scope": "all_records",
+  "dataset_records": 70,
+  "raw_result_rows": 70,
+  "unique_completed": 70,
+  "duplicate_result_rows": 0,
+  "missing_ids": [],
+  "excluded_ids": [],
+  "api_error_ids": [],
+  "api_completed": 70,
+  "api_failed": 0,
+  "primary": {
+    "count": 70,
+    "correct": 70,
+    "accuracy": 1.0
+  },
+  "raw_unique_rescored": {
+    "count": 70,
+    "correct": 70,
+    "accuracy": 1.0
+  },
+  "score_changed_ids": [
+    "gaokao_math_2021_henan_53_14",
+    "gaokao_math_2021_henan_53_16",
+    "gaokao_math_2022_henan_62_13",
+    "gaokao_math_2022_henan_62_14",
+    "gaokao_math_2022_henan_62_16",
+    "gaokao_math_2023_henan_604_13",
+    "gaokao_math_2024_henan_719_12",
+    "gaokao_math_2024_henan_719_14",
+    "gaokao_math_2025_henan_874_13"
+  ],
+  "by_question_type": {
+    "填空题": {
+      "count": 20,
+      "correct": 20,
+      "accuracy": 1.0
+    },
+    "选择题": {
+      "count": 50,
+      "correct": 50,
+      "accuracy": 1.0
+    }
+  },
+  "by_year": {
+    "2015": {
+      "count": 10,
+      "correct": 10,
+      "accuracy": 1.0
+    },
+    "2021": {
+      "count": 10,
+      "correct": 10,
+      "accuracy": 1.0
+    },
+    "2022": {
+      "count": 10,
+      "correct": 10,
+      "accuracy": 1.0
+    },
+    "2023": {
+      "count": 10,
+      "correct": 10,
+      "accuracy": 1.0
+    },
+    "2024": {
+      "count": 10,
+      "correct": 10,
+      "accuracy": 1.0
+    },
+    "2025": {
+      "count": 10,
+      "correct": 10,
+      "accuracy": 1.0
+    },
+    "2026": {
+      "count": 10,
+      "correct": 10,
+      "accuracy": 1.0
+    }
+  },
+  "by_modality": {
+    "text_only": {
+      "count": 62,
+      "correct": 62,
+      "accuracy": 1.0
+    },
+    "with_image": {
+      "count": 8,
+      "correct": 8,
+      "accuracy": 1.0
+    }
+  }
+}

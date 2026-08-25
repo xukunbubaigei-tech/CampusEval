@@ -1,0 +1,110 @@
+{
+  "model": "qwen3-8b",
+  "evaluation_scope": "text_only",
+  "dataset_records": 70,
+  "raw_result_rows": 68,
+  "unique_completed": 62,
+  "duplicate_result_rows": 6,
+  "missing_ids": [
+    "gaokao_math_2015_henan_445_06",
+    "gaokao_math_2015_henan_445_14",
+    "gaokao_math_2021_henan_53_16",
+    "gaokao_math_2022_henan_62_06",
+    "gaokao_math_2022_henan_62_07",
+    "gaokao_math_2023_henan_604_03",
+    "gaokao_math_2025_henan_874_06",
+    "gaokao_math_2025_henan_874_07"
+  ],
+  "excluded_ids": [
+    "gaokao_math_2024_henan_719_09",
+    "gaokao_math_2026_henan_1032_10"
+  ],
+  "api_error_ids": [
+    "gaokao_math_2022_henan_62_04",
+    "gaokao_math_2022_henan_62_16",
+    "gaokao_math_2023_henan_604_11",
+    "gaokao_math_2024_henan_719_06",
+    "gaokao_math_2024_henan_719_08",
+    "gaokao_math_2024_henan_719_10",
+    "gaokao_math_2024_henan_719_12",
+    "gaokao_math_2024_henan_719_14",
+    "gaokao_math_2025_henan_874_04",
+    "gaokao_math_2025_henan_874_13",
+    "gaokao_math_2026_henan_1032_07"
+  ],
+  "api_completed": 51,
+  "api_failed": 11,
+  "primary": {
+    "count": 49,
+    "correct": 44,
+    "accuracy": 0.8979591836734694
+  },
+  "raw_unique_rescored": {
+    "count": 51,
+    "correct": 44,
+    "accuracy": 0.8627450980392157
+  },
+  "score_changed_ids": [
+    "gaokao_math_2022_henan_62_13",
+    "gaokao_math_2022_henan_62_14",
+    "gaokao_math_2023_henan_604_13",
+    "gaokao_math_2024_henan_719_13",
+    "gaokao_math_2025_henan_874_14"
+  ],
+  "by_question_type": {
+    "填空题": {
+      "count": 14,
+      "correct": 12,
+      "accuracy": 0.8571428571428571
+    },
+    "选择题": {
+      "count": 35,
+      "correct": 32,
+      "accuracy": 0.9142857142857143
+    }
+  },
+  "by_year": {
+    "2015": {
+      "count": 8,
+      "correct": 8,
+      "accuracy": 1.0
+    },
+    "2021": {
+      "count": 9,
+      "correct": 9,
+      "accuracy": 1.0
+    },
+    "2022": {
+      "count": 6,
+      "correct": 6,
+      "accuracy": 1.0
+    },
+    "2023": {
+      "count": 8,
+      "correct": 7,
+      "accuracy": 0.875
+    },
+    "2024": {
+      "count": 4,
+      "correct": 4,
+      "accuracy": 1.0
+    },
+    "2025": {
+      "count": 6,
+      "correct": 6,
+      "accuracy": 1.0
+    },
+    "2026": {
+      "count": 8,
+      "correct": 4,
+      "accuracy": 0.5
+    }
+  },
+  "by_modality": {
+    "text_only": {
+      "count": 49,
+      "correct": 44,
+      "accuracy": 0.8979591836734694
+    }
+  }
+}

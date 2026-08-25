@@ -1,0 +1,16 @@
+# Direct runtime dependencies and their fully pinned transitive dependencies.
+requests==2.34.2
+certifi==2026.7.22
+charset-normalizer==3.5.1
+idna==3.19
+urllib3==2.7.0
+
+jsonschema==4.26.0
+attrs==26.1.0
+jsonschema-specifications==2025.9.1
+referencing==0.37.0
+rpds-py==2026.6.3
+typing-extensions==4.16.0
+
+sympy==1.14.0
+mpmath==1.3.0

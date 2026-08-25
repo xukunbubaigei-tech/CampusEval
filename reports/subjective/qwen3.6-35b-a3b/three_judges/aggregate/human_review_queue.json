@@ -1,0 +1,56 @@
+{
+  "records": [
+    {
+      "answer_id": "qwen3.6-35b-a3b:gaokao_math_2023_henan_604_17",
+      "question_id": "gaokao_math_2023_henan_604_17",
+      "reasons": [
+        "judge_requested_review"
+      ],
+      "status": "pending"
+    },
+    {
+      "answer_id": "qwen3.6-35b-a3b:gaokao_math_2024_henan_719_19",
+      "question_id": "gaokao_math_2024_henan_719_19",
+      "reasons": [
+        "judge_requested_review"
+      ],
+      "status": "pending"
+    },
+    {
+      "answer_id": "qwen3.6-35b-a3b:gaokao_math_2025_henan_874_19",
+      "question_id": "gaokao_math_2025_henan_874_19",
+      "reasons": [
+        "score_range_threshold",
+        "variance_threshold",
+        "judge_requested_review"
+      ],
+      "status": "pending"
+    },
+    {
+      "answer_id": "qwen3.6-35b-a3b:gaokao_math_2026_henan_1032_19",
+      "question_id": "gaokao_math_2026_henan_1032_19",
+      "reasons": [
+        "judge_requested_review"
+      ],
+      "status": "pending"
+    },
+    {
+      "answer_id": "qwen3.6-35b-a3b:gaokao_math_2024_henan_719_17",
+      "question_id": "gaokao_math_2024_henan_719_17",
+      "reasons": [
+        "score_range_threshold",
+        "variance_threshold"
+      ],
+      "status": "pending"
+    },
+    {
+      "answer_id": "qwen3.6-35b-a3b:gaokao_math_2025_henan_874_15",
+      "question_id": "gaokao_math_2025_henan_874_15",
+      "reasons": [
+        "score_range_threshold",
+        "variance_threshold"
+      ],
+      "status": "pending"
+    }
+  ]
+}

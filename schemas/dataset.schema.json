@@ -1,0 +1,63 @@
+{
+  "title": "Gaokao Math Dataset Record",
+  "type": "object",
+  "required": ["id", "source", "question", "answer", "metadata"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "source": {
+      "type": "string",
+      "enum": ["gaokao", "conic10k", "aime", "university_exam"]
+    },
+    "question": {
+      "type": "object",
+      "required": ["text", "images", "options"],
+      "properties": {
+        "text": {"type": "string", "minLength": 1},
+        "images": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1},
+          "uniqueItems": true
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {"type": "string"},
+              {
+                "type": "object",
+                "required": ["label", "text"],
+                "properties": {
+                  "label": {"type": "string", "minLength": 1},
+                  "text": {"type": "string"}
+                },
+                "additionalProperties": false
+              }
+            ]
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "answer": {
+      "type": "object",
+      "required": ["final_answer", "solution"],
+      "properties": {
+        "final_answer": {"type": "string", "minLength": 1},
+        "solution": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["paper_name", "question_type"],
+      "properties": {
+        "paper_name": {"type": "string"},
+        "question_type": {
+          "enum": ["选择题", "填空题", "解答题", "证明题", "综合题", "压轴题"]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

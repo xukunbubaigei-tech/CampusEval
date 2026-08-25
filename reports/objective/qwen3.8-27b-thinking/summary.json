@@ -1,0 +1,79 @@
+{
+  "model": "qwen3.8-27b",
+  "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "evaluation_scope": "all_records",
+  "excluded_image_count": 0,
+  "excluded_image_ids": [],
+  "requested": 70,
+  "completed": 70,
+  "failed": 0,
+  "correct": 57,
+  "accuracy": 0.8142857142857143,
+  "by_question_type": {
+    "填空题": {
+      "count": 20,
+      "correct": 8,
+      "accuracy": 0.4
+    },
+    "选择题": {
+      "count": 50,
+      "correct": 49,
+      "accuracy": 0.98
+    }
+  },
+  "by_year": {
+    "2015": {
+      "count": 10,
+      "correct": 10,
+      "accuracy": 1.0
+    },
+    "2021": {
+      "count": 10,
+      "correct": 8,
+      "accuracy": 0.8
+    },
+    "2022": {
+      "count": 10,
+      "correct": 7,
+      "accuracy": 0.7
+    },
+    "2023": {
+      "count": 10,
+      "correct": 9,
+      "accuracy": 0.9
+    },
+    "2024": {
+      "count": 10,
+      "correct": 8,
+      "accuracy": 0.8
+    },
+    "2025": {
+      "count": 10,
+      "correct": 7,
+      "accuracy": 0.7
+    },
+    "2026": {
+      "count": 10,
+      "correct": 8,
+      "accuracy": 0.8
+    }
+  },
+  "by_modality": {
+    "text_only": {
+      "count": 62,
+      "correct": 51,
+      "accuracy": 0.8225806451612904
+    },
+    "with_image": {
+      "count": 8,
+      "correct": 6,
+      "accuracy": 0.75
+    }
+  },
+  "total_latency_seconds": 1391.72,
+  "usage": {
+    "completion_tokens": 85893,
+    "prompt_tokens": 17069,
+    "total_tokens": 102962
+  }
+}

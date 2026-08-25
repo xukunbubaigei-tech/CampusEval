@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "subjective_judgment.schema.json",
+  "title": "Subjective Judgment (plain-text rubric protocol v2)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["question_id", "answer_id", "judge_slot", "judge_model", "score", "max_score", "reason", "confidence", "needs_human_review"],
+  "properties": {
+    "question_id": {"type": "string", "minLength": 1},
+    "answer_id": {"type": "string", "minLength": 1},
+    "judge_slot": {"type": "string", "minLength": 1},
+    "judge_model": {"type": "string", "minLength": 1},
+    "score": {"type": "number", "minimum": 0},
+    "max_score": {"type": "number", "minimum": 1},
+    "reason": {"type": "string", "minLength": 1},
+    "correct_parts": {"type": "array", "items": {"type": "string"}},
+    "errors": {"type": "array", "items": {"type": "string"}},
+    "evidence_quotes": {"type": "array", "items": {"type": "string"}},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "needs_human_review": {"type": "boolean"},
+    "review_reasons": {"type": "array", "items": {"type": "string"}},
+    "prompt_version": {"type": "string", "minLength": 1}
+  }
+}

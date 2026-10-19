@@ -12,10 +12,10 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from gaokao_math_benchmark.subjective.aggregation import aggregate_judgments, summary
-from gaokao_math_benchmark.subjective.io_utils import read_jsonl
-from gaokao_math_benchmark.subjective.prompts import judge_prompt
-from gaokao_math_benchmark.subjective.validation import validate_judgment, validate_rubric
+from CampusEval.subjective.aggregation import aggregate_judgments, summary
+from CampusEval.subjective.io_utils import read_jsonl
+from CampusEval.subjective.prompts import judge_prompt
+from CampusEval.subjective.validation import validate_judgment, validate_rubric
 
 ROOT = Path(__file__).resolve().parents[1]
 FIX = ROOT / "tests/fixtures/subjective"
@@ -143,7 +143,7 @@ class DryRunTests(unittest.TestCase):
             cfg_path = Path(tmp) / "cfg.json"
             cfg_path.write_text(json.dumps(_config(), ensure_ascii=False), encoding="utf-8")
             cmd = [
-                sys.executable, str(ROOT / "scripts/evaluate_subjective_answers.py"),
+                sys.executable, str(ROOT / "scripts/evaluation/evaluate_subjective_answers.py"),
                 "--answers", str(FIX / "answers.jsonl"),
                 "--questions", str(FIX / "questions.jsonl"),
                 "--rubrics", str(FIX / "rubrics.jsonl"),

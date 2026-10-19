@@ -8,11 +8,10 @@ __pycache__/
 *.log
 runs/
 tmp/
-workspace/extracted/
-workspace/review/
-workspace/rejected/
-workspace/staging/
-workspace/reports/
+# Keep only the workspace guide in Git. Raw PDFs, downloaded Parquet,
+# webpage parsing JSON and all content-named subdirectories stay local.
+/workspace/*
+!/workspace/README.md
 node_modules/
 *.sqlite-journal
 *.sqlite-wal

@@ -1,32 +1,73 @@
-# workspace/ — 数据流水线工作区（P5）
+# workspace — 原始解析材料与数据处理工作区
 
-本目录用于新增数据的处理与暂存，**不属于正式发布数据**。正式数据一律在
-`datasets/`、`data/images/`；正式模型报告在 `reports/`。
+本目录保存网页下载的解析 JSON、原始输入、人工复核材料和发布暂存文件，不属于正式题库。正式数据在 `datasets/`，引用图片在 `data/images/`，正式模型报告在项目根目录的 `reports/`。
+
+## 网页端精准解析标准步骤
+
+自 2026-10-19 起，后续需要 MinerU 提取的 PDF 统一使用下列流程，不再使用轻量 API 脚本。原 `tools/` 目录已删除。
+
+1. 打开 **[MinerU 网页端](https://mineru.net/)**，从首页进入在线使用/解析页面，登录账号。
+2. 上传待处理 PDF，使用网页端的**精准解析**方式。网页名称或布局变化时，以页面实际提供的精准解析选项为准；不要改用轻量接口。
+3. 等待解析完成，核对文件名、页数及题干、公式、选项和图表的预览结果。
+4. 在网页结果中下载 **JSON 格式**。如果结果以压缩包提供，解压并找到解析 JSON；下载的 JSON 是原始版面解析结果，还不是正式题库 JSONL。
+5. 在以下目录中**直接新建一个以解析内容命名的子文件夹**：
+
+   ```text
+   D:\codex-project\高考数据集\CampusEval\workspace
+   ```
+
+6. 将下载的 JSON 原文件放入该子文件夹。题干与答案解析分开解析时，分别建立内容明确的文件夹；分批解析时在文件名中保留来源与页码范围，避免覆盖。
+7. 保留原始 JSON，另行完成题目切分、题答匹配、图片整理、原页核对与数学复核，再转换为规范 JSONL 并校验发布。不要直接把网页下载 JSON 写入正式题库。
+
+建议布局（以下为命名示例，不表示新增批次已完成）：
+
+```text
+workspace/
+├── 考研数学一_1987-2023_题干/
+│   ├── 题干_001-080.json
+│   └── 题干_081-127.json
+├── 考研数学一_1987-2023_答案解析/
+│   └── 1987年_答案解析.json
+├── SOA_Exam_P_题干/
+│   └── SOA_题干_001-150.json
+└── SOA_Exam_P_答案解析/
+    └── SOA_解析_001-150.json
+```
+
+下载文件名已有清晰来源、批次和页码时可保留原名；需要改名时保留对应关系。建议每个内容目录附简短说明，记录原 PDF 文件名、页码范围、解析日期、所选模式、下载 JSON 文件名和必要的分批对应关系，便于后续参考。JSON、原 PDF、页码映射和必要图片应作为可追溯材料保存；不把这些内容当作随时可丢弃的缓存。
+
+## 现有材料与构建器衔接
+
+旧批次仍位于 `extracted/kaoyan/precise/`、`extracted/SOA/` 等位置。本次规范不移动旧材料，也不补写无法确认的历史网页设置。
+
+现有考研、SOA 构建器包含固定输入路径或文件名约定。新 JSON 按上述标准保存后，需根据实际结构适配构建器输入；不会因为文件放进 `workspace/` 就被自动读取。`import_dataset.py` 接受整理后的题目 JSON/JSONL，不直接接受 MinerU 版面 JSON。
 
 ## 目录职责
 
-| 目录 | 用途 | Git 跟踪 |
-|---|---|---|
-| `imports/` | 用户新提供的原始输入（JSON / JSONL / PDF / 图片 / MinerU 提取结果） | ✅ 保留（当前项目要求原始 PDF 可保留） |
-| `review/` | 待人工审核内容（如缺 Rubric 的候选） | ✅ 保留 |
-| `rejected/` | 导入失败报告与退回内容（审计用） | ❌ gitignore，按需 `--scope rejected` 清理 |
-| `staging/` | 导入流水线原子发布的临时目录 | ❌ gitignore |
-| `reports/` | 导入成功报告等派生产物 | ❌ gitignore |
-| `extracted/` | OCR / MinerU 解析中间输出 | ❌ gitignore |
+| 目录 | 用途 |
+|---|---|
+| `<解析内容名称>/` | 后续网页精准解析下载的原始 JSON，按内容或题干/解析分组保存 |
+| `imports/` | 原始 PDF、图片，以及整理后准备导入的题目与配套输入 |
+| `review/` | 待人工审核材料与复核图像 |
+| `extracted/` | 旧批次提取结果、页码映射及其他转换中间材料 |
+| `staging/` | 发布前暂存数据 |
+| `rejected/` | 导入失败记录与退回报告 |
+| `reports/` | 导入报告、迁移审计与备份等维护记录 |
 
-## 净室原则
+工作区材料与正式题库分开保存；正式数据引用的图片应放入 `data/images/`，不直接引用工作区中的临时路径。
 
-- 中间文件（OCR 裁剪图、临时 JSON、请求回执、staging）**绝不提交**、不混入
-  `datasets/` 与 `reports/`。
-- 正式数据只引用 `data/images/` 中的规范图片；`workspace/extracted/` 的裁剪图
-  不得被正式数据引用。
-- 清理命令只作用于本工作区，见下；**永远不触碰** `datasets/`、`data/`、
-  `reports/` 与 `workspace/imports/`、`workspace/review/`。
+## 上传与本地保留
+
+项目 `.gitignore` 仅允许上传本目录的 `README.md`；其他所有内容默认只保留本地，包括 `imports/`、原始 U-MATH Parquet、旧提取结果、复核图片、迁移备份，以及今后新建的 `workspace/<解析内容名称>/`。新增内容目录无需再逐个补忽略规则。
+
+这些文件仍可用于追溯和重建，不会因忽略上传而删除。它们未纳入 Git 备份，应按需另行备份。忽略规则不会自动移除已经被 Git 跟踪的文件；本次核对本目录原先只有 `README.md` 被跟踪。
 
 ## 清理
 
+默认清理脚本会删除 `staging/`、`extracted/` 和工作区 `reports/` 的内容，可能包含原始解析结果与迁移备份。日常应指定清理范围，并先预览。从项目父目录执行：
+
 ```powershell
-.venv\Scripts\python scripts\clean_workspace.py --dry-run   # 先看将删除什么
-.venv\Scripts\python scripts\clean_workspace.py             # 清理 staging/extracted/reports
-.venv\Scripts\python scripts\clean_workspace.py --scope rejected   # 显式清理失败报告
+.venv\Scripts\python.exe CampusEval\scripts\maintenance\clean_workspace.py --scope staging --dry-run
 ```
+
+确认暂存内容可以丢弃后，移除 `--dry-run` 才会执行删除。当前脚本不扫描直接位于 `workspace/<解析内容名称>/` 的其他自定义目录；不应为了清理方便将原始 JSON 混入 `staging/`。

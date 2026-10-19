@@ -5,9 +5,14 @@
     "training": 1000,
     "objective_70": 70,
     "subjective_50": 50,
-    "rubrics": 50
+    "rubrics": 50,
+    "kaoyan": 805,
+    "MIT": 146,
+    "U-MATH": 1100,
+    "SOA": 718
   },
-  "image_references": 23,
+  "image_references": 311,
+  "primary_records": 3897,
   "missing_images": [],
   "unreferenced_images": [],
   "errors": []

@@ -7,7 +7,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPT = ROOT / "scripts/clean_workspace.py"
+SCRIPT = ROOT / "scripts/maintenance/clean_workspace.py"
 
 TRANSIENT = ("staging", "extracted", "reports", "rejected")
 KEEP = ("imports", "review")

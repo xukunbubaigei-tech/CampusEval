@@ -13,7 +13,7 @@ FILES = {
     "subjective_50": DATASETS / "subjective_50/questions.jsonl",
 }
 EXPECTED = {"benchmark": 128, "training": 1000, "objective_70": 70, "subjective_50": 50}
-KNOWN_SOURCES = {"gaokao", "conic10k", "aime", "university_exam"}
+KNOWN_SOURCES = {"gaokao", "conic10k", "aime", "university_exam", "umath", "soa"}
 BANNED_TOP_LEVEL = {
     "schema_version",
     "dataset_scope",
@@ -31,7 +31,7 @@ def _load(path: Path) -> list[dict]:
 
 def _source_of_from_script():
     spec = importlib.util.spec_from_file_location(
-        "migrate_add_source", ROOT / "scripts/migrate_add_source.py"
+        "migrate_add_source", ROOT / "scripts/archive/migrate_add_source.py"
     )
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)

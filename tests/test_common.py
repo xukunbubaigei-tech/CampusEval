@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from gaokao_math_benchmark.subjective.common import (ensure_run_output_dir, image_data_url,
+from CampusEval.subjective.common import (ensure_run_output_dir, image_data_url,
                                                      latency_total, load_api_key, multimodal_content,
                                                      resolve_image_path, usage_summary)
 

@@ -7,7 +7,7 @@ equations, item-number notations, float equivalence).
 """
 import unittest
 
-from gaokao_math_benchmark.evaluation.metrics import normalize, score_final
+from CampusEval.evaluation.metrics import normalize, score_final
 
 # (prediction, gold) pairs that are mathematically equivalent but differ in
 # format; all were originally mis-scored as wrong by the naive matcher.

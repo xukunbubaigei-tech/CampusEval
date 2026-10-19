@@ -1,0 +1,85 @@
+{
+  "model": "glm-5.3",
+  "evaluation_scope": "all_records",
+  "dataset_records": 70,
+  "raw_result_rows": 70,
+  "unique_completed": 70,
+  "duplicate_result_rows": 0,
+  "missing_ids": [],
+  "excluded_ids": [],
+  "api_error_ids": [],
+  "api_completed": 70,
+  "api_failed": 0,
+  "primary": {
+    "count": 70,
+    "correct": 60,
+    "accuracy": 0.8571428571428571
+  },
+  "raw_unique_rescored": {
+    "count": 70,
+    "correct": 60,
+    "accuracy": 0.8571428571428571
+  },
+  "score_changed_ids": [],
+  "by_question_type": {
+    "填空题": {
+      "count": 20,
+      "correct": 14,
+      "accuracy": 0.7
+    },
+    "选择题": {
+      "count": 50,
+      "correct": 46,
+      "accuracy": 0.92
+    }
+  },
+  "by_year": {
+    "2015": {
+      "count": 10,
+      "correct": 10,
+      "accuracy": 1.0
+    },
+    "2021": {
+      "count": 10,
+      "correct": 8,
+      "accuracy": 0.8
+    },
+    "2022": {
+      "count": 10,
+      "correct": 8,
+      "accuracy": 0.8
+    },
+    "2023": {
+      "count": 10,
+      "correct": 9,
+      "accuracy": 0.9
+    },
+    "2024": {
+      "count": 10,
+      "correct": 10,
+      "accuracy": 1.0
+    },
+    "2025": {
+      "count": 10,
+      "correct": 8,
+      "accuracy": 0.8
+    },
+    "2026": {
+      "count": 10,
+      "correct": 7,
+      "accuracy": 0.7
+    }
+  },
+  "by_modality": {
+    "text_only": {
+      "count": 62,
+      "correct": 54,
+      "accuracy": 0.8709677419354839
+    },
+    "with_image": {
+      "count": 8,
+      "correct": 6,
+      "accuracy": 0.75
+    }
+  }
+}

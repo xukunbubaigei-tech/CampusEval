@@ -1,0 +1,219 @@
+{
+  "answers": 50,
+  "average_score_rate": 0.9153333370000001,
+  "full_score_rate": 0.64,
+  "human_review_rate": 0.34,
+  "judge_consistency": {
+    "mean_score_range_ratio": 0.07
+  },
+  "by_question": {
+    "gaokao_math_2021_henan_53_17": {
+      "score_rate": 0.7,
+      "needs_human_review": true
+    },
+    "gaokao_math_2021_henan_53_18": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2021_henan_53_19": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2021_henan_53_20": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2021_henan_53_21": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2021_henan_53_22": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2021_henan_53_23": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2022_henan_62_17": {
+      "score_rate": 0.95,
+      "needs_human_review": true
+    },
+    "gaokao_math_2022_henan_62_18": {
+      "score_rate": 0.983333,
+      "needs_human_review": false
+    },
+    "gaokao_math_2022_henan_62_19": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2022_henan_62_20": {
+      "score_rate": 0.533333,
+      "needs_human_review": true
+    },
+    "gaokao_math_2022_henan_62_21": {
+      "score_rate": 0.808333,
+      "needs_human_review": true
+    },
+    "gaokao_math_2022_henan_62_22": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2022_henan_62_23": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2023_henan_604_17": {
+      "score_rate": 0.75,
+      "needs_human_review": true
+    },
+    "gaokao_math_2023_henan_604_18": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2023_henan_604_19": {
+      "score_rate": 0.933333,
+      "needs_human_review": true
+    },
+    "gaokao_math_2023_henan_604_20": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2023_henan_604_21": {
+      "score_rate": 0.983333,
+      "needs_human_review": true
+    },
+    "gaokao_math_2023_henan_604_22": {
+      "score_rate": 0.983333,
+      "needs_human_review": true
+    },
+    "gaokao_math_2023_henan_604_23": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2024_henan_719_15": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2024_henan_719_16": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2024_henan_719_17": {
+      "score_rate": 0.933333,
+      "needs_human_review": true
+    },
+    "gaokao_math_2024_henan_719_18": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2024_henan_719_19": {
+      "score_rate": 0.75,
+      "needs_human_review": true
+    },
+    "gaokao_math_2025_henan_874_15": {
+      "score_rate": 0.933333,
+      "needs_human_review": true
+    },
+    "gaokao_math_2025_henan_874_16": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2025_henan_874_17": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2025_henan_874_18": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2025_henan_874_19": {
+      "score_rate": 0.983333,
+      "needs_human_review": true
+    },
+    "gaokao_math_2026_henan_1032_15": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2026_henan_1032_16": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2026_henan_1032_17": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "gaokao_math_2026_henan_1032_18": {
+      "score_rate": 0.8,
+      "needs_human_review": true
+    },
+    "gaokao_math_2026_henan_1032_19": {
+      "score_rate": 0.408333,
+      "needs_human_review": true
+    },
+    "train_conic10k_00452": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00449": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00274": {
+      "score_rate": 0.2,
+      "needs_human_review": true
+    },
+    "train_conic10k_00564": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00351": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00343": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00295": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00641": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00548": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00189": {
+      "score_rate": 0.2,
+      "needs_human_review": true
+    },
+    "train_conic10k_00521": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00010": {
+      "score_rate": 0.933333,
+      "needs_human_review": true
+    },
+    "train_conic10k_00231": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    },
+    "train_conic10k_00211": {
+      "score_rate": 1.0,
+      "needs_human_review": false
+    }
+  },
+  "usage": {
+    "prompt_tokens": 467737,
+    "completion_tokens": 88306,
+    "total_tokens": 556043
+  },
+  "latency_seconds": 3652.11,
+  "estimated_cost": null,
+  "cost_note": "Token usage is measured; configure verified model pricing before estimating cost."
+}

@@ -3,7 +3,7 @@
 Covers: deterministic auto-id, source inference, normalization rejection of
 empty question/answer, dry-run writing nothing, a real end-to-end import on a
 temporary project-root copy (auto id not used here; explicit id + rubric +
-image + mini rebuild + manifest refresh + post-validation), and a failure
+image + fixed-mini preservation + manifest refresh + post-validation), and a failure
 case that leaves the formal data untouched.
 """
 import base64
@@ -17,7 +17,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPT = ROOT / "scripts/import_dataset.py"
+SCRIPT = ROOT / "scripts/maintenance/import_dataset.py"
 
 TINY_PNG = base64.b64decode(
     "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="
@@ -62,6 +62,45 @@ def _load_jsonl(path: Path) -> list[dict]:
 
 
 class NormalizeUnitTests(unittest.TestCase):
+    def test_umath_preserves_reference_answer_without_inventing_solution(self):
+        mod = _import_script()
+        raw = {"id": "umath_1",
+               "question": {"text": "Evaluate the integral."},
+               "answer": {"final_answer": "$1/2$", "solution": ""},
+               "metadata": {"question_type": "解答题"}}
+        record, errors = mod.normalize({"record": raw}, ROOT, None, {})
+        self.assertEqual(errors, [])
+        self.assertEqual(record["source"], "umath")
+        self.assertEqual(record["metadata"]["paper_name"], "umath")
+        self.assertEqual(record["answer"], raw["answer"])
+        validator, _ = mod.schema_validators(ROOT)
+        self.assertEqual(list(validator.iter_errors(record)), [])
+
+    def test_university_exam_allows_missing_solution_and_falls_back_to_source(self):
+        mod = _import_script()
+        record, errors = mod.normalize(
+            {"record": {"id": "university_kaoyan_1987_math1_01", "source": "university_exam",
+                        "question": {"text": "求导数。"},
+                        "answer": {"final_answer": "1", "solution": ""},
+                        "metadata": {"paper_name": "  ", "question_type": "解答题"}}},
+            ROOT, None, {},
+        )
+        self.assertEqual(errors, [])
+        self.assertEqual(record["metadata"]["paper_name"], "university_exam")
+        self.assertEqual(record["answer"]["solution"], "")
+        validator, _ = mod.schema_validators(ROOT)
+        self.assertEqual(list(validator.iter_errors(record)), [])
+
+    def test_existing_sources_still_require_solution(self):
+        mod = _import_script()
+        record, errors = mod.normalize(
+            {"record": {"source": "gaokao", "question": {"text": "求导数。"},
+                        "answer": {"final_answer": "1", "solution": ""},
+                        "metadata": {"question_type": "解答题"}}}, ROOT, None, {},
+        )
+        self.assertIsNone(record)
+        self.assertTrue(any("requires answer.solution" in e for e in errors))
+
     def test_auto_id_deterministic(self):
         mod = _import_script()
         record = {"question": {"text": "求 f(x)=x^2 的导数。", "images": []}, "metadata": {"year": 2026}}
@@ -123,10 +162,6 @@ class EndToEndTests(unittest.TestCase):
                          "subject_variant": "math", "question_type": "解答题"},
         }
         (imp / "q.jsonl").write_text(json.dumps(question, ensure_ascii=False) + "\n", encoding="utf-8")
-        ids_path = tmp / "datasets/subjective_50/ids.json"
-        ids = json.loads(ids_path.read_text(encoding="utf-8"))
-        ids.append(self.NEW_ID)
-        ids_path.write_text(json.dumps(ids, ensure_ascii=False, indent=2), encoding="utf-8")
         if with_rubric:
             rubric = {
                 "question_id": self.NEW_ID,
@@ -141,6 +176,9 @@ class EndToEndTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
             imp = self._prepare(tmp, with_rubric=True)
+            fixed_paths = [tmp / "datasets" / name / "questions.jsonl" for name in ("objective_70", "subjective_50")]
+            fixed_paths.append(tmp / "datasets/subjective_50/rubrics.jsonl")
+            before = {path: path.read_bytes() for path in fixed_paths}
             proc = _run([
                 "--imports", str(imp / "q.jsonl"), "--rubrics", str(imp / "rubric.jsonl"),
                 "--target", "main", "--project-root", str(tmp),
@@ -155,22 +193,26 @@ class EndToEndTests(unittest.TestCase):
             self.assertEqual(len(bench), 129)
             new_record = next(r for r in bench if r["id"] == self.NEW_ID)
             self.assertEqual(new_record["question"]["images"],
-                             ["data/images/questions/gaokao/" + self.NEW_ID + "_0.png"])
-            self.assertTrue((tmp / "data/images/questions/gaokao" / (self.NEW_ID + "_0.png")).is_file())
+                             ["data/images/gaokao/" + self.NEW_ID + "_0.png"])
+            self.assertTrue((tmp / "data/images/gaokao" / (self.NEW_ID + "_0.png")).is_file())
 
             subjective = _load_jsonl(tmp / "datasets/subjective_50/questions.jsonl")
-            self.assertEqual(len(subjective), 51)
-            self.assertIn(self.NEW_ID, {r["id"] for r in subjective})
+            self.assertEqual(len(subjective), 50)
+            self.assertNotIn(self.NEW_ID, {r["id"] for r in subjective})
 
             rubrics = _load_jsonl(tmp / "datasets/subjective_50/rubrics.jsonl")
-            self.assertEqual(len(rubrics), 51)
-            self.assertTrue(any(r["question_id"] == self.NEW_ID for r in rubrics))
+            self.assertEqual(len(rubrics), 50)
+            self.assertFalse(any(r["question_id"] == self.NEW_ID for r in rubrics))
+            self.assertEqual(report["imported_rubrics"][0]["question_id"], self.NEW_ID)
+            for path, content in before.items():
+                self.assertEqual(path.read_bytes(), content)
 
             manifest = json.loads((tmp / "datasets/RELEASE_MANIFEST.json").read_text(encoding="utf-8"))
             self.assertEqual(manifest["counts"]["benchmark"], 129)
-            self.assertEqual(manifest["counts"]["subjective_50"], 51)
-            self.assertEqual(manifest["counts"]["approved_rubrics"], 51)
-            self.assertEqual(manifest["counts"]["images"], 24)
+            self.assertEqual(manifest["counts"]["subjective_50"], 50)
+            self.assertEqual(manifest["counts"]["approved_rubrics"], 50)
+            self.assertEqual(manifest["counts"]["images"],
+                             json.loads((ROOT / "datasets/RELEASE_MANIFEST.json").read_text(encoding="utf-8"))["counts"]["images"] + 1)
             # post-publish validation report exists and is ok
             self.assertTrue((tmp / "datasets/VALIDATION_REPORT.json").exists())
 

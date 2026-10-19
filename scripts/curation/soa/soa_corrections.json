@@ -1,0 +1,321 @@
+{
+  "112": {
+    "question": "The cumulative distribution function of a random variable $X$ is $$F_X(x)=\\begin{cases}0,&x<0,\\\\1/2,&0\\leq x<2,\\\\(x-1)/2,&2\\leq x<3,\\\\1,&x\\geq3.\\end{cases}$$ Calculate $E(X)$.",
+    "basis": "Transcribed and checked against original PDF question/solution 112; repairs OCR omissions or preserves diagram information as text."
+  },
+  "126": {
+    "body": "An insurance company’s annual profit is normally distributed with mean 100 and\nvariance 400.\nLet Z be normally distributed with mean 0 and variance 1 and let F be the cumulative\ndistribution function of Z.\nDetermine the probability that the company’s profit in a year is at most 60, given that the\nprofit in the year is positive.",
+    "options": [
+      "$1-F(2)$",
+      "$F(2)/F(5)$",
+      "$[1-F(2)]/F(5)$",
+      "$[F(0.25)-F(0.1)]/F(0.25)$",
+      "$[F(5)-F(2)]/F(5)$"
+    ],
+    "basis": "Transcribed and checked against original PDF question/solution 126; repairs OCR omissions or preserves diagram information as text."
+  },
+  "146": {
+    "body": "On any given day, a certain machine has either no malfunctions or exactly one\nmalfunction. The probability of a malfunction on any given day is 0.40. Machine\nmalfunctions on different days are mutually independent.\nCalculate the probability that the machine has its third malfunction on the fifth day, given\nthat the machine has not had three malfunctions in the first three days.",
+    "options": [
+      "0.064",
+      "0.138",
+      "0.148",
+      "0.230",
+      "0.246"
+    ],
+    "basis": "Transcribed and checked against original PDF question/solution 146; repairs OCR omissions or preserves diagram information as text."
+  },
+  "201": {
+    "body": "A group of 100 patients is tested, one patient at a time, for three risk factors for a certain\ndisease until either all patients have been tested or a patient tests positive for more than\none of these three risk factors. For each risk factor, a patient tests positive with\nprobability $p ,$ , where $0 < p < 1$ . The outcomes of the tests across all patients and all risk\nfactors are mutually independent.\nDetermine an expression for the probability that exactly n patients are tested, where n is a\npositive integer less than 100.",
+    "options": [
+      "$\\left[ 1 - 3 p ^ {2} (1 - p) \\right] ^ {n - 1} \\left[ 3 p ^ {2} (1 - p) \\right]$",
+      "$\\left[ 1 - 3 p ^ {2} (1 - p) - p ^ {3} \\right] ^ {n - 1} \\left[ 3 p ^ {2} (1 - p) + p ^ {3} \\right]$",
+      "$\\left[ 1 - 3 p ^ {2} (1 - p) - p ^ {3} \\right] \\left[ 3 p ^ {2} (1 - p) + p ^ {3} \\right] ^ {n - 1}$",
+      "$n \\Big [ 1 - 3 p ^ {2} (1 - p) - p ^ {3} \\Big ] ^ {n - 1} \\Big [ 3 p ^ {2} (1 - p) + p ^ {3} \\Big ]$",
+      "$3 \\left[ (1 - p) ^ {n - 1} p \\right] ^ {2} \\left[ 1 - (1 - p) ^ {n - 1} p \\right] + \\left[ (1 - p) ^ {n - 1} p \\right] ^ {3}$"
+    ],
+    "basis": "Transcribed and checked against original PDF question/solution 201; repairs OCR omissions or preserves diagram information as text."
+  },
+  "203": {
+    "body": "Four distinct integers are chosen randomly and without replacement from the first twelve\npositive integers. X is the random variable representing the second smallest of the four\nselected integers, and $p$ is the probability function of X.\nDetermine p(x) for $x = 2 , 3 , . . . , 10$",
+    "options": [
+      "$\\frac{(x-1)(11-x)(12-x)}{495}$",
+      "$\\frac{(x-1)(11-x)(12-x)}{990}$",
+      "$\\frac{(x-1)(x-2)(12-x)}{990}$",
+      "$\\frac{(x-1)(x-2)(12-x)}{495}$",
+      "$\\frac{(10-x)(11-x)(12-x)}{495}$"
+    ],
+    "basis": "Transcribed and checked against original PDF question/solution 203; repairs OCR omissions or preserves diagram information as text."
+  },
+  "321": {
+    "body": "A business manufactures light bulbs and sells them in boxes of 50. Let p denote the\nprobability that a light bulb is defective. The events that different light bulbs are\ndefective are mutually independent.\nLet X denote the number of non-defective light bulbs in a box of 50. In addition, let n be\nan integer such that $\\operatorname { P } \\left[ X \\geq n \\right] \\geq 0.95$\nDetermine which one of the following statements must be true.",
+    "options": [
+      "$\\sum_{k=n}^{50}\\frac{50!}{k!(50-k)!}(1-p)^kp^{50-k}\\geq0.95$",
+      "$\\sum_{k=0}^{n}\\frac{50!}{k!(50-k)!}(1-p)^kp^{50-k}\\geq0.95$",
+      "$\\sum_{k=n+1}^{50}\\frac{50!}{k!(50-k)!}p^k(1-p)^{50-k}\\geq0.95$",
+      "$\\sum_{k=0}^{n}\\frac{50!}{k!(50-k)!}p^k(1-p)^{50-k}\\geq0.95$",
+      "$\\sum_{k=n}^{50}\\frac{50!}{k!(50-k)!}p^k(1-p)^{50-k}\\geq0.95$"
+    ],
+    "basis": "Transcribed and checked against original PDF question/solution 321; repairs OCR omissions or preserves diagram information as text."
+  },
+  "399": {
+    "body": "In a large population of patients, 20% have cancer. Of those who have cancer, 8% have\nstage IV cancer.\nPatients are tested one at a time, at random, until five patients with stage IV cancer are\nfound.\nLet N represent the number of patients tested. Let C represent the number of patients\ntested who have cancer.\nDetermine the probability function, $p _ { N , C } ( n , c )$ , for integers n and c such that $5 \\leq c \\leq n$",
+    "options": [
+      "$p _ {N, C} (n, c) = \\frac {(n - 1) !}{(n - c) ! (c - 5) ! 4 !} (0.8) ^ {n - c} (0.184) ^ {c - 5} (0.016) ^ {5}$",
+      "$p _ {N, C} (n, c) = \\frac {(n - 1) !}{(n - c) ! (c - 5) ! 4 !} (0.8) ^ {n - c} (0.12) ^ {c - 5} (0.08) ^ {5}$",
+      "$p _ {N, C} (n, c) = \\frac {n !}{(n - c) ! (c - 5) ! 5 !} (0.8) ^ {n - c} (0.184) ^ {c - 5} (0.016) ^ {5}$",
+      "$p _ {N, C} (n, c) = \\frac {(n - 5) !}{(n - c) ! (c - 5) !} (0.8) ^ {n - c} (0.184) ^ {c - 5} (0.016) ^ {5}$",
+      "$p _ {N, C} (n, c) = \\frac {(n - 1) !}{(n - c - 1) ! (c - 4) ! 4 !} (0.8) ^ {n - c - 1} (0.12) ^ {c - 4} (0.08) ^ {5}$"
+    ],
+    "basis": "Transcribed and checked against original PDF question/solution 399; repairs OCR omissions or preserves diagram information as text."
+  },
+  "431": {
+    "body": "Each year, a car insurance company’s four quarterly profits are mutually independent and\nnormally distributed with common mean and variance. Each quarter, the probability that\nthe company earns a positive profit is 0.80.\nCalculate the probability that the company earns an overall positive profit in a given year.",
+    "options": [
+      "0.410",
+      "0.663",
+      "0.800",
+      "0.954",
+      "0.998"
+    ],
+    "basis": "Transcribed and checked against original PDF question/solution 431; repairs OCR omissions or preserves diagram information as text."
+  },
+  "443": {
+    "body": "A continuous random variable, X, has density function $f ( x )$ where\n$$\nf (x) = \\left\\{ \\begin{array}{l l} \\frac {x - 1}{4}, & \\text { for } 1 <   x <   3 \\\\ \\frac {5 - x}{4}, & \\text { for } 3 \\leq x <   5 \\\\ 0, & \\text { otherwise. } \\end{array} \\right.\n$$\nDetermine which of the following expressions equals $\\operatorname { E } { \\big ( } | X - 2 | { \\big ) }$ .\n",
+    "options": [
+      "$\\frac {1}{4} \\int_ {1} ^ {2} (2 - x) (x - 1) d x + \\frac {1}{4} \\int_ {2} ^ {3} (x - 2) (x - 1) d x + \\frac {1}{4} \\int_ {3} ^ {5} (2 - x) (5 - x) d x$",
+      "${ \\frac { 1 } { 4 } } \\int _ { 1 } ^ { 3 } { \\bigl ( } 2 - x { \\bigr ) } { \\bigl ( } x - 1 { \\bigr ) } d x + { \\frac { 1 } { 4 } } \\int _ { 3 } ^ { 5 } { \\bigl ( } x - 2 { \\bigr ) } { \\bigl ( } 5 - x { \\bigr ) } d x$",
+      "$\\frac {1}{4} \\int_ {1} ^ {2} (x - 2) (x - 1) d x + \\frac {1}{4} \\int_ {2} ^ {3} (2 - x) (x - 1) d x + \\frac {1}{4} \\int_ {3} ^ {5} (2 - x) (5 - x) d x$",
+      "${ \\frac { 1 } { 4 } } \\int _ { 1 } ^ { 3 } { \\bigl ( } x - 2 { \\bigr ) } { \\bigl ( } x - 1 { \\bigr ) } d x + { \\frac { 1 } { 4 } } \\int _ { 3 } ^ { 5 } { \\bigl ( } x - 2 { \\bigr ) } { \\bigl ( } 5 - x { \\bigr ) } d x$",
+      "${ \\frac { 1 } { 4 } } \\int _ { 1 } ^ { 2 } { \\bigl ( } 2 - x { \\bigr ) } { \\bigl ( } x - 1 { \\bigr ) } d x + { \\frac { 1 } { 4 } } \\int _ { 2 } ^ { 3 } { \\bigl ( } x - 2 { \\bigr ) } { \\bigl ( } x - 1 { \\bigr ) } d x + { \\frac { 1 } { 4 } } \\int _ { 3 } ^ { 5 } { \\bigl ( } x - 2 { \\bigr ) } { \\bigl ( } 5 - x { \\bigr ) } d x$"
+    ],
+    "basis": "Transcribed and checked against original PDF question/solution 443; repairs OCR omissions or preserves diagram information as text."
+  },
+  "465": {
+    "body": "Homeowner losses due to tornado damage are exponentially distributed with standard\ndeviation σ. A homeowners policy covers tornado losses in full, subject to a deductible.\nThe probability that a random loss exceeds the deductible by at least σ is 0.20.\nCalculate the probability that a random loss exceeds the deductible by at least 0.5σ.",
+    "options": [
+      "0.33",
+      "0.40",
+      "0.46",
+      "0.54",
+      "0.60"
+    ],
+    "basis": "Transcribed and checked against original PDF question/solution 465; repairs OCR omissions or preserves diagram information as text."
+  },
+  "527": {
+    "body": "Let $X$ and $Y$ be random variables for which\n(i) $\\operatorname{Var}(X)=\\operatorname{Var}(Y)$;\n(ii) $\\operatorname{Var}(X+Y)=10$;\n(iii) $\\operatorname{Var}(X-2Y)=16$.\nCalculate $\\operatorname{Cov}(X,Y)$.",
+    "options": [
+      "-1.0",
+      "-0.1",
+      "0.1",
+      "1.0",
+      "2.0"
+    ],
+    "basis": "Transcribed and checked against original PDF question/solution 527; repairs OCR omissions or preserves diagram information as text."
+  },
+  "531": {
+    "body": "A policyholder is insured against both fire and theft claims. The probability of a fire\nclaim is 10%. The probability of a theft claim is 30%.\nLet p be the probability of having neither a fire nor a theft claim, assuming fire and theft\nclaims are independent.\nLet r be the probability of having neither a fire nor a theft claim, assuming fire and theft\nclaims are mutually exclusive.\nCalculate $p-r$.",
+    "options": [
+      "-0.06",
+      "-0.03",
+      "0.00",
+      "0.03",
+      "0.06"
+    ],
+    "basis": "Transcribed and checked against original PDF question/solution 531; repairs OCR omissions or preserves diagram information as text."
+  },
+  "646": {
+    "body": "A car rental insurance policyholder rents a car for seven days. For any day, the\nprobability that the policyholder has no claims is a constant r. The occurrences of claims\non different days are mutually independent.\nDetermine the probability that the policyholder has at least one claim during the seven-\nday rental period.",
+    "options": [
+      "$r^7$",
+      "$(1-r)r^6$",
+      "$7(1-r)r^6$",
+      "$1-r^7$",
+      "$(1-r)^7$"
+    ],
+    "basis": "Transcribed and checked against original PDF question/solution 646; repairs OCR omissions or preserves diagram information as text."
+  },
+  "660": {
+    "body": "A motorist decides not to renew a car insurance policy. The number of months until the\nmotorist is charged for driving without insurance is exponentially distributed with mean\n2.50.\nCalculate the probability that the motorist lasts at least 2.50 months without being charged.",
+    "options": [
+      "$1-e^{-0.4}$",
+      "$e^{-1}$",
+      "$1-e^{-1}$",
+      "$e^{-0.4}$",
+      "$1-e^{-6.25}$"
+    ],
+    "basis": "Transcribed and checked against original PDF question/solution 660; repairs OCR omissions or preserves diagram information as text."
+  },
+  "680": {
+    "body": "The loss, X, subject to reimbursement under an insurance policy, has a distribution with\ndensity function\n$$\nf (x) = \\left\\{ \\begin{array}{l l} \\left(\\frac {1}{\\beta}\\right) e ^ {\\frac {- (x - d)}{\\beta}}, & \\text { for } x \\geq d \\\\ 0, & \\text { otherwise }, \\end{array} \\right.\n$$\nwhere d is the deductible, and $\\beta$ is a positive constant.\nDetermine the $10 ^ { \\mathrm { t h } }$ percentile of X.",
+    "options": [
+      "$\\beta \\ln \\left(\\frac {11}{10}\\right)$",
+      "$\\beta \\ln \\left(\\frac {10}{9}\\right)$",
+      "$\\beta \\ln \\left(\\frac {11}{10}\\right) + d$",
+      "$\\beta \\ln \\left(\\frac {10}{9}\\right) + d$",
+      "$\\frac {1}{\\beta} \\ln \\left(\\frac {11}{10}\\right)$"
+    ],
+    "basis": "Transcribed and checked against original PDF question/solution 680; repairs OCR omissions or preserves diagram information as text."
+  },
+  "706": {
+    "body": "The lifespan of a factory robot is exponentially distributed with mean 10 years.\nLet r represent a real number with $0 < r < 1$\nii) Let x represent the $100 r ^ { \\mathrm { t h } }$ percentile of the lifespan, in years.\niii) Let y represent the $100 ( 1 - r ) ^ { \\mathrm { t h } }$ percentile of the lifespan, in years.\nDetermine y as a function of x.",
+    "options": [
+      "$y=-10\\ln(1-e^{-x/10})$",
+      "$y=-\\frac1{10}\\ln(1-e^{-10x})$",
+      "$y=-10\\ln(10-e^{-x/10})$",
+      "$y=-\\frac1{10}\\ln(10-e^{-10x})$",
+      "$y=-\\frac1{10}\\ln(10-e^{-x/10})$"
+    ],
+    "basis": "Transcribed and checked against original PDF question/solution 706; repairs OCR omissions or preserves diagram information as text."
+  },
+  "183": {
+    "solution": "Let $A$, $M$, and $L$ denote clients buying annuities, mutual funds, and life insurance. In the Venn diagram, the disjoint regions are: $A$ only $x$; $M$ only $45$; $L$ only $x+45$; $A\\cap M$ only $77$; $A\\cap L$ only $y$; $M\\cap L$ only $82$; all three $16$. Then $290=45+45+x+x$, giving $x=100$. Also $228=100+y+16+77$, giving $y=35$. The total number of clients is $145+82+16+35+100+77+45=500$.",
+    "basis": "Transcribed and checked against original PDF question/solution 183; repairs OCR omissions or preserves diagram information as text."
+  },
+  "188": {
+    "solution": "Let $A$ denote wanting life policy P, $B$ wanting life policy Q, and $C$ wanting the health policy. The disjoint Venn regions have probabilities $a$ in $A$ only, $b$ in $A\\cap C$, $0.18$ in $C$ only, $c$ in $B\\cap C$, and $d$ in $B$ only; $A\\cap B=\\varnothing$. Conditions (ii) and (iii) give $a+b=2(c+d)$ and $b+c+0.18=0.45$, so $b+c=0.27$. Condition (v) gives $P((A\\cup B)\\cap C)=P(A\\cup B)P(C)$, or $b+c=(a+b+c+d)(0.45)$. Therefore $0.27=(a+d+0.27)(0.45)$, so $a+d=0.33$. The desired probability is $a+0.18+d=0.51$.",
+    "basis": "Transcribed and checked against original PDF question/solution 188; repairs OCR omissions or preserves diagram information as text."
+  },
+  "258": {
+    "solution": "Let the risk factors be $A,B,C$. The Venn diagram has 400 in each single-factor-only region, 300 in the three-factor region, 500 outside all three, and $X,Y,Z$ in the three pair-only regions. Thus $400+300+X+Y=1000$, $400+300+X+Z=1000$, and $400+300+Y+Z=1000$. Comparing these equations gives $X=Y=Z=150$. The total number of participants is $3(400)+3(150)+300+500=2450$.",
+    "basis": "Transcribed and checked against original PDF question/solution 258; repairs OCR omissions or preserves diagram information as text."
+  },
+  "367": {
+    "solution": "In the Venn diagram for heart disease, high cholesterol, and diabetes, each single-condition-only region contains 68 people; the three-condition region contains 84; the three pair-only regions contain $X,Y,Z$; and 155 people are outside all three. The three condition totals give $68+84+X+Z=268$, $68+84+X+Y=268$, and $68+84+Y+Z=268$. Therefore $X=Y=Z=58$. The total is $68+68+68+84+58+58+58+155=617$.",
+    "basis": "Transcribed and checked against original PDF question/solution 367; repairs OCR omissions or preserves diagram information as text."
+  },
+  "214": {
+    "body": "A certain town experiences an average of 5 tornadoes in any four year period. The number of years from now until the town experiences its next tornado as well as the number of years between tornados have identical exponential distributions and all such times are mutually independent.\nCalculate the median number of years from now until the town experiences its next tornado.",
+    "basis": "Transcribed and checked against original PDF question/solution 214; repairs OCR omissions or preserves diagram information as text."
+  },
+  "359": {
+    "body": "Every member of a certain committee is either an X or aY.\nThirty percent of the Xs on the committee are male. Forty percent of the Ys on the\ncommittee are female. Sixty percent of the committee members are Ys. A randomly\nselected member of the committee is male.\nCalculate the probability that he is a Y.",
+    "basis": "Transcribed and checked against original PDF question/solution 359; repairs OCR omissions or preserves diagram information as text."
+  },
+  "373": {
+    "body": "In a particular contract, there are two options available for each of two sections A and B.\nIf X is the number of options selected for section A and Y is the number of options\nselected for section B, then the joint probability function of X and Y is\n$p(x,y)=\\begin{cases}\\frac{x+y+2}{36},&x,y\\in\\{0,1,2\\},\\\\0,&\\text{otherwise}.\\end{cases}$\nCalculate the variance of X.\n",
+    "basis": "Transcribed and checked against original PDF question/solution 373; repairs OCR omissions or preserves diagram information as text."
+  },
+  "467": {
+    "body": "Within a fleet of aircraft, planes are subject to mechanical inspection. For a randomly\nselected airplane, let X denote the number of inspections in the past year and Y the\nnumber of repairs. The joint probability function of X and Y is given by\n$p(x,y)=\\begin{cases}\\frac{x-2y-xy+3}{18},&x\\in\\{1,2,3\\},\\ y\\in\\{0,1\\},\\\\0,&\\text{otherwise}.\\end{cases}$\nCalculate the expected number of repairs per inspection, $\\operatorname { E } { \\left( { \\frac { Y } { X } } \\right) }$\n",
+    "basis": "Transcribed and checked against original PDF question/solution 467; repairs OCR omissions or preserves diagram information as text."
+  },
+  "553": {
+    "body": "A random variable $X$ is exponentially distributed with 40th percentile equal to $4\\ln(5/3)$. Calculate the median of $X$.",
+    "basis": "Transcribed and checked against original PDF question/solution 553; repairs OCR omissions or preserves diagram information as text."
+  },
+  "563": {
+    "body": "Losses under a boat insurance policy are exponentially distributed with mean $400/\\ln2$. For each loss, the claim payment is the amount of the loss, up to a maximum of 1000. Calculate the expected value of a claim payment.",
+    "basis": "Transcribed and checked against original PDF question/solution 563; repairs OCR omissions or preserves diagram information as text."
+  },
+  "622": {
+    "body": "Let $X$ be a random variable representing the time required to fix a flat tire on a car. You are given: (i) $X$ is uniform on $[a,b]$; (ii) the 50th percentile of $X$ is 16.36; (iii) the standard deviation of $X$ is 7.63. Calculate $b/a$.",
+    "basis": "Transcribed and checked against original PDF question/solution 622; repairs OCR omissions or preserves diagram information as text."
+  },
+  "141": {
+    "solution": "We have $0.3=P(\\text{insurer must pay at least }1.2)=P(\\text{loss}\\geq1.2+d)=\\frac{2-1.2-d}{2-0}=\\frac{0.8-d}{2}$. Thus $d=0.8-2(0.3)=0.2$. Then $P(\\text{insurer must pay at least }1.44)=P(\\text{loss}\\geq1.44+d)=\\frac{2-1.44-0.2}{2-0}=0.18$.",
+    "basis": "Transcribed and checked against original PDF question/solution 141; repairs OCR omissions or preserves diagram information as text."
+  },
+  "186": {
+    "solution": "Let $T$ be the event that two red and two blue balls are transferred, and $B$ the event that a blue ball is drawn. Then $P(T\\mid B)=P(T\\cap B)/P(B)$. The numerator is $P(T\\cap B)=\\frac{\\binom82\\binom62}{\\binom{14}4}\\frac24=\\frac{840}{4004}$. The denominator is $$P(B)=\\frac{\\binom80\\binom64}{\\binom{14}4}\\frac44+\\frac{\\binom81\\binom63}{\\binom{14}4}\\frac34+\\frac{\\binom82\\binom62}{\\binom{14}4}\\frac24+\\frac{\\binom83\\binom61}{\\binom{14}4}\\frac14=\\frac{1716}{4004}.$$ Therefore $P(T\\mid B)=840/1716\\approx0.49$.",
+    "basis": "Transcribed and checked against original PDF question/solution 186; repairs OCR omissions or preserves diagram information as text."
+  },
+  "312": {
+    "solution": "Let $M$ denote medical and $P$ property insurance. We have $P(M)=0.30$, $P(P)=0.42$, and $P(M\\cup P)=0.60$. Thus $P(M\\cap P)=0.30+0.42-0.60=0.12$. Hence $$P(\\text{exactly one}\\mid\\text{not both})=\\frac{0.60-0.12}{1-0.12}=\\frac{0.48}{0.88}=0.54545.$$",
+    "basis": "Transcribed and checked against original PDF question/solution 312; repairs OCR omissions or preserves diagram information as text."
+  },
+  "318": {
+    "solution": "Let $WP$ denote a woman being pregnant, $WNP$ not pregnant, and $TP$ a positive pregnancy test. By Bayes theorem, $$P(WP\\mid TP)=\\frac{P(TP\\mid WP)P(WP)}{P(TP\\mid WP)P(WP)+P(TP\\mid WNP)P(WNP)}=\\frac{0.90(0.30)}{0.90(0.30)+0.20(0.70)}=\\frac{0.27}{0.41}=0.6585.$$",
+    "basis": "Transcribed and checked against original PDF question/solution 318; repairs OCR omissions or preserves diagram information as text."
+  },
+  "331": {
+    "solution": "Let $H$ denote health insurance and $D$ disability income insurance. Then $P(H)=x/100$, $P(D)=y/100$, and $P(H\\cap D^c)=z/100$. Write $P(H\\cap D)=k/100$. Since $x=z+k$, we have $k=x-z$. Therefore $$P(D\\cap H^c)=P(D)-P(D\\cap H)=\\frac{y-k}{100}=\\frac{y-x+z}{100}.$$",
+    "basis": "Transcribed and checked against original PDF question/solution 331; repairs OCR omissions or preserves diagram information as text."
+  },
+  "535": {
+    "solution": "Let $X$ be the health-insurance loss and $Y$ the dental-insurance loss. Their variances are 40,000 and 10,000, respectively, and they are independent. The total unreimbursed loss is $U=0.2X+0.1Y$. Consequently $$\\operatorname{Var}(U)=\\operatorname{Var}(0.2X)+\\operatorname{Var}(0.1Y)=0.2^2(40000)+0.1^2(10000)=1700.$$",
+    "basis": "Transcribed and checked against original PDF question/solution 535; repairs OCR omissions or preserves diagram information as text."
+  },
+  "645": {
+    "solution": "The required probability is the probability of a first reimbursed theft in year 2 and exactly one reimbursed theft in years 3, 4, 5, divided by the probability of exactly two reimbursed thefts in five years. Thus $$\\frac{(0.8)(0.2)\\binom31(0.8)^2(0.2)}{\\binom52(0.8)^3(0.2)^2}=0.30.$$",
+    "basis": "Transcribed and checked against original PDF question/solution 645; repairs OCR omissions or preserves diagram information as text."
+  },
+  "118": {
+    "solution": "The payments are 0 with probability 0.72, 300 with probability 0.14, 600 with probability 0.06, and 700 with probability 0.08. Thus $E(Y)=0.72(0)+0.14(300)+0.06(600)+0.08(700)=134$ and $E(Y^2)=0.72(0^2)+0.14(300^2)+0.06(600^2)+0.08(700^2)=73400$. The variance is $73400-134^2=55444$, so the standard deviation is approximately 235.",
+    "basis": "Transcribed and checked against original PDF question/solution 118; repairs OCR omissions or preserves diagram information as text."
+  },
+  "405": {
+    "solution": "The expected monthly payout is $100000[300000P(\\text{match all 5 and bonus})+50000P(\\text{match all 5 but no bonus})]$. We have $P(\\text{match all 5 and bonus})=\\frac1{\\binom{30}5}\\frac15=\\frac1{712530}$ and $P(\\text{match all 5 but no bonus})=\\frac1{\\binom{30}5}\\frac45=\\frac4{712530}$. Thus the expected monthly payout is $$100000\\left[300000\\frac1{712530}+50000\\frac4{712530}\\right]\\approx70172.$$",
+    "basis": "Transcribed and checked against original PDF question/solution 405; repairs OCR omissions or preserves diagram information as text."
+  },
+  "38": {
+    "body": "An insurance policy pays for a random loss X subject to a deductible of C, where\n$0 < C < 1$ . The loss amount is modeled as a continuous random variable with density\nfunction\n$$\nf (x) = \\left\\{ \\begin{array}{l l} 2 x, & 0 <   x <   1 \\\\ 0, & \\text { otherwise. } \\end{array} \\right.\n$$\nGiven a random loss X, the probability that the insurance payment is less than 0.5 is equal\nto 0.64.\nCalculate $C$.",
+    "basis": "Transcribed and checked against original PDF question/solution 38; repairs OCR omissions or preserves diagram information as text."
+  },
+  "160": {
+    "body": "Losses due to accidents at an amusement park are exponentially distributed. An\ninsurance company offers the park owner two different policies, with different premiums,\nto insure against losses due to accidents at the park.\nPolicy A has a deductible of 1.44. For a random loss, the probability is 0.640 that under\nthis policy, the insurer will pay some money to the park owner. Policy B has a deductible\nof d. For a random loss, the probability is 0.512 that under this policy, the insurer will\npay some money to the park owner.\nCalculate $d$.",
+    "basis": "Transcribed and checked against original PDF question/solution 160; repairs OCR omissions or preserves diagram information as text."
+  },
+  "523": {
+    "body": "You are given the following information about two insurance policies:\ni) Losses covered by each policy follow a normal distribution with mean\n8000.\nii) Losses covered by Policy I have standard deviation k.\niii) Losses covered by Policy II have standard deviation 1.5k.\nThe $p ^ { \\mathrm { t h } }$ percentile of losses covered by Policy I is equal to the 81<sup>st</sup> percentile of losses\ncovered by Policy II.\nCalculate $p$.",
+    "basis": "Transcribed and checked against original PDF question/solution 523; repairs OCR omissions or preserves diagram information as text."
+  },
+  "610": {
+    "body": "Losses are uniformly distributed on the interval [0, 2000]. An insurance policy pays the\namount of each loss up to a maximum of m. The expected value of the claim payment on\na random loss is 910.\nCalculate $m$.",
+    "basis": "Transcribed and checked against original PDF question/solution 610; repairs OCR omissions or preserves diagram information as text."
+  },
+  "679": {
+    "body": "Claims paid against a particular insurance policy are equal to the amount of the loss and\nfollow a normal distribution with mean 525 and standard deviation 100.\nA deductible, d, is written into the policy and applies separately to each loss. As a result,\nonly 14% of the losses result in a claim payment exceeding 500.\nCalculate $d$.",
+    "basis": "Transcribed and checked against original PDF question/solution 679; repairs OCR omissions or preserves diagram information as text."
+  },
+  "209": {
+    "body": "Let X be a random variable with density function\n$$\nf (x) = \\left\\{ \\begin{array}{l l} 2 e ^ {- 2 x}, & x > 0 \\\\ 0, & \\text { otherwise. } \\end{array} \\right.\n$$ Calculate $P(X\\leq0.5\\mid X\\leq1.0)$.",
+    "basis": "Transcribed and checked against original PDF question/solution 209; repairs OCR omissions or preserves diagram information as text."
+  },
+  "567": {
+    "body": "A company tests five batteries. Each battery has a probability $p$ of being defective, where $p$ is a constant. The events of different batteries being defective are mutually independent. The number of defective batteries is a random variable $N$, where $E(N^2)=1.80$. Calculate $\\operatorname{Var}(N)$.",
+    "basis": "Transcribed and checked against original PDF question/solution 567; repairs OCR omissions or preserves diagram information as text."
+  },
+  "629": {
+    "body": "Let Y be a discrete random variable with probability function\n$$\np (y) = \\left\\{ \\begin{array}{l l} 0.2, & \\text { for   } y = a \\\\ 0.1, & \\text { for   } y = 1 \\\\ 0.3, & \\text { for   } y = 3 \\\\ 0.4, & \\text { for   } y = 10 \\\\ 0, & \\text { otherwise }, \\end{array} \\right.\n$$\nwhere a is a constant less than 0. Given $E(Y^2)=47.8$, calculate $\\operatorname{Var}(Y)$.",
+    "basis": "Transcribed and checked against original PDF question/solution 629; repairs OCR omissions or preserves diagram information as text."
+  },
+  "647": {
+    "body": "An unfair coin is tossed. If the outcome of the coin toss is heads, then a six-sided die\nwith the probability that each even number is twice as likely as each odd number is\nrolled. If the outcome of the coin toss is tails, then a fair die is rolled.\nLet X be the random variable equal to the number on the face of the rolled die. Let F be\nthe cumulative distribution function for X. Given $F(3)=0.463$, calculate $P(X=4)$.",
+    "basis": "Transcribed and checked against original PDF question/solution 647; repairs OCR omissions or preserves diagram information as text."
+  },
+  "710": {
+    "body": "Operator response times during an emergency drill are uniformly distributed over the interval $[a,b]$. Let $x,y,z$ be the mean, the median, and the 75th percentile, respectively, of the response times. Calculate $x+y+z$.",
+    "basis": "Transcribed and checked against original PDF question/solution 710; repairs OCR omissions or preserves diagram information as text."
+  },
+  "3": {
+    "body": "You are given P[A ∪ B] = 0.7 and P[A ∪ B′]  = 0.9 .\nCalculate P[A].",
+    "basis": "Preserve the user manual correction exactly; original probability notation checked against PDF."
+  },
+  "110": {
+    "body": "The probability of x losses occurring in year 1 is $( 0.5 ) ^ { x + 1 }$ for $x=0,1,2,\\ldots$.\nThe probability of y losses in year 2 given x losses in year 1 is given by the table:\n| Number of losses in year 1 (x) | Number of losses in year 2 (y) given x losses in year 1 |  |  |  |  |\n| --- | --- | --- | --- | --- | --- |\n|  | 0 | 1 | 2 | 3 | 4+ |\n| 0 | 0.60 | 0.25 | 0.05 | 0.05 | 0.05 |\n| 1 | 0.45 | 0.30 | 0.10 | 0.10 | 0.05 |\n| 2 | 0.25 | 0.30 | 0.20 | 0.20 | 0.05 |\n| 3 | 0.15 | 0.20 | 0.20 | 0.30 | 0.15 |\n| 4+ | 0.05 | 0.15 | 0.25 | 0.35 | 0.20 |\nCalculate the probability of exactly 2 losses in 2 years.",
+    "basis": "Original PDF question 110: private-use ellipsis and reordered variable range."
+  },
+  "131": {
+    "options": [
+      "$F(x)=\\begin{cases}0,&x<0,\\\\0.20x,&0\\leq x<4,\\\\1,&x\\geq4.\\end{cases}$",
+      "$F(x)=\\begin{cases}0,&x<0,\\\\0.20x,&0\\leq x<5,\\\\1,&x\\geq5.\\end{cases}$",
+      "$F(x)=\\begin{cases}0,&x<0,\\\\0.25x,&0\\leq x<4,\\\\1,&x\\geq4.\\end{cases}$",
+      "$F(x)=\\begin{cases}0,&x<0,\\\\0.25x,&0\\leq x<5,\\\\1,&x\\geq5.\\end{cases}$",
+      "$F(x)=\\begin{cases}0,&x<1,\\\\0.25x,&1\\leq x<5,\\\\1,&x\\geq5.\\end{cases}$"
+    ],
+    "basis": "Original PDF question 131: transcribe all five piecewise CDFs, restoring missing branches and removing bracket glyph fragments."
+  },
+  "211": {
+    "body": "A flood insurance company determines that $N$, the number of claims received in a month, is a random variable with $P(N=n)=2/3^{n+1}$ for $n=0,1,2,\\ldots$. The numbers of claims received in different months are mutually independent. Calculate the probability that more than three claims will be received during a consecutive two-month period, given that fewer than two claims were received in the first of the two months.",
+    "basis": "Original PDF question 211: replace private-use ellipsis with LaTeX and preserve variable range."
+  },
+  "701": {
+    "body": "Let $O_1,O_2,O_3,\\ldots$ form an infinite sequence of mutually exclusive and exhaustive outcomes in a sample space. Their probabilities, for some constant $k$, are given by $P(O_i)=k(1/3)^i$ for $i=1,2,3,\\ldots$. Calculate the probability that an even-indexed outcome $(O_2,O_4,O_6,\\ldots)$ occurs.",
+    "basis": "Original PDF question 701: restore ordered index range and ellipses."
+  },
+  "735": {
+    "solution": "Set up a joint probability table and then a marginal function for X.\n|  |  | x |  |  |\n| --- | --- | --- | --- | --- |\n|  |  | 1 | 2 | 3 |\n| y | 1 | 2/60 | 3/60 | 4/60 |\n|  | 2 | 5/60 | 6/60 | 7/60 |\n|  | 3 | 10/60 | 11/60 | 12/60 |\n| $f_X(x)$ |  | 17/60 | 20/60 | 23/60 |\n$$0.44E(X)=0.44\\left[\\frac{17}{60}(1)+\\frac{20}{60}(2)+\\frac{23}{60}(3)\\right]=0.44(2.1)=0.924.$$",
+    "basis": "Original PDF solution 735: replace scattered bracket glyphs and equation text by the exact expectation equation."
+  }
+}

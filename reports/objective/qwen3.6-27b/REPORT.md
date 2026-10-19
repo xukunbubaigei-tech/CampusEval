@@ -3,7 +3,7 @@
 - **评测时间**：2026-08-07 23:26 – 次日 00:17（GMT+8）
 - **模型**：qwen3.6-27b（阿里云百炼 DashScope 兼容接口）
 - **评测范围**：`--text-only`（排除 8 道图片题），`--stream`（思考模式），`--max-tokens 4096`，`--retries 1`
-- **结果目录**：`gaokao_math_benchmark/mini_dataset_70/evaluations/qwen3.6-27b/`
+- **结果目录**：`CampusEval/mini_dataset_70/evaluations/qwen3.6-27b/`
 - **API Key**：仅经环境变量 `DASHSCOPE_API_KEY` 注入，未写入任何文件
 
 ## 一、核心指标

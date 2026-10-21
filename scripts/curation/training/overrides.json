@@ -1,0 +1,703 @@
+{
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0001": {
+    "answer.final_answer": "（1）$0.14$；（2）$K^2\\approx9.967>6.635$，有99%的把握认为有关；（3）按性别分层抽样，再按总体男女比例加权估计。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0003": {
+    "answer.final_answer": "（1）递减区间$(-\\infty,0)$，递增区间$(0,+\\infty)$；（2）$a\\le\\frac12$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0004": {
+    "answer.final_answer": "（I）$(1,0)$、$(\\frac12,-\\frac{\\sqrt3}{2})$；（II）$x=\\frac{1-\\cos2\\alpha}{4},\\ y=-\\frac{\\sin2\\alpha}{4}$，轨迹为圆$(x-\\frac14)^2+y^2=\\frac1{16}$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0005": {
+    "answer.final_answer": "（I）$a_n=3^{-n}$；（II）前$n$项和为$-\\frac{2n}{n+1}$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0006": {
+    "answer.final_answer": "（I）A配方$0.30$，B配方$0.42$；（II）$P(X=-2)=0.04,\\ P(X=2)=0.54,\\ P(X=4)=0.42$，$E(X)=2.68$元。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0008": {
+    "answer.final_answer": "（I）$a=b=1$；（II）$k\\le0$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0009": {
+    "answer.final_answer": "（I）$x^2+(y-4)^2=16$；（II）$|AB|=2\\sqrt3$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0011": {
+    "answer.final_answer": "（1）$A=\\frac\\pi3$；（2）$b=c=2$。",
+    "question.text": "17. (12 分) 已知 $a, b, c$ 分别为 $\\triangle A B C$ 三个内角 $A, B, C$ 的对边, $a\\cos C+\\sqrt{3} a \\sin C-b-c=0$\n\n(1) 求 $A$;\n\n(2) 若 $a=2, \\triangle A B C$ 的面积为 $\\sqrt{3}$; 求 $b, c$."
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0012": {
+    "answer.final_answer": "（1）$y=10\\min(n,16)-80$；（2）（i）$P(X=60)=0.1,\\ P(X=70)=0.2,\\ P(X=80)=0.7$，$E(X)=76$，$D(X)=44$；（ii）购进17枝，期望利润$76.4$元，高于16枝的$76$元。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0014": {
+    "answer.final_answer": "（1）$f(x)=e^x-x+\\frac12x^2$，递减区间$(-\\infty,0)$，递增区间$(0,+\\infty)$；（2）最大值$\\frac e2$，在$a=\\sqrt e-1,\\ b=\\frac{\\sqrt e}{2}$时取到。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0015": {
+    "answer.final_answer": "（1）$A(1,\\sqrt3), B(-\\sqrt3,1), C(-1,-\\sqrt3), D(\\sqrt3,-1)$；（2）$[32,52]$。",
+    "question.text": "23. 选修 4- 4; 坐标系与参数方程\n\n已知曲线 $C_{1}$ 的参数方程是 $\\left\\{\\begin{array}{l}x=2 \\cos \\phi \\\\ y=3 \\sin \\phi\\end{array}\\right.$ ( $\\phi$ 为参数), 以坐标原点为极点, $x$ 轴的 正半轴为极轴建立坐标系, 曲线 $C_{2}$ 的坐标系方程是 $\\rho=2$, 正方形 $A B C D$ 的顶 点都在 $C_{2}$ 上, 且 $A, B, C, D$ 依逆时针次序排列, 点 $A$ 的极坐标为 $\\left(2, \\frac{\\pi}{3}\\right)$\n\n(1) 求点 $A, B, C, D$ 的直角坐标;\n\n（2）设 $P$ 为 $C_{1}$ 上任意一点, 求 $|P A|^{2}+|P B|^{2}+|P C|^{2}+|P D|^{2}$ 的取值范围."
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0016": {
+    "answer.final_answer": "（I）$\\frac3{64}$；（II）$P(X=400)=\\frac{11}{16},\\ P(X=500)=\\frac1{16},\\ P(X=800)=\\frac14$，$E(X)=\\frac{2025}{4}$元。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0017": {
+    "answer.final_answer": "（I）$\\frac{x^2}{4}+\\frac{y^2}{3}=1,\\ x\\ne-2$；（II）$|AB|=2\\sqrt3$或$\\frac{18}{7}$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0018": {
+    "answer.final_answer": "（I）$a=4,b=2,c=2,d=2$；（II）$1\\le k\\le e^2$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0019": {
+    "answer.final_answer": "（1）$\\rho^2-8\\rho\\cos\\theta-10\\rho\\sin\\theta+16=0$；（2）$(2,0)$和$(2,\\frac\\pi2)$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0020": {
+    "answer.final_answer": "（I）$B=\\frac\\pi4$；（II）面积最大值$1+\\sqrt2$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0021": {
+    "answer.final_answer": "（I）$m=1$，递减区间$(-1,0)$，递增区间$(0,+\\infty)$；（II）对$m\\le2$，在定义域$x>-m$上恒有$f(x)>0$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0022": {
+    "answer.final_answer": "（1）$x=\\cos\\alpha+\\cos2\\alpha,\\ y=\\sin\\alpha+\\sin2\\alpha,\\ 0<\\alpha<2\\pi$；（2）$d=2|\\cos\\frac\\alpha2|$，轨迹经过原点（$\\alpha=\\pi$）。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0023": {
+    "answer.final_answer": "（I）$ab+bc+ca\\le\\frac13$；（II）$\\frac{a^2}{b}+\\frac{b^2}{c}+\\frac{c^2}{a}\\ge1$；两式等号均当且仅当$a=b=c=\\frac13$成立。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0024": {
+    "answer.final_answer": "（I）$a_{n+2}-a_n=\\lambda$；（II）存在且仅有$\\lambda=4$，此时$a_n=2n-1$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0025": {
+    "answer.final_answer": "（I）$\\frac{x^2}{4}+y^2=1$；（II）$l:y=\\pm\\frac{\\sqrt7}{2}x-2$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0026": {
+    "answer.final_answer": "（I）$a=1,b=2$；（II）对所有$x>0$，$f(x)>1$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0027": {
+    "answer.final_answer": "（I）$x=2\\cos\\theta,\\ y=3\\sin\\theta$（$0\\le\\theta<2\\pi$），$l:2x+y-6=0$；（II）最大值$\\frac{22\\sqrt5}{5}$，最小值$\\frac{2\\sqrt5}{5}$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0028": {
+    "answer.final_answer": "（I）最小值$4\\sqrt2$，当$a=b=\\sqrt2$时取到；（II）不存在满足条件且$2a+3b=6$的正数$a,b$。",
+    "answer.solution": "由条件得$\\sqrt{ab}=1/a+1/b\\ge2/\\sqrt{ab}$，所以$ab\\ge2$。故$a^3+b^3\\ge2(ab)^{3/2}\\ge4\\sqrt2$，在$a=b=\\sqrt2$时取等号。又$2a+3b\\ge2\\sqrt{6ab}\\ge4\\sqrt3>6$，故第二问不存在解。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0029": {
+    "answer.final_answer": "（I）$\\{a_n+\\frac12\\}$首项$\\frac32$、公比$3$，$a_n=\\frac{3^n-1}{2}$；（II）$\\sum_{k=1}^n\\frac1{a_k}<\\frac32$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0030": {
+    "answer.final_answer": "（I）在$\\mathbb R$上严格递增；（II）$b$的最大值为$2$；（III）$\\ln2\\approx0.693$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0031": {
+    "answer.final_answer": "（I）$x=1+\\cos t,\\ y=\\sin t,\\ 0\\le t\\le\\pi$；（II）直线$CD$倾斜角$\\frac\\pi3$，$D(\\frac32,\\frac{\\sqrt3}{2})$，其中$C$表示半圆圆心$(1,0)$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0032": {
+    "answer.final_answer": "（I）$f(x)\\ge2$；（II）$\\frac{1+\\sqrt5}{2}<a<\\frac{5+\\sqrt{21}}2$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0033": {
+    "answer.final_answer": "（I）$a_n=2n+1$；（II）前$n$项和$\\frac{n}{3(2n+3)}$。",
+    "question.text": "17. (12 分) $S_{n}$ 为数列 $\\left\\{a_{n}\\right\\}$ 的前 $n$ 项和, 已知 $a_{n}>0, a_{n}{ }^{2}+2 a_{n}=4 S_{n}+3$\n\n(1) 求 $\\left\\{a_{n}\\right\\}$ 的通项公式:\n\n(II ) 设 $b_{n}=\\frac{1}{a_{n} a_{n+1}}$, 求数列 $\\left\\{b_{n}\\right\\}$ 的前 $n$ 项和."
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0038": {
+    "answer.final_answer": "（I）$C=\\frac\\pi3$；（II）周长$5+\\sqrt7$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0039": {
+    "answer.final_answer": "（I）圆$x^2+(y-1)^2=a^2$，极坐标方程$\\rho^2-2\\rho\\sin\\theta+1-a^2=0$；（II）$a=1$。",
+    "question.text": "23. 在直角坐标系 $x O y$ 中, 曲线 $C_{1}$ 的参数方程为 $\\left\\{\\begin{array}{l}x=a \\cos t \\\\ y=1+a\\sin t\\end{array}(t\\right.$ 为参数, $a>0$ ) . 在以坐标原点为极点, $x$ 轴正半轴为极轴的极坐标系中, 曲线 $C_{2}: \\rho=4 \\cos \\theta$. ( I ) 说明 $C_{1}$ 是哪种曲线, 并将 $C_{1}$ 的方程化为极坐标方程;\n\n(II ) 直线 $C_{3}$ 的极坐标方程为 $\\theta=\\alpha_{0}$, 其中 $\\alpha_{0}$ 满足 $\\tan \\alpha_{0}=2$, 若曲线 $C_{1}$ 与 $C_{2}$ 的公 共点都在 $\\mathrm{C}_{3}$ 上, 求 $a$."
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0040": {
+    "answer.final_answer": "（I）$b_1=0,b_{11}=1,b_{101}=2$；（II）前1000项和$1893$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0041": {
+    "answer.final_answer": "（I）面积$\\frac{144}{49}$；（II）$\\sqrt[3]2<k<2$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0044": {
+    "answer.final_answer": "（I）$M=(-1,1)$；（II）对$a,b\\in M$，$|a+b|<|1+ab|$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0045": {
+    "answer.final_answer": "（1）公比$\\frac\\lambda{\\lambda-1}$，$a_n=\\frac1{1-\\lambda}(\\frac\\lambda{\\lambda-1})^{n-1}$（$\\lambda\\ne0,1$）；（2）$\\lambda=-1$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0046": {
+    "answer.final_answer": "（I）$f'(x)=-2a\\sin2x-(a-1)\\sin x$；（II）$A=\\begin{cases}2-3a,&0<a\\le\\frac15,\\\\\\frac{a^2+6a+1}{8a},&\\frac15<a<1,\\\\3a-2,&a\\ge1;\\end{cases}$；（III）$|f'(x)|\\le2A$。",
+    "answer.solution": "$f'(x)=-2a\\sin2x-(a-1)\\sin x$。令$t=\\cos x\\in[-1,1]$，则$f(x)=2at^2+(a-1)t-1$。比较端点$t=\\pm1$及顶点$t=(1-a)/(4a)$处的绝对值，得答案中的三段表达式。又$|f'(x)|\\le2a+|a-1|$。当$0<a\\le1/5$时，$2A=4-6a\\ge1+a$；当$1/5<a<1$时，$A=(a^2+6a+1)/(8a)\\ge1$；当$a\\ge1$时，$2A=6a-4\\ge3a-1$。三段均有$|f'(x)|\\le2A$。",
+    "question.text": "21. (12 分) 设函数 $f(x)=a \\cos 2 x+(a-1)(\\cos x+1)$, 其中 $a>0$, 记$|f(x)|$的最大值为$A$。（I）求$f'(x)$；（II）求$A$；（III）证明$|f'(x)|\\le2A$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0047": {
+    "answer.final_answer": "（1）$[-1,3]$；（2）$a\\ge2$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0048": {
+    "answer.final_answer": "（1）$\\sin B\\sin C=\\frac23$；（2）周长$3+\\sqrt{33}$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0050": {
+    "answer.final_answer": "（1）$\\frac{x^2}{4}+y^2=1$；（2）直线$l$过定点$(2,-1)$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0051": {
+    "answer.final_answer": "（1）$a\\le0$时在$\\mathbb R$上递减；$a>0$时在$(-\\infty,-\\ln a)$递减，在$(-\\ln a,+\\infty)$递增；（2）$0<a<1$。",
+    "question.text": "21. （12 分) 已知函数 $f(x)=a e^{2x}+(a-2) e^{x}-x$.\n\n（1）讨论 $f(x)$ 的单调性;\n\n(2) 若 $f(x)$ 有两个零点, 求 $a$ 的取值范围."
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0052": {
+    "answer.final_answer": "（1）$(3,0)$和$(-\\frac{21}{25},\\frac{24}{25})$；（2）$a=8$或$-16$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0053": {
+    "answer.final_answer": "（1）$[-1,\\frac{\\sqrt{17}-1}{2}]$；（2）$-1\\le a\\le1$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0055": {
+    "answer.final_answer": "（1）$x^2+y^2=2$；（2）直线$l$过$F(-1,0)$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0056": {
+    "answer.final_answer": "（1）$a=1$；（2）唯一极大值点$x_0\\in(0,\\frac12)$满足$2x_0-2-\\ln x_0=0$，且$e^{-2}<f(x_0)<\\frac14$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0057": {
+    "answer.final_answer": "（1）$(x-2)^2+y^2=4$，去掉原点；（2）面积最大值$2+\\sqrt3$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0059": {
+    "answer.final_answer": "（1）$P(X=200)=0.2,\\ P(X=300)=0.4,\\ P(X=500)=0.4$；（2）$n=300$时$E(Y)$最大，最大值$520$元。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0060": {
+    "answer.final_answer": "（1）$O$在圆$M$上；（2）$l:x-y-2=0$时，圆为$x^2+y^2-6x-2y=0$；$l:2x+y-4=0$时，圆为$x^2+y^2-\\frac92x+y=0$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0064": {
+    "answer.final_answer": "（1）$(x+1)^2+y^2=4$；（2）$C_1:y=-\\frac43|x|+2$。",
+    "answer.solution": "曲线$C_2$为圆$(x+1)^2+y^2=4$。折线$y=k|x|+2$的右半支与圆相切要求$(2-k)^2=4(1+k^2)$，给出$k=0$或$-4/3$。当$k=0$时仅一交点；当$k=-4/3$时右半支有一切点、左半支有两交点，恰为三点。反向考虑左半支相切，只会给出$k=0$或$4/3$，均不产生三交点。因此$C_1:y=-\\frac43|x|+2$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0065": {
+    "answer.final_answer": "（1）$(\\frac12,+\\infty)$；（2）$0<a\\le2$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0066": {
+    "answer.final_answer": "（1）$a_n=2n-9$；（2）$S_n=n^2-8n$，最小值$-16$，在$n=4$取到。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0068": {
+    "answer.final_answer": "（1）$C:\\frac{x^2}{4}+\\frac{y^2}{16}=1$，$l:(x-1)\\sin\\alpha-(y-2)\\cos\\alpha=0$；（2）斜率$-2$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0069": {
+    "answer.final_answer": "（1）$[-2,3]$；（2）$a\\le-6$或$a\\ge2$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0072": {
+    "answer.final_answer": "（1）$a=0$时，$-1<x<0$有$f(x)<0$，$x>0$有$f(x)>0$；（2）$a=-\\frac16$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0073": {
+    "answer.final_answer": "（1）$A=\\frac\\pi3$；（2）$\\sin C=\\frac{\\sqrt6+\\sqrt2}{4}$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0074": {
+    "answer.final_answer": "（1）$l:12x-8y-7=0$；（2）$|AB|=\\frac{4\\sqrt{13}}3$。",
+    "answer.solution": "设$l:y=\\frac32x+m$，联立得$9x^2+(12m-12)x+4m^2=0$。焦半径和给出$x_1+x_2+3/2=4$，所以$m=-7/8$。第二问设$l:x=\\frac23y+t$，得$y_1+y_2=2$。由$\\overrightarrow{AP}=3\\overrightarrow{PB}$得$y_1=-3y_2$，故$y_1=3,y_2=-1$。因此$|AB|=\\sqrt{1+4/9}\\,|y_1-y_2|=4\\sqrt{13}/3$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0075": {
+    "answer.final_answer": "（1）$f'$的唯一极大值点$t\\in(0,\\frac\\pi2)$满足$\\sin t=\\frac1{(1+t)^2}$；（2）$f$恰有两个零点：$0$及位于$(\\frac\\pi2,\\pi)$的唯一根。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0076": {
+    "answer.final_answer": "（1）$P(X=-1)=(1-\\alpha)\\beta,\\ P(X=0)=\\alpha\\beta+(1-\\alpha)(1-\\beta),\\ P(X=1)=\\alpha(1-\\beta)$；（2）（i）公比$4$；（ii）$p_4=\\frac1{257}$，治愈率较低的甲药被判为更有效的概率很小。",
+    "question.text": "21. 为了治疗某种疾病，研制了甲、乙两种新药，希望知道哪种新药更有效, 为此进行动物 试验. 试验方案如下: 每一轮选取两只白鼠对药效进行对比试验. 对于两只白鼠, 随机选一 只施以甲药, 另一只施以乙药. 一轮的治疗结果得出后, 再安排下一轮试验. 当其中一种药 治愈的白鼠比另一种药治愈的白鼠多 4 只时, 就停止试验, 并认为治愈只数多的药更有效. 为 了方便描述问题, 约定: 对于每轮试验, 若施以甲药的白鼠治愈且施以乙药的白鼠末治愈则 甲药得 1 分, 乙药得-1 分; 若施以乙药的白鼠治愈且施以甲药的白鼠末治愈则乙药得 1 分, 甲药得 - 1 分; 若都治愈或都末治愈则两种药均得 0 分. 甲、乙两种药的治愈率分别记为 $\\alpha$ 和 $\\beta$, 一轮试验中甲药的得分记为 $X$.\n\n(1) 求 $X$ 的分布列;\n\n(2) 若甲药、乙药在试验开始时都赋予 4 分, $p_{i}(i=0,1, \\cdots, 8)$ 表示“甲药的累计得分为 $i$ 时, 最终认为甲药比乙药更有效”的概率，则 $p_{0}=0, \\quad p_{8}=1$,\n\n$p_{i}=a p_{i-1}+b p_{i}+c p_{i+1}(i=1,2, \\cdots, 7)$, 其中 $a=P(X=-1), \\quad b=P(X=0)$,\n\n$c=P(X=1)$ ．假设 $\\alpha=0.5, \\beta=0.8$.\n\n(i)证明: $\\left\\{p_{i+1}-p_{i}\\right\\}(i=0,1,2, \\cdots, 7)$ 为等比数列;\n\n(ii)求 $p_{4}$, 并根据 $p_{4}$ 的值解释这种试验方案的合理性.",
+    "answer.solution": "每轮得分的三种概率分别为$(1-\\alpha)\\beta$、$\\alpha\\beta+(1-\\alpha)(1-\\beta)$、$\\alpha(1-\\beta)$。代入$\\alpha=0.5,\\beta=0.8$，得$a=0.4,b=0.5,c=0.1$。递推式化为$p_{i+1}-p_i=4(p_i-p_{i-1})$，所以差分等比。由$p_0=0,p_8=1$得$p_i=(4^i-1)/(4^8-1)$，故$p_4=1/257$。甲的实际治愈率较低，而被误判较优的概率很小，说明方案具有区分能力。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0077": {
+    "answer.final_answer": "（1）$C:x^2+\\frac{y^2}{4}=1$，去掉$(-1,0)$；$l:2x+\\sqrt3y+11=0$；（2）最小距离$\\sqrt7$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0078": {
+    "answer.final_answer": "（1）$\\frac1a+\\frac1b+\\frac1c\\le a^2+b^2+c^2$；（2）$(a+b)^3+(b+c)^3+(c+a)^3\\ge24$；等号均当且仅当$a=b=c=1$成立。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0079": {
+    "answer.final_answer": "（1）$\\frac12$；（2）$\\frac1{10}$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0080": {
+    "answer.final_answer": "（1）$\\{a_n+b_n\\}$公比$\\frac12$，$\\{a_n-b_n\\}$公差$2$；（2）$a_n=n-\\frac12+2^{-n},\\ b_n=-n+\\frac12+2^{-n}$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0081": {
+    "answer.final_answer": "（1）在$(0,1)$、$(1,+\\infty)$上分别递增，每个区间各有一个零点；（2）公切线$y=\\frac{x}{x_0}+\\ln x_0-1$，在指数曲线上的切点为$(-\\ln x_0,\\frac1{x_0})$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0082": {
+    "answer.final_answer": "（1）$\\frac{x^2}{4}+\\frac{y^2}{2}=1$，去掉$(\\pm2,0)$，为椭圆；（2）（i）$PQ\\perp PG$；（ii）面积最大值$\\frac{16}{9}$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0083": {
+    "answer.final_answer": "（1）$\\rho_0=2\\sqrt3$，$l:\\rho\\cos(\\theta-\\frac\\pi3)=2$；（2）$\\rho=4\\cos\\theta,\\ \\frac\\pi4\\le\\theta\\le\\frac\\pi2$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0084": {
+    "answer.final_answer": "（1）$(-\\infty,1)$；（2）$a\\ge1$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0085": {
+    "answer.final_answer": "（1）$B=\\frac\\pi3$；（2）面积范围$(\\frac{\\sqrt3}{8},\\frac{\\sqrt3}{2})$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0086": {
+    "answer.final_answer": "（1）定点$(0,\\frac12)$；（2）面积$3$或$4\\sqrt2$。",
+    "answer.solution": "设$D(d,-1/2)$。切点的横坐标满足$x^2-2dx-1=0$，故弦$AB$为$y=dx+1/2$，经过$(0,1/2)$。中点为$H(d,d^2+1/2)$。由$EH\\perp AB$得$d(d^2-1)=0$，即$d=0,\\pm1$。$AB=2(1+d^2)$，两侧高度之和为$(d^2+3)/\\sqrt{1+d^2}$，故四边形面积$(d^2+3)\\sqrt{1+d^2}$，分别为$3$或$4\\sqrt2$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0087": {
+    "answer.final_answer": "（1）最小值$\\frac43$，在$(x,y,z)=(\\frac53,-\\frac13,-\\frac13)$时取到；（2）$a\\le-3$或$a\\ge-1$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0088": {
+    "answer.final_answer": "（1）$a_2=5,a_3=7,a_n=2n+1$；（2）$S_n=(2n-1)2^{n+1}+2$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0089": {
+    "answer.final_answer": "（1）$0.43,0.27,0.21,0.09$；（2）$350$人次；（3）列联表两行为$(33,37)$、$(22,8)$，$K^2\\approx5.820>3.841$，有95%的把握认为有关。",
+    "answer.solution": "【解析】\n\n【分析】\n\n(1) 根据频数分布表可计算出该市一天的空气质量等级分别为 $1 、 2 、 3 、 4$ 的概率;\n\n(2) 利用每组的中点值乘以频数，相加后除以 100 可得结果;\n\n（3）根据表格中的数据完善 $2 \\times 2$ 列联表, 计算出 $K^{2}$ 的观测值, 再结合临界值表可得结论.\n\n【详解】(1) 由频数分布表可知, 该市一天的空气质量等级为 1 的概率为 $\\frac{2+16+25}{100}=0.43$, 等级为 2 的概率为 $\\frac{5+10+12}{100}=0.27$, 等级为 3 的概率为 $\\frac{6+7+8}{100}=0.21$, 等级为 4 的概率 为 $\\frac{7+2+0}{100}=0.09$;\n\n(2) 由频数分布表可知，一天中到该公园锖炼的人次的平均数为\n\n$\\frac{100 \\times 20+300 \\times 35+500 \\times 45}{100}=350$\n\n(3) $2 \\times 2$ 列联表如下:\n\n\\begin{tabular}{|l|l|l|}\n\\hline & 人次 $\\leq 400$ & 人次 $>400$ \\\\\n\\hline 空气质量好 & 33 & 37 \\\\\n\\hline 空气质量不好 & 22 & 8 \\\\\n\\hline\n\\end{tabular}\n\n$K^{2}=\\frac{100 \\times(33 \\times 8-37 \\times 22)^{2}}{55 \\times 45 \\times 70 \\times 30} \\approx 5.820>3.841$,\n\n因此，有 $95 \\%$ 的把握认为一天中到该公园锻炼的人次与该市当天的空气质量有关."
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0090": {
+    "answer.final_answer": "（1）$b=-\\frac34$；（2）所有实零点均属于$[-1,1]$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0091": {
+    "answer.final_answer": "（1）$4\\sqrt{10}$；（2）$\\rho(\\sin\\theta-3\\cos\\theta)=12$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0092": {
+    "answer.final_answer": "（1）$ab+bc+ca<0$；（2）$\\max\\{a,b,c\\}\\ge\\sqrt[3]4$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0093": {
+    "answer.final_answer": "（1）公比$-2$；（2）前$n$项和$\\frac{1-(3n+1)(-2)^n}{9}$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0094": {
+    "answer.final_answer": "（1）$\\frac1{16}$；（2）$\\frac34$；（3）$\\frac7{16}$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0095": {
+    "answer.final_answer": "（1）递减区间$(-\\infty,0)$，递增区间$(0,+\\infty)$；（2）$a\\ge\\frac{7-e^2}{4}$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0096": {
+    "answer.final_answer": "（1）单位圆$x^2+y^2=1$；（2）公共点$(\\frac14,\\frac14)$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0097": {
+    "answer.final_answer": "（1）$A=\\frac{2\\pi}3$；（2）周长最大值$3+2\\sqrt3$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0098": {
+    "answer.final_answer": "（1）$12000$只；（2）$r\\approx0.94$；（3）按植物覆盖面积分层，再在各层随机抽样，按层权重估计总体数量。",
+    "question.text": "18. 某沙漠地区经过治理, 生态系统得到很大改善, 野生动物数量有所增加.为调查该地区某种野生动物的 数量, 将其分成面积相近的 200 个地块, 从这些地块中用简单随机抽样的方法抽取 20 个作为样区, 调查得 到样本数据 $\\left(x_{i}, y_{i}\\right)(i=1,2, \\ldots, 20)$, 其中 $x_{i}$ 和 $y_{i}$ 分别表示第 $i$ 个样区的植物覆盖面积(单位: 公顷)和这种野 生动物的数量, 并计算得 $\\sum_{i=1}^{20} x_{i}=60, \\sum_{i=1}^{20} y_{i}=1200, \\sum_{i=1}^{20}\\left(x_{i}-\\bar{x}\\right)^{2}=80, \\sum_{i=1}^{20}\\left(y_{i}-\\bar{y}\\right)^{2}=9000$, $\\sum_{i=1}^{20}\\left(x_i-\\bar x\\right)\\left(y_i-\\bar y\\right)=800$\n\n(1) 求该地区这种野生动物数量的估计值 (这种野生动物数量的估计值等于样区这种野生动物数量的平 均数乘以地块数）;\n\n(2) 求样本 $\\left(x_{i}, y_{i}\\right)(i=1,2, \\ldots, 20)$ 的相关系数（精确到 0.01$)$;\n\n(3) 根据现有统计资料, 各地块间植物覆盖面积差异很大.为提高样本的代表性以获得该地区这种野生动 物数量更准确的估计, 请给出一种你认为更合理的抽样方法, 并说明理由.\n\n附：$r=\\frac{\\sum_{i=1}^n(x_i-\\bar x)(y_i-\\bar y)}{\\sqrt{\\sum_{i=1}^n(x_i-\\bar x)^2\\sum_{i=1}^n(y_i-\\bar y)^2}}$，$\\sqrt2\\approx1.414$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0099": {
+    "answer.final_answer": "（1）递增区间$(0,\\frac\\pi3)$、$(\\frac{2\\pi}3,\\pi)$，递减区间$(\\frac\\pi3,\\frac{2\\pi}3)$；（2）$|f(x)|\\le\\frac{3\\sqrt3}{8}$；（3）题中乘积$\\le(\\frac34)^n$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0100": {
+    "answer.final_answer": "（1）$C_1:x+y=4,\\ x,y\\ge0$，$C_2:x^2-y^2=4$；（2）$\\rho=\\frac{17}{5}\\cos\\theta$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0101": {
+    "answer.final_answer": "（1）$(-\\infty,\\frac32]\\cup[\\frac{11}{2},+\\infty)$；（2）$a\\le-1$或$a\\ge3$。",
+    "question.text": "23. 已知函数 $f(x)=\\left|x-a^{2}\\right|+|x-2 a+1|$.\n\n(1) 当 $a=2$ 时, 求不等式 $f(x) \\geq 4$ 的解集;\n\n(2) 若 $f(x) \\geq 4$, 求 $a$ 的取值范围."
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0102": {
+    "answer.final_answer": "（1）$0.75$、$0.60$；（2）$K^2\\approx10.256>6.635$，有99%的把握认为存在差异。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0103": {
+    "answer.final_answer": "任意两个条件都能推出第三个；三者共同成立时$a_n=(2n-1)a_1$，$S_n=n^2a_1$，$\\sqrt{S_n}=n\\sqrt{a_1}$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0104": {
+    "answer.final_answer": "（1）$C:y^2=x$，$\\odot M:(x-2)^2+y^2=1$；（2）直线$A_2A_3$与圆$M$相切。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0105": {
+    "answer.final_answer": "（1）递增区间$(0,\\frac2{\\ln2})$，递减区间$(\\frac2{\\ln2},+\\infty)$；（2）$a\\in(1,e)\\cup(e,+\\infty)$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0106": {
+    "answer.final_answer": "（1）$(x-\\sqrt2)^2+y^2=2$；（2）$x=3-\\sqrt2+2\\cos t,\\ y=2\\sin t$，$0\\le t<2\\pi$；两曲线无公共点。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0113": {
+    "answer.final_answer": "（1）$2a^2=b^2+c^2$；（2）周长$14$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0114": {
+    "answer.final_answer": "（1）$0.06\\,\\mathrm m^2$、$0.39\\,\\mathrm m^3$；（2）$r\\approx0.97$；（3）$1209\\,\\mathrm m^3$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0115": {
+    "answer.final_answer": "（1）$\\frac{x^2}{3}+\\frac{y^2}{4}=1$；（2）直线$HN$过定点$(0,-2)$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0116": {
+    "answer.final_answer": "（1）$\\sqrt3x+y+2m=0$；（2）$-\\frac{19}{12}\\le m\\le\\frac52$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0117": {
+    "answer.final_answer": "（1）$abc\\le\\frac19$；（2）$\\frac a{b+c}+\\frac b{a+c}+\\frac c{a+b}\\le\\frac1{2\\sqrt{abc}}$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0118": {
+    "answer.final_answer": "（1）公差$1$；（2）$a_n=n-13$，$S_n=\\frac{n(n-25)}2$，最小值$-78$，在$n=12$或$13$时取到。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0119": {
+    "answer.final_answer": "（1）$0.6$；（2）$P(X=0)=0.16,P(X=10)=0.44,P(X=20)=0.34,P(X=30)=0.06$，$E(X)=13$分。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0120": {
+    "answer.final_answer": "（1）$y^2=4x$；（2）$AB:x-\\sqrt2y-4=0$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0121": {
+    "answer.final_answer": "（1）$a\\le e+1$；（2）$x_1x_2<1$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Open-ended_Questions_0122": {
+    "answer.final_answer": "（1）$a+b+2c\\le3$；（2）当$b=2c$时$\\frac1a+\\frac1c\\ge3$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0000": {
+    "answer.final_answer": "（I）$a_n=11-2n$；（II）$S_n=10n-n^2$，在$n=5$时最大，最大值$25$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0001": {
+    "answer.final_answer": "（1）$0.14$；（2）$K^2\\approx9.967>6.635$，有99%的把握认为有关；（3）按性别分层抽样，再按总体男女比例加权估计。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0002": {
+    "answer.final_answer": "（I）$|AB|=\\frac43$；（II）$b=\\frac{\\sqrt2}{2}$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0003": {
+    "answer.final_answer": "（I）递增区间$(-\\infty,-1)$、$(0,+\\infty)$，递减区间$(-1,0)$；（II）$a\\le1$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0005": {
+    "answer.final_answer": "（I）$a_n=3^{-n}$，$S_n=\\frac{1-3^{-n}}2=\\frac{1-a_n}{2}$；（II）$b_n=-\\frac{n(n+1)}2$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0006": {
+    "answer.final_answer": "（I）A配方$0.30$，B配方$0.42$；（II）$P(X=-2)=0.04,\\ P(X=2)=0.54,\\ P(X=4)=0.42$，$E(X)=2.68$元。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0008": {
+    "answer.final_answer": "（I）$a=b=1$；（II）对$x>0,\\ x\\ne1$，$f(x)>\\frac{\\ln x}{x-1}$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0011": {
+    "answer.final_answer": "（1）$A=\\frac\\pi3$；（2）$b=c=2$。",
+    "question.text": "17. (12 分) 已知 $a, b, c$ 分别为 $\\triangle A B C$ 三个内角 $A, B, C$ 的对边, $c=\\sqrt{3} a \\sin C-c\\cos A$.\n\n(1) 求 $A$;\n\n(2) 若 $a=2, \\triangle A B C$ 的面积为 $\\sqrt{3}$, 求 $b, c$.",
+    "answer.solution": "由正弦定理，条件化为$\\sin C(\\sqrt3\\sin A-\\cos A-1)=0$。三角形中$\\sin C>0$，故$2\\sin(A-\\pi/6)=1$，结合$0<A<\\pi$得$A=\\pi/3$。由面积得$bc=4$，由余弦定理得$b^2+c^2-bc=4$，故$(b-c)^2=0$，从而$b=c=2$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0012": {
+    "answer.final_answer": "（I）$y=10\\min(n,17)-85$；（II）（i）平均日利润$76.4$元；（ii）$P(X\\ge75)=0.7$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0014": {
+    "answer.final_answer": "（I）$a\\le0$时在$\\mathbb R$递增；$a>0$时在$(-\\infty,\\ln a)$递减，在$(\\ln a,+\\infty)$递增；（II）$k$最大值为$2$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0016": {
+    "answer.final_answer": "（I）$a=b=4$；（II）递增区间$(-\\infty,-2)$、$(-\\ln2,+\\infty)$，递减区间$(-2,-\\ln2)$；极大值$4-\\frac4{e^2}$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0019": {
+    "answer.final_answer": "（I）$a_n=27-2n$；（II）$a_1+a_4+\\cdots+a_{3n-2}=n(28-3n)$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0020": {
+    "answer.final_answer": "（I）$y^2-x^2=1$；（II）$x^2+(y-1)^2=3$或$x^2+(y+1)^2=3$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0021": {
+    "answer.final_answer": "（I）极小值$0$，极大值$\\frac4{e^2}$；（II）截距范围$(-\\infty,0)\\cup[3+2\\sqrt2,+\\infty)$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0023": {
+    "answer.final_answer": "（I）$ab+bc+ca\\le\\frac13$；（II）$\\frac{a^2}{b}+\\frac{b^2}{c}+\\frac{c^2}{a}\\ge1$；两式等号均当且仅当$a=b=c=\\frac13$成立。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0024": {
+    "answer.final_answer": "（1）$a_n=\\frac{n+2}{2}$；（2）前$n$项和$2-\\frac{n+4}{2^{n+1}}$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0025": {
+    "answer.final_answer": "（1）$(x-1)^2+(y-3)^2=2$；（2）非退化情形$l:x+3y-8=0$，面积$\\frac{16}{5}$；若允许$M=P$，另有$l:y=x$，面积为$0$。",
+    "answer.solution": "设$M(x,y)$。弦中点条件为$\\overrightarrow{CM}\\cdot\\overrightarrow{MP}=0$，即$x(2-x)+(y-4)(2-y)=0$，化为$(x-1)^2+(y-3)^2=2$。再由$OM^2=OP^2=8$得$x+3y=8$，交点为$P(2,2)$及$M(-2/5,14/5)$。若$M\\ne P$，直线$l$为$x+3y-8=0$，面积$|\\det(P,M)|/2=16/5$；若允许退化情形$M=P$，直线$l$必须过$P$且垂直于$CP$，即$y=x$，面积为$0$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0026": {
+    "answer.final_answer": "（1）$b=1$；（2）$a\\in(-1-\\sqrt2,-1+\\sqrt2)\\cup(1,+\\infty)$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0027": {
+    "answer.final_answer": "（I）$x=2\\cos\\theta,\\ y=3\\sin\\theta$（$0\\le\\theta<2\\pi$），$l:2x+y-6=0$；（II）最大值$\\frac{22\\sqrt5}{5}$，最小值$\\frac{2\\sqrt5}{5}$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0029": {
+    "answer.final_answer": "（I）$a=1$；（II）$k<1$时曲线与直线恰有一个交点。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0031": {
+    "answer.final_answer": "（I）$f(x)\\ge2$；（II）$\\frac{1+\\sqrt5}{2}<a<\\frac{5+\\sqrt{21}}2$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0032": {
+    "answer.final_answer": "（I）$\\cos B=\\frac14$；（II）面积$1$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0033": {
+    "answer.final_answer": "（1）$\\frac{4-\\sqrt7}{3}<k<\\frac{4+\\sqrt7}{3}$；（2）$|MN|=2$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0034": {
+    "answer.final_answer": "（1）$\\frac{x^2}{8}+\\frac{y^2}{4}=1$；（2）斜率乘积$-\\frac12$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0035": {
+    "answer.final_answer": "（I）$a\\le0$时在$(0,+\\infty)$递增；$a>0$时在$(0,\\frac1a)$递增，在$(\\frac1a,+\\infty)$递减；（II）$0<a<1$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0038": {
+    "answer.final_answer": "（I）$a_n=3n-1$；（II）前$n$项和$\\frac32(1-3^{-n})$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0039": {
+    "answer.final_answer": "（I）$\\frac{|OH|}{|ON|}=2$；（II）没有其他公共点，直线$MH$为抛物线在$H$处的切线。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0040": {
+    "answer.final_answer": "（I）圆$x^2+(y-1)^2=a^2$，极坐标方程$\\rho^2-2\\rho\\sin\\theta+1-a^2=0$；（II）$a=1$。",
+    "question.text": "23. 在直角坐标系 $x O y$ 中, 曲线 $C_{1}$ 的参数方程为 $\\left\\{\\begin{array}{l}x=a \\cos t \\\\ y=1+a\\sin t\\end{array}(t\\right.$ 为参数, $a>0)$ . 在以坐标原点为极点, $x$ 轴正半轴为极轴的极坐标系中, 曲线 $C_{2}: \\rho=4 \\cos \\theta$.\n\n( I ) 说明 $C_{1}$ 是哪种曲线, 并将 $C_{1}$ 的方程化为极坐标方程;\n\n(II ) 直线 $C_{3}$ 的极坐标方程为 $\\theta=\\alpha_{0}$, 其中 $\\alpha_{0}$ 满足 $\\tan \\alpha_{0}=2$, 若曲线 $C_{1}$ 与 $C_{2}$ 的公 共点都在 $\\mathrm{C}_{3}$ 上, 求 $a$."
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0041": {
+    "answer.final_answer": "（I）$a_n=\\frac{2n+3}{5}$；（II）前10项和$24$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0042": {
+    "answer.final_answer": "（I）$0.55$；（II）$0.30$；（III）平均保费估计为$1.1925a$元。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0043": {
+    "answer.final_answer": "（1）$y=-2x+2$；（II）$a\\le2$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0047": {
+    "answer.final_answer": "（1）递增区间$(0,1)$，递减区间$(1,+\\infty)$；（2）对$x>1$，$1<\\frac{x-1}{\\ln x}<x$；（3）对$c>1,\\ 0<x<1$，$1+(c-1)x>c^x$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0048": {
+    "answer.final_answer": "（1）$C_1:\\frac{x^2}{3}+y^2=1$，$C_2:x+y-4=0$；（2）最小值$\\sqrt2$，此时$P(\\frac32,\\frac12)$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0050": {
+    "answer.final_answer": "（1）$a_n=(-2)^n$；（2）$S_n=\\frac23[(-2)^n-1]$，$S_{n+1},S_n,S_{n+2}$成等差数列。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0052": {
+    "answer.final_answer": "（1）$a=0$时在$\\mathbb R$递增；$a\\ne0$时，令$t=a$（$a>0$）或$t=-a/2$（$a<0$），在$(-\\infty,\\ln t)$递减，在$(\\ln t,+\\infty)$递增；（2）$-2e^{3/4}\\le a\\le1$。",
+    "answer.solution": "$f'(x)=(e^x-a)(2e^x+a)$。$a=0$时导数恒正；$a>0$时唯一临界点为$\\ln a$；$a<0$时为$\\ln(-a/2)$。两种非零情形均先减后增。$a>0$时最小值为$-a^2\\ln a$，非负要求$0<a\\le1$；$a<0$时最小值为$a^2[3/4-\\ln(-a/2)]$，非负要求$-2e^{3/4}\\le a<0$；$a=0$时恒正。合并得$[-2e^{3/4},1]$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0053": {
+    "answer.final_answer": "（1）$(3,0)$和$(-\\frac{21}{25},\\frac{24}{25})$；（2）$a=8$或$-16$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0055": {
+    "answer.final_answer": "（1）$x^2+y^2=2$；（2）直线$l$过$F(-1,0)$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0056": {
+    "answer.final_answer": "（1）递增区间$(-1-\\sqrt2,-1+\\sqrt2)$，递减区间$(-\\infty,-1-\\sqrt2)$、$(-1+\\sqrt2,+\\infty)$；（2）$a\\ge1$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0059": {
+    "answer.final_answer": "（1）$a_n=\\frac2{2n-1}$；（2）前$n$项和$\\frac{2n}{2n+1}$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0060": {
+    "answer.final_answer": "（1）$0.6$；（2）$Y\\in\\{-100,300,900\\}$，$P(Y>0)=0.8$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0061": {
+    "answer.final_answer": "（1）不能出现$AC\\perp BC$；（2）圆在$y$轴上截得的弦长恒为$3$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0064": {
+    "answer.final_answer": "（1）$b_1=1,b_2=2,b_3=4$；（2）是等比数列，公比$2$；（3）$a_n=n2^{n-1}$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0065": {
+    "answer.final_answer": "（1）$BM:y=\\pm\\frac12(x+2)$；（2）$\\angle ABM=\\angle ABN$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0069": {
+    "answer.final_answer": "（1）递增区间$(-\\infty,3-2\\sqrt3)$、$(3+2\\sqrt3,+\\infty)$，递减区间$(3-2\\sqrt3,3+2\\sqrt3)$；（2）对所有实数$a$，$f$恰有一个实零点。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0070": {
+    "answer.final_answer": "（1）$C:\\frac{x^2}{4}+\\frac{y^2}{16}=1$，$l:(x-1)\\sin\\alpha-(y-2)\\cos\\alpha=0$；（2）斜率$-2$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0074": {
+    "answer.final_answer": "（1）男性$0.8$，女性$0.6$；（2）$K^2=\\frac{100}{21}\\approx4.762>3.841$，有95%的把握认为评价存在差异。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0075": {
+    "answer.final_answer": "（1）$a_n=10-2n$；（2）$n\\in\\{1,2,\\ldots,10\\}$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0076": {
+    "answer.final_answer": "（1）半径$2$或$6$；（2）存在$P(1,0)$，使$|MA|-|MP|=1$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0079": {
+    "answer.final_answer": "（1）$a_n=2^{2n-1}$；（2）前$n$项和$n^2$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0080": {
+    "answer.final_answer": "（1）$e=\\sqrt3-1$；（2）$b=4$，$a\\ge4\\sqrt2$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0081": {
+    "answer.final_answer": "（1）唯一极小值点$t>1$满足$\\ln t=1/t$；（2）恰有两个实根，且互为倒数。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0085": {
+    "answer.final_answer": "（1）设$u=\\min(0,a/3),v=\\max(0,a/3)$。$a\\ne0$时，递增区间$(-\\infty,u)$、$(v,+\\infty)$，递减区间$(u,v)$；$a=0$时在$\\mathbb R$递增；（2）$M-m\\in[\\frac8{27},2)$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0086": {
+    "answer.final_answer": "（1）定点$(0,\\frac12)$；（2）$x^2+(y-\\frac52)^2=4$或$x^2+(y-\\frac52)^2=2$。",
+    "answer.solution": "设$D(d,-1/2)$。切点横坐标满足$x^2-2dx-1=0$，故$AB:y=dx+1/2$过$(0,1/2)$。其中点为$H(d,d^2+1/2)$，$EH\\perp AB$给出$d(d^2-1)=0$。当$d=0$时$EH^2=4$；当$d=\\pm1$时$EH^2=2$。故圆为$x^2+(y-5/2)^2=4$或$x^2+(y-5/2)^2=2$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0088": {
+    "answer.final_answer": "（1）$a_n=3^{n-1}$；（2）$m=6$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0089": {
+    "answer.final_answer": "（1）$0.43,0.27,0.21,0.09$；（2）$350$人次；（3）列联表两行为$(33,37)$、$(22,8)$，$K^2\\approx5.820>3.841$，有95%的把握认为有关。",
+    "answer.solution": "【解析】\n\n【分析】\n\n(1) 根据频数分布表可计算出该市一天的空气质量等级分别为 $1 、 2 、 3 、 4$ 的概率;\n\n(2) 利用每组的中点值乘以频数，相加后除以 100 可得结果;\n\n(3) 根据表格中的数据完善 $2 \\times 2$ 列联表, 计算出 $K^{2}$ 的观测值, 再结合临界值表可得结论.\n\n【详解】(1) 由频数分布表可知, 该市一天的空气质量等级为 1 的概率为 $\\frac{2+16+25}{100}=0.43$, 等级为 2 的概率为 $\\frac{5+10+12}{100}=0.27$, 等级为 3 的概率为 $\\frac{6+7+8}{100}=0.21$, 等级为 4 的概率 为 $\\frac{7+2+0}{100}=0.09$;\n\n(2) 由频数分布表可知，一天中到该公园锖炼的人次的平均数为\n\n$$\n\\frac{100 \\times 20+300 \\times 35+500 \\times 45}{100}=350\n$$\n\n(3) $2 \\times 2$ 列联表如下:\n\n\\begin{tabular}{|l|l|l|}\n\\hline & 人次 $\\leq 400$ & 人次 $>400$ \\\\\n\\hline 空气质量好 & 33 & 37 \\\\\n\\hline 空气质量不好 & 22 & 8 \\\\\n\\hline\n\\end{tabular}\n\n$$\nK^{2}=\\frac{100 \\times(33 \\times 8-37 \\times 22)^{2}}{55 \\times 45 \\times 70 \\times 30} \\approx 5.820>3.841 \\text {, }\n$$\n\n因此，有 $95 \\%$ 的把握认为一天中到该公园锻炼的人次与该市当天的空气质量有关."
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0090": {
+    "answer.final_answer": "（1）$k\\le0$时在$\\mathbb R$递增；$k>0$时，递增区间$(-\\infty,-\\sqrt{k/3})$、$(\\sqrt{k/3},+\\infty)$，递减区间$(-\\sqrt{k/3},\\sqrt{k/3})$；（2）$0<k<\\frac4{27}$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0091": {
+    "answer.final_answer": "（1）$4\\sqrt{10}$；（2）$\\rho(\\sin\\theta-3\\cos\\theta)=12$。",
+    "question.text": "22. 在直角坐标系 $x O y$ 中, 曲线 $C$ 的参数方程为 $\\left\\{\\begin{array}{l}x=2-t-t^{2}, \\\\ y=2-3t+t^{2}\\end{array}\\right.$ ( $t$ 为参数且 $\\left.t \\neq 1\\right), C$ 与坐标轴交 于 $A, B$ 两点.\n\n(1) 求 $|A B|$ :\n\n(2) 以坐标原点为极点, $x$ 轴正半轴为极轴建立极坐标系, 求直线 $A B$ 的极坐标方程."
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0093": {
+    "answer.final_answer": "（1）甲$0.40$，乙$0.28$；（2）平均利润分别为$15$元/件和$10$元/件，选择甲分厂。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0094": {
+    "answer.final_answer": "（1）面积$\\sqrt3$；（2）$C=\\frac\\pi{12}$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0095": {
+    "answer.final_answer": "（1）递减区间$(-\\infty,0)$，递增区间$(0,+\\infty)$；（2）$a>e^{-1}$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0097": {
+    "answer.final_answer": "（1）$A=\\frac\\pi3$；（2）$B=\\frac\\pi2$，三角形为直角三角形。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0100": {
+    "answer.final_answer": "（1）$c\\ge-1$；（2）对任意$a>0$，在$(0,a)$、$(a,+\\infty)$上分别严格递减。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0103": {
+    "answer.final_answer": "（1）$0.75$、$0.60$；（2）$K^2\\approx10.256>6.635$，有99%的把握认为存在差异。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0104": {
+    "answer.final_answer": "$a_n=(2n-1)a_1$，为公差$2a_1$的等差数列。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0105": {
+    "answer.final_answer": "（1）递减区间$(0,1/a)$，递增区间$(1/a,+\\infty)$；（2）$a>e^{-1}$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0112": {
+    "answer.final_answer": "（1）$C=\\frac{5\\pi}{8}$；（2）$2a^2=b^2+c^2$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0113": {
+    "answer.final_answer": "（1）$0.06\\,\\mathrm m^2$、$0.39\\,\\mathrm m^3$；（2）$r\\approx0.97$；（3）$1209\\,\\mathrm m^3$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0117": {
+    "answer.final_answer": "（1）$P_A=\\frac{12}{13}$，$P_B=\\frac78$；（2）$K^2\\approx3.205>2.706$，有90%的把握认为有关。",
+    "question.text": "17. 甲、乙两城之间的长途客车均由 $A$ 和 $B$ 两家公司运营, 为了解这两家公司长途客车的运 行情况，随机调查了甲、乙两城之间的 500 个班次，得到下面列联表:\n\n\\begin{tabular}{|c|c|c|}\n\\hline & 准点班次数 & 未准点班次数 \\\\\n\\hline$A$ & 240 & 20 \\\\\n\\hline$B$ & 210 & 30 \\\\\n\\hline\n\\end{tabular}\n\n（1）根据上表, 分别估计这两家公司甲、乙两城之间的长途客车准点的概率;\n\n（2）能否有 $90 \\%$ 的把握认为甲、乙两城之间的长途客车是否准点与客车所属公司有关?\n\n附: $K^{2}=\\frac{n(a d-b c)^{2}}{(a+b)(c+d)(a+c)(b+d)}$,\n\n$\\begin{array}{cccc}P\\left(\\begin{array}{ll}K^{2} & k\\end{array}\\right) & 0.100 & 0.050 & 0.010 \\\\ & 2.706 & 3.841 & 6.635\\end{array}$"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Open-ended_Questions_0119": {
+    "answer.final_answer": "（1）$a=3$；（2）$a\\in[-1,+\\infty)$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Fill-in-the-Blank_0056": {
+    "answer.final_answer": "0.18",
+    "answer.solution": "甲以$4:1$获胜必须第五场获胜，唯一一场失利只能出现在前四场。前两场中恰一场主场失利的概率贡献为$2(0.4)(0.6)(0.5)^2(0.6)=0.072$；第三、四场中恰一场客场失利的贡献为$2(0.6)^2(0.5)(0.5)(0.6)=0.108$。两种情况互斥，故概率为$0.072+0.108=0.18$。"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Fill-in-the-Blank_0031": {
+    "answer.final_answer": "(2)(3)(4)",
+    "answer.solution": "解: (1)如果 $m \\perp n, m \\perp \\alpha, n / / \\beta$, 不能得出 $\\alpha \\perp \\beta$, 故错误; (2)如果 $n / / \\alpha$, 则存在直线 $l \\subset \\alpha$, 使 $n / / l$, 由 $m \\perp \\alpha$, 可得 $m \\perp l$, 那么 $m \\perp n$. 故 正确;\n\n(3)如果 $\\alpha / / \\beta, m \\subset \\alpha$, 那么 $m$ 与 $\\beta$ 无公共点, 则 $m / / \\beta$. 故正确\n\n(4)如果 $m / / n, \\alpha / / \\beta$, 那么 $m, n$ 与 $\\alpha$ 所成的角和 $m, n$ 与 $\\beta$ 所成的角均相等.\n\n故正确;\n\n故答案为: (2)(3)(4)"
+  },
+  "train_conic10k_00157": {
+    "answer.final_answer": "$2\\sqrt2-1$",
+    "answer.solution": "设$P(x_0,y_0)$，则$y_0^2=4x_0$、$F(1,0)$，由抛物线定义得$|PF|=x_0+1$。条件$|PA|=2|PF|$给出$(x_0-4)^2+4x_0=4(x_0+1)^2$，即$x_0^2+4x_0-4=0$。因$x_0\\ge0$，有$x_0=-2+2\\sqrt2$，故$|PF|=2\\sqrt2-1$。"
+  },
+  "train_conic10k_00577": {
+    "answer.final_answer": "$-\\frac12$",
+    "answer.solution": "由$y^2\\le2x$得$x+y\\ge\\frac12y^2+y=\\frac12(y+1)^2-\\frac12\\ge-\\frac12$。当$(x,y)=(\\frac12,-1)$时也满足$2x+y-2\\le0$，故最小值为$-\\frac12$。"
+  },
+  "train_conic10k_00043": {
+    "answer.final_answer": "$(-\\infty,-\\sqrt3)\\cup(\\sqrt3,+\\infty)$"
+  },
+  "train_conic10k_00109": {
+    "answer.final_answer": "$y^2=4x$或$y=0,\\ x<0$"
+  },
+  "train_conic10k_00133": {
+    "answer.final_answer": "$(3,4)\\cup(4,5)$"
+  },
+  "train_conic10k_00228": {
+    "answer.final_answer": "$(6,7)\\cup(7,8)$"
+  },
+  "train_conic10k_00281": {
+    "answer.final_answer": "$(-6,-1)\\cup(-1,4)$"
+  },
+  "train_conic10k_00283": {
+    "answer.final_answer": "$(-\\infty,-\\frac32)\\cup(\\frac{3\\sqrt3}{8},\\frac32)$"
+  },
+  "train_conic10k_00284": {
+    "answer.final_answer": "$\\frac{x^2}{9}+\\frac{y^2}{5}=1,\\ y\\ne0$"
+  },
+  "train_conic10k_00307": {
+    "answer.final_answer": "$(-3,1)\\cup(1,5)$"
+  },
+  "train_conic10k_00337": {
+    "answer.final_answer": "$[-1-\\sqrt3,0)\\cup(0,1+\\sqrt3]$"
+  },
+  "train_conic10k_00353": {
+    "answer.final_answer": "$(-\\infty,0)\\cup(4,+\\infty)$"
+  },
+  "train_conic10k_00565": {
+    "answer.final_answer": "$y^2=8x,\\ x\\ne0$"
+  },
+  "train_conic10k_00628": {
+    "answer.final_answer": "$\\frac\\pi3$（即$60^\\circ$）",
+    "answer.solution": "令$r_1=MF,r_2=NF$。抛物线定义和题设给出$r_1+r_2=2MN$，故$\\cos\\angle MFN=\\frac{r_1^2+r_2^2-(r_1+r_2)^2/4}{2r_1r_2}=\\frac38(\\frac{r_1}{r_2}+\\frac{r_2}{r_1})-\\frac14\\ge\\frac12$。等号可由$r_1=r_2$取得，故最大角为$\\pi/3$，即$60^\\circ$。"
+  },
+  "train_conic10k_00635": {
+    "answer.final_answer": "$\\frac{x^2}{4}+y^2=1,\\ y\\ne0$"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_Fill-in-the-Blank_0001": {
+    "question.text": "设连续函数$y=f(x)$在$(0,1]$上满足$0\\le f(x)\\le1$。为估计曲线$y=f(x)$与$x=0,x=1,y=0$围成区域的面积$S$，独立产生$N$个在单位正方形内均匀分布的随机点$(x_i,y_i)$，$i=1,\\ldots,N$。设满足$y_i\\le f(x_i)$的点数为$N_1$，则$S$的近似值为______。"
+  },
+  "train_conic10k_00023": {
+    "answer.solution": "设两交点为$P_1(x_1,y_1),P_2(x_2,y_2)$。从$2x_1^2-y_1^2=2$与$2x_2^2-y_2^2=2$作差，得$2(x_1+x_2)(x_1-x_2)=(y_1+y_2)(y_1-y_2)$。中点为$(2,1)$，故斜率$k=4$，直线为$y=4x-7$；代回所得二次方程有两个不同实根。"
+  },
+  "train_conic10k_00036": {
+    "answer.solution": "两渐近线为$y=\\pm\\frac ba x$，其交点的中点为$Q(-\\frac{a^2m}{a^2-9b^2},-\\frac{3b^2m}{a^2-9b^2})$。由$PA=PB$得$PQ\\perp AB$。$AB$斜率为$1/3$，故$k_{PQ}=-3$，化简得$2a^2=8b^2$，所以$e=\\sqrt{1+b^2/a^2}=\\frac{\\sqrt5}{2}$。"
+  },
+  "train_conic10k_00066": {
+    "answer.solution": "联立得$(2-k^2)x^2-2kx-3=0$。当$k=\\sqrt2$时退化为一次方程，只有一个交点；当$k\\ne\\sqrt2$时，要求判别式$24-8k^2=0$，结合$k>0$得$k=\\sqrt3$。因此$k\\in\\{\\sqrt2,\\sqrt3\\}$。"
+  },
+  "train_conic10k_00097": {
+    "answer.solution": "$F(1,0)$，$FM$斜率为$-2$，所以$AM$斜率为$1/2$。联立$y=x/2+2$与$y^2=4x$，得$A(4,4)$。直线$AF$为$y=\\frac43(x-1)$，代入抛物线得$y^2-3y-4=0$。除$A$的纵坐标$4$外，另一根为$-1$，即$B$的纵坐标为$-1$。"
+  },
+  "train_conic10k_00108": {
+    "answer.solution": "当$a=-1$时，直线$y=-1$与抛物线$y^2=-x$只有交点$(-1,-1)$。当$a\\ne-1$时，消去$x$得$(a+1)y^2-ay-a=0$，唯一交点要求判别式$a(5a+4)=0$。排除$a=0$，得$a=-4/5$。因此$a=-1$或$-4/5$。"
+  },
+  "train_conic10k_00140": {
+    "answer.solution": "两渐近线为$bx\\pm ay=0$。由$P$在双曲线上，$b^2x_P^2-a^2y_P^2=a^2b^2$，故$d_1d_2=\\frac{a^2b^2}{a^2+b^2}=\\frac25ab$。令$t=b/a>0$，则$2t^2-5t+2=0$，所以$t=2$或$1/2$。于是$e=\\sqrt{1+t^2}=\\sqrt5$或$\\sqrt5/2$。"
+  },
+  "train_conic10k_00147": {
+    "answer.solution": "设方程为$mx^2+ny^2=1$。渐近线斜率给出$-m/n=1/4$，过$(2\\sqrt2,1)$给出$8m+n=1$。联立得$m=1/4,n=-1$，所以标准方程为$\\frac{x^2}{4}-y^2=1$。"
+  },
+  "train_conic10k_00152": {
+    "answer.solution": "抛物线焦点为$F(1,0)$，圆心为$C(0,4)$、半径为$1$。所求距离和为$|PF|+|PC|-1\\ge|FC|-1$。等号在$P$位于线段$FC$时成立。联立$y=-4x+4$和$y^2=4x$得$4x^2-9x+4=0$，在线段上的根为$x=\\frac{9-\\sqrt{17}}8$。"
+  },
+  "train_conic10k_00245": {
+    "answer.solution": "设交点纵坐标为$y_1,y_2$，则$ky^2-4y-4k=0$，$y_1y_2=-4$，$y_1+y_2=4/k$。由$x_i=y_i^2/4$得$x_1x_2=1$。焦半径$|FP|=x_1+1,|FQ|=x_2+1$，所以倒数和$\\frac{x_1+x_2+2}{x_1x_2+x_1+x_2+1}=1$。"
+  },
+  "train_conic10k_00251": {
+    "answer.solution": "由$2c=2\\sqrt5$得$c=\\sqrt5$；两准线距离$2a^2/c=18\\sqrt5/5$给出$a^2=9$。故$b^2=a^2-c^2=4$，椭圆方程为$\\frac{x^2}{9}+\\frac{y^2}{4}=1$。"
+  },
+  "train_conic10k_00258": {
+    "answer.solution": "方程化为$\\frac{x^2}{1/\\sin\\alpha}+\\frac{y^2}{1/\\cos\\alpha}=1$。在$0<\\alpha<\\pi/2$内，焦点在$x$轴要求$1/\\sin\\alpha>1/\\cos\\alpha$，即$\\sin\\alpha<\\cos\\alpha$。故$0<\\alpha<\\pi/4$。"
+  },
+  "train_conic10k_00292": {
+    "answer.solution": "$F(p/2,0)$。由$OP=PF$得$x_P=p/4$，代入抛物线得$|y_P|=p/\\sqrt2$。直线$FP$延长至$x=-p/2$时，纵坐标的绝对值为$4|y_P|=2\\sqrt2p$。故三角形面积为$\\frac12\\frac p2(2\\sqrt2p)=p^2/\\sqrt2=8\\sqrt2$，得$p=4$，方程为$y^2=8x$。"
+  },
+  "train_conic10k_00297": {
+    "answer.solution": "由焦半径$1+p/2=5$得$p=8$，$F(4,0)$，抛物线为$y^2=16x$。点$M$为$(1,\\pm4)$，相应直线$MF$为$4x\\pm3y-16=0$。原点到该直线距离为$16/\\sqrt{4^2+3^2}=16/5$。"
+  },
+  "train_conic10k_00374": {
+    "answer.solution": "右顶点为$(a,0)$、右焦点为$(c,0)$。中点条件给出$c=2a$，所以$b^2=c^2-a^2=3a^2$。故渐近线为$y=\\pm\\frac ba x=\\pm\\sqrt3x$。"
+  },
+  "train_conic10k_00394": {
+    "answer.solution": "设$P(x,y)$。由数量积条件得$x^2+y^2+ax=0$，与椭圆方程结合得$e^2x^2+ax+b^2=0$。一根为$-a$，另一根为$-ab^2/c^2$。后者严格位于$(-a,0)$要求$0<b^2/c^2<1$，即$1/\\sqrt2<e<1$。"
+  },
+  "train_conic10k_00399": {
+    "answer.solution": "圆在$A(x_A,y_A)$处的切线为$x_Ax+y_Ay=25$，在$B$处类似。两切线交于$Q(x_Q,y_Q)$，故弦$AB$为$x_Qx+y_Qy=25$。因其经过$M(-2,3)$，得$-2x_Q+3y_Q=25$，即轨迹$2x-3y+25=0$。此线上点到原点距离至少$25/\\sqrt{13}>5$，确有两条实切线，故整条直线均满足。"
+  },
+  "train_conic10k_00408": {
+    "answer.solution": "设双曲线半虚轴为$b$、半焦距为$c$，则半实轴为$\\sqrt{c^2-b^2}$，椭圆半长轴为$\\sqrt{c^2+4b^2}$。令$t=b^2/c^2\\in(0,1)$，则$e_1e_2=\\frac1{\\sqrt{(1+4t)(1-t)}}$。因$(1+4t)(1-t)=25/16-4(t-3/8)^2\\le25/16$，故最小值$4/5$，在$t=3/8$取得。"
+  },
+  "train_conic10k_00510": {
+    "answer.solution": "双曲线半焦距$c=\\sqrt{5+4}=3$，左焦点为$(-3,0)$。抛物线准线为$x=-p/2$，故$p/2=3$，得$p=6$。"
+  },
+  "train_conic10k_00520": {
+    "answer.solution": "标准方程为$\\frac{x^2}{1/m^2}+y^2=1$与$\\frac{x^2}{1/n^2}-y^2=1$。共焦点给出$1/m^2-1=1/n^2+1$，故$0<m^2<1/2$。令$t=1-2m^2\\in(0,1)$，则$(e_1e_2)^2=\\frac{(1-m^2)^2}{1-2m^2}=\\frac14(t+2+1/t)>1$；其连续取遍$(1,+\\infty)$，故$e_1e_2\\in(1,+\\infty)$。"
+  },
+  "train_conic10k_00556": {
+    "answer.solution": "设切点为$A$，从左焦点向切线$MF_2$作垂线，垂足为$B$。有$BF_1=2a, BF_2=2b$。由$\\angle F_1MF_2=60^\\circ$得$MF_1=4a/\\sqrt3$、$MB=2a/\\sqrt3$。双曲线定义给出$MF_2-MF_1=2b-2a/\\sqrt3=2a$，故$b/a=1+1/\\sqrt3$。渐近线为$y=\\pm(1+\\sqrt3/3)x$。"
+  },
+  "train_conic10k_00559": {
+    "answer.solution": "设$M(y_1^2/4,y_1),N(y_2^2/4,y_2)$，则$k_{OM}k_{ON}=16/(y_1y_2)=-1/2$，故$y_1y_2=-32$。于是$|MN|^2=(y_1-y_2)^2[1+(y_1+y_2)^2/16]\\ge128$。当$y_1=-y_2=\\pm4\\sqrt2$时取等号，最小值为$8\\sqrt2$。"
+  },
+  "train_conic10k_00564": {
+    "answer.solution": "交点为$U(3,2\\sqrt3)$、$V(1/3,-2\\sqrt3/3)$，$F(1,0)$。当$A=U,B=V$时，$(\\lambda,\\mu)=(1/4,3/4)$，所求值为$5$；互换$A,B$时，$(\\lambda,\\mu)=(3/4,1/4)$，所求值为$0$。题干未指定交点次序，故可能值为$0$或$5$。",
+    "answer.final_answer": "$0$或$5$（取决于$A,B$的命名次序）"
+  },
+  "train_conic10k_00572": {
+    "answer.solution": "设$P(x,y)$。条件给出$x^2+y^2-c^2=2c^2$，即$x^2+y^2=3c^2$。与椭圆方程联立得$x^2=\\frac{a^2(4c^2-a^2)}{c^2}$。存在实点要求$0\\le x^2\\le a^2$，等价于$3c^2\\le a^2\\le4c^2$。所以$1/2\\le e\\le1/\\sqrt3$。"
+  },
+  "train_conic10k_00576": {
+    "answer.solution": "记$B=(\\sqrt5+1)/2$，双曲线为$x^2-y^2/B=1$。设$M(u,v),N(-u,-v),P(x,y)$，有$x^2-u^2=(y^2-v^2)/B$。故$k_{PM}k_{PN}=\\frac{(y-v)(y+v)}{(x-u)(x+u)}=B=\\frac{\\sqrt5+1}{2}$。"
+  },
+  "train_conic10k_00592": {
+    "answer.solution": "设$A(x,y)$，其中$x<0,y>0$，则$B(-x,-y)$、$F(-\\sqrt2,0)$。比较两角正切可得$x^2+y^2+2\\sqrt2x-2=0$。与$x^2/9+y^2/7=1$联立，取第二象限内的解，得$x=-3\\sqrt2/2,y=\\sqrt{14}/2$。故直线斜率$y/x=-\\sqrt7/3$。"
+  },
+  "train_conic10k_00593": {
+    "answer.solution": "题设条件矛盾，不存在这样的抛物线。由焦半径公式得$|AB|=y_A+y_B+p=6$，中点到$x$轴距离为$1$且$y_A,y_B\\ge0$，故$y_A+y_B=2$、$p=4$。但过焦点的实弦长至少为通径长$2p=8$，不可能等于$6$。因此原答案$x^2=8y$不满足实弦条件。",
+    "answer.final_answer": "不存在满足这些条件的抛物线。"
+  },
+  "train_conic10k_00595": {
+    "answer.solution": "标准方程为$x^2+\\frac{y^2}{1/m}=1$，要求$m>0$。当长轴在$x$轴时，半长轴$1$为半短轴$1/\\sqrt m$的两倍，得$m=4$；当长轴在$y$轴时，$1/\\sqrt m=2$，得$m=1/4$。"
+  },
+  "train_conic10k_00646": {
+    "answer.solution": "抛物线焦点为$F(p/2,0)$。对于任一实焦点弦，两焦半径$r_A,r_B$满足$1/r_A+1/r_B=2/p$。由$r_A=5r_B$得$6/r_A=2/p$，故$r_A=3p$，从而$|AF|/|OF|=3p/(p/2)=6$。"
+  },
+  "train_gaokao_bench_math_ii_2010-2022_Math_II_MCQs_0205": {
+    "question.text": "已知向量$\\vec a=(2,1),\\vec b=(-2,4)$，则$|\\vec a-\\vec b|=$（ ）\nA. 2\nB. 3\nC. 4\nD. 5"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_Fill-in-the-Blank_0068": {
+    "answer.final_answer": "36"
+  },
+  "train_gaokao_bench_math_i_2010-2022_Math_I_MCQs_0082": {
+    "question.text": "12. (5 分) 定义“规范 01 数列” $\\left\\{a_{n}\\right\\}$ 如下: $\\left\\{a_{n}\\right\\}$ 共有 $2 m$ 项, 其中 $m$ 项为 $0, m$ 项 为 1 , 且对任意 $k \\leqslant 2 m, a_{1}, a_{2}, \\ldots, a_{k}$ 中 0 的个数不少于 1 的个数, 若 $m=4$, 则不同的“规范 01 数列”共有（）\nA. 18 个\nB. 16 个\nC. 14 个\nD. 12 个",
+    "question.options": [
+      {
+        "label": "A",
+        "text": "18 个"
+      },
+      {
+        "label": "B",
+        "text": "16 个"
+      },
+      {
+        "label": "C",
+        "text": "14 个"
+      },
+      {
+        "label": "D",
+        "text": "12 个"
+      }
+    ]
+  },
+  "train_conic10k_00642": {
+    "answer.solution": "由渐近线斜率$-b/a=-3/4$及$b=3$得$a=4$、$c=5$。双曲线定义给出$||PF_1|-|PF_2||=2a=8$。代入$|PF_1|=10$，得$|PF_2|=2$或$18$，两种值均满足焦点三角形的存在条件。"
+  },
+  "train_conic10k_00041": {
+    "answer.solution": "设左顶点$A(-a,0)$。向两条渐近线作垂线，垂足为$M(-a^3/c^2,-a^2b/c^2)$、$N(-a^3/c^2,a^2b/c^2)$，其中$c^2=a^2+b^2$。因此$MN=2a^2b/c^2=4a/5$，即$2a^2-5ab+2b^2=0$。由$a>b>0$取$a=2b$，故$e=\\sqrt{a^2+b^2}/a=\\sqrt5/2$。"
+  }
+}

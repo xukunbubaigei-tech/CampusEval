@@ -1,7 +1,7 @@
 """Tests for the plain-text rubric protocol v2 (rubric validation, judgment
 validation, blind prompt, aggregation, and dry-run behaviour).
 
-Runnable with either ``python -m unittest tests.test_subjective_evaluation``
+Runnable with either ``python -m unittest CampusEval.scripts.tests.test_subjective_evaluation``
 or pytest.
 """
 import copy
@@ -17,8 +17,8 @@ from CampusEval.subjective.io_utils import read_jsonl
 from CampusEval.subjective.prompts import judge_prompt
 from CampusEval.subjective.validation import validate_judgment, validate_rubric
 
-ROOT = Path(__file__).resolve().parents[1]
-FIX = ROOT / "tests/fixtures/subjective"
+ROOT = Path(__file__).resolve().parents[2]
+FIX = Path(__file__).resolve().parent / "fixtures/subjective"
 CONFIG = ROOT / "configs/subjective_evaluation.json"
 
 

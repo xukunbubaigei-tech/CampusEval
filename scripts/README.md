@@ -1,6 +1,6 @@
 # scripts 分类导航
 
-更新日期：2026-10-19。脚本按职责分类，子目录的 `__init__.py` 用于支持包导入。历史 `archive/` 目录已恢复，保留迁移工具供回归测试与追溯；轻量 API 提取不再使用，网页端精准解析标准步骤见文末。
+更新日期：2026-10-21。脚本按职责分类，子目录的 `__init__.py` 用于支持包导入。历史 `archive/` 目录保留迁移工具用于追溯；轻量 API 提取不再使用，网页端精准解析标准步骤见文末。
 
 ## 目录结构
 
@@ -13,7 +13,8 @@ scripts/
 │   ├── mit/          MIT：收集来源、首批构建、第二批扩充
 │   ├── soa/          SOA：定位题答边界、转换暂存题库
 │   └── umath/        U-MATH：转换 Parquet 和图片
-├── checks/           专项校验与数学复核（5 个）
+├── checks/           考研、SOA 两个来源专项校验入口
+├── tests/            程序回归测试与可选来源集成检查
 ├── curation/         人工题答和纠错资产（8 个）
 │   ├── kaoyan/       考研纠错及依据
 │   ├── mit/          首批、第二批题答整理稿
@@ -28,9 +29,10 @@ scripts/
 | [evaluation](evaluation/README.md) | 运行模型评测实验 |
 | [maintenance](maintenance/README.md) | 导入新题与检查项目完整性 |
 | [construction](construction/README.md) | 查看各来源如何加工成题库 |
-| [checks](checks/README.md) | 查看专项检查和指定数学断言 |
+| [checks](checks/README.md) | 检查考研、SOA 现有题库的来源专项约束 |
+| [tests](tests/README.md) | 运行默认回归测试和可选来源集成检查 |
 | [curation](curation/README.md) | 审阅人工整理的题答及纠错依据 |
-| [archive](archive/README.md) | 历史迁移、回归测试与追溯；轻量提取已停用 |
+| [archive](archive/README.md) | 历史迁移与追溯；轻量提取已停用 |
 
 只读取现成 JSONL 或使用自己的训练程序，不需要运行构建工具。日常实验优先查看 `evaluation/`；数据维护优先查看 `maintenance/`。
 
@@ -39,8 +41,14 @@ scripts/
 从项目父目录 `D:\codex-project\高考数据集` 执行：
 
 ```powershell
-# 离线发布检查（会写入校验报告）
+# 更新数据集 README 中的文件清单
+.venv\Scripts\python.exe CampusEval\scripts\maintenance\update_dataset_readme.py
+
+# 离线发布检查（结果写入本地 workspace/reports）
 .venv\Scripts\python.exe CampusEval\scripts\maintenance\validate_clean_release.py
+
+# 程序回归测试
+.venv\Scripts\python.exe -m unittest discover -s CampusEval\scripts\tests
 
 # 查看导入器参数
 .venv\Scripts\python.exe CampusEval\scripts\maintenance\import_dataset.py --help
@@ -60,7 +68,7 @@ scripts/
 - SOA 专项校验读取 `construction/soa/prepare_soa_segments.py` 中的排除题号；SOA 构建器读取 `curation/soa/soa_corrections.json`。
 - 通用发布检查与专项检查覆盖不同要求，保留两层。
 - 客观题重评分与 `evaluation/metrics.py` 有部分重复逻辑，但规则不同；未来整合需先比对结果。
-- 历史归档目录已恢复，其中迁移工具仍供回归测试使用；缓存 `__pycache__/` 可按需清理。
+- 历史归档目录用于追溯，当前回归测试不再依赖其中的迁移工具；缓存 `__pycache__/` 可按需清理。
 - `build_soa_dataset.py` 写入暂存区，不直接发布正式 SOA 题库。当前 `import_dataset.py` 保留固定 mini 并检查一致性，不自动重建 mini；当前项目没有 `rebuild_mini_datasets.py`。
 
 ## 原文件与新位置
@@ -96,9 +104,6 @@ scripts/
 | `validate_kaoyan_dataset.py` | [checks/validate_kaoyan_dataset.py](checks/validate_kaoyan_dataset.py) |
 | `validate_reports.py` | [maintenance/validate_reports.py](maintenance/validate_reports.py) |
 | `validate_soa_dataset.py` | [checks/validate_soa_dataset.py](checks/validate_soa_dataset.py) |
-| `verify_kaoyan_corrections.py` | [checks/verify_kaoyan_corrections.py](checks/verify_kaoyan_corrections.py) |
-| `verify_mit_batch2.py` | [checks/verify_mit_batch2.py](checks/verify_mit_batch2.py) |
-| `verify_mit_mathematics.py` | [checks/verify_mit_mathematics.py](checks/verify_mit_mathematics.py) |
 | `write_kaoyan_report.py` | [construction/kaoyan/write_kaoyan_report.py](construction/kaoyan/write_kaoyan_report.py) |
 
 ## 当前 PDF 提取入口

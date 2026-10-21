@@ -74,7 +74,9 @@ def main():
               "checks": ["JSON Schema", "unique IDs", "exact-text deduplication", "MCQ answer-label agreement",
                          "local image references", "math delimiter and brace balance", "published/pending separation"],
               "not_verified": "逐题公式转写准确性与数学正确性", "errors": errors}
-    (DATA / "validation_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    report_path = BASE / "workspace/reports/kaoyan_validation.json"
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
     if errors:
         raise SystemExit(1)

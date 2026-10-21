@@ -36,9 +36,15 @@ def validate(path: Path) -> list[dict]:
         assert row["answer"]["solution"].strip(), number
         options = row["question"]["options"]
         assert [o["label"] for o in options] == list("ABCDE"), number
+        compact = lambda text: re.sub(r"\s+", "", text)
+        assert len({compact(o["text"]) for o in options}) == 5, (number, "Duplicate option text")
+        last_line = row["question"]["text"].strip().splitlines()[-1]
+        assert not any(compact(last_line) == compact(f"({o['label']}) {o['text']}")
+                       for o in options), (number, "Option duplicated at end of question")
         fields = [row["question"]["text"], row["answer"]["solution"]] + [o["text"] for o in options]
         for text in fields:
             assert text.strip() and "[VISUAL:" not in text, number
+            assert not re.search(r"</?(?:sup|sub)\b", text, re.I), (number, "Unconverted HTML superscript/subscript")
             assert not any(c == "\ufffd" or unicodedata.category(c) == "Co"
                            or (unicodedata.category(c) == "Cc" and c not in "\n\r\t")
                            for c in text), (number, "Replacement/private-use/control character")

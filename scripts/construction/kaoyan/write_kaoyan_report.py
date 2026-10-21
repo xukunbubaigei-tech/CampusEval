@@ -20,7 +20,7 @@ def main():
 - `questions.jsonl`：沿用 id、source、question、answer、metadata 五个顶层字段，source 为 university_exam。
 - `data/images/kaoyan/`：从原 PDF 裁出的题图及解析图，保留相对路径引用。
 - `conversion_report.md` / `.json`：数量、年度覆盖、规则与限制。
-- `validation_report.json`：格式、重复、选项答案、图片路径及公式定界符检查。
+- `workspace/reports/kaoyan_validation.json`：本地格式、重复、选项答案、图片路径及公式定界符检查结果。
 - `corrections.json`：原页位置、修改前后记录及校正依据。
 - `correction_verification.json`：对所列校正公式进行的符号/数值核验。
 - `pending_review.jsonl`：本轮暂存队列；当前为 {report['pending_count']} 条。
@@ -37,7 +37,7 @@ def main():
 
 ## 可复现处理
 
-脚本在 `scripts/`：`scripts/construction/kaoyan/prepare_kaoyan_answer_batches.py`、`scripts/construction/kaoyan/convert_kaoyan_precise.py`、`scripts/construction/kaoyan/build_kaoyan_dataset.py`、`scripts/construction/kaoyan/crop_kaoyan_figures.py`、`scripts/checks/verify_kaoyan_corrections.py`、`scripts/checks/validate_kaoyan_dataset.py`。网页精准解析 JSON 及逐年页码映射保存在本机 `workspace/extracted/kaoyan/precise/`；该中间目录不随代码分发。免登录轻量接口仅用于早期草稿定位，后续已停止使用。后续统一访问 https://mineru.net/ ，通过网页端精准解析并下载JSON，存入workspace下以解析内容命名的直接子文件夹；详见项目workspace/README.md。
+脚本在 `scripts/`：`scripts/construction/kaoyan/prepare_kaoyan_answer_batches.py`、`scripts/construction/kaoyan/convert_kaoyan_precise.py`、`scripts/construction/kaoyan/build_kaoyan_dataset.py`、`scripts/construction/kaoyan/crop_kaoyan_figures.py`、`scripts/checks/validate_kaoyan_dataset.py`。历史一次性公式试算脚本已清理，校正依据保存在纠错配置与数据维护摘要中。网页精准解析 JSON 及逐年页码映射保存在本机 `workspace/extracted/kaoyan/precise/`；该中间目录不随代码分发。免登录轻量接口仅用于早期草稿定位，后续已停止使用。后续统一访问 https://mineru.net/ ，通过网页端精准解析并下载JSON，存入workspace下以解析内容命名的直接子文件夹；详见项目workspace/README.md。
 """
     (DATA / "README.md").write_text(readme, encoding="utf-8")
     lines = ["# 本地考研数学一收录报告", "", "完成日期：2026-10-19。", "",
@@ -56,7 +56,7 @@ def main():
               "| ID | 依据 |", "|---|---|"]
     lines += [f"| {c['id']} | {c['verification_basis'].replace('|',' / ')} |" for c in corrections]
     lines += ["", "## 校验与限制", ""] + ["- " + s for s in report['limitations']]
-    lines += ["- JSON Schema、ID、完全重复题干、选项答案、图片引用和美元公式定界符的结果见 validation_report.json。",
+    lines += ["- JSON Schema、ID、完全重复题干、选项答案、图片引用和美元公式定界符的结果见本地 workspace/reports/kaoyan_validation.json。",
               "- 符号与数值交叉验证的范围和计算项目见 correction_verification.json，不能将其外推为805题全部数学正确。", ""]
     (DATA / "conversion_report.md").write_text("\n".join(lines), encoding="utf-8")
     print("Wrote standalone dataset README and conversion report")

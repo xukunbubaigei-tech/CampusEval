@@ -2,6 +2,8 @@
 
 将本地 Parquet 与图片转换为项目格式。
 
+现行版本读取原始 1,100 行，按 `corrections.py` 修正 19 条、排除缺表的 `umath_416`，输出 1,099 题。ID 保持原行号；解析仍为空。修正规则不可省略，否则会恢复已确认的上游错误。
+
 | 文件 | 用途 |
 |---|---|
 | [build_umath_dataset.py](build_umath_dataset.py) | 将本地 Parquet 及图片转换为统一题库格式 |

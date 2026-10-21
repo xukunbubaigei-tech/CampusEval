@@ -61,7 +61,10 @@ def format_options(options: list) -> str:
 
 
 def choice_mode(row: dict) -> str | None:
-    if row.get("metadata", {}).get("question_type") != "选择题":
+    qtype = row.get("metadata", {}).get("question_type")
+    if qtype == "多选题":
+        return "multiple"
+    if qtype != "选择题":
         return None
     gold = str(row.get("answer", {}).get("final_answer", "")).strip().upper()
     return "multiple" if re.fullmatch(r"[A-D]{2,4}", gold) else "single"
@@ -70,7 +73,7 @@ def choice_mode(row: dict) -> str | None:
 def build_prompt(row: dict) -> str:
     question = row["question"]
     qtype = row["metadata"]["question_type"]
-    option_text = format_options(question.get("options", [])) if qtype == "选择题" else ""
+    option_text = format_options(question.get("options", [])) if qtype in {"选择题", "多选题"} else ""
     mode = choice_mode(row)
     if mode == "multiple":
         answer_rule = "本题为多选题，输出所有正确选项字母，按字母顺序排列且不加空格，例如AC。"
@@ -100,8 +103,8 @@ def build_content(row: dict, dataset: Path, use_images: bool) -> str | list[dict
 def extract_answer(response: str, qtype: str, mode: str | None = None) -> str:
     tagged = re.search(r"<answer>\s*(.*?)\s*</answer>", response, re.I | re.S)
     value = tagged.group(1).strip() if tagged else response.strip()
-    if qtype == "选择题":
-        if mode == "multiple":
+    if qtype in {"选择题", "多选题"}:
+        if qtype == "多选题" or mode == "multiple":
             letters = re.findall(r"[A-D]", value.upper())
             return "".join(sorted(set(letters))) if letters else value
         match = re.search(r"(?:^|[^A-Z])([A-D])(?:[^A-Z]|$)", value.upper())

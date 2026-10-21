@@ -9,7 +9,7 @@ from CampusEval.subjective.common import (ensure_run_output_dir, image_data_url,
                                                      latency_total, load_api_key, multimodal_content,
                                                      resolve_image_path, usage_summary)
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 TINY_PNG = base64.b64decode(
     "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="
 )

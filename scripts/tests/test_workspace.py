@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 SCRIPT = ROOT / "scripts/maintenance/clean_workspace.py"
 
 TRANSIENT = ("staging", "extracted", "reports", "rejected")
@@ -44,20 +44,22 @@ class CleanWorkspaceTests(unittest.TestCase):
             self.assertEqual(proc.returncode, 0, proc.stderr)
             report = json.loads(proc.stdout)
             self.assertTrue(report["dry_run"])
-            self.assertEqual(len(report["deleted_files"]), 3)  # default: staging/extracted/reports
+            self.assertEqual(report["scopes"], ["staging"])
+            self.assertEqual(report["deleted_files"], ["workspace/staging/a.json"])
             self.assertTrue((tmp / "workspace/staging/a.json").exists())
             self.assertTrue((tmp / "workspace/extracted/b.md").exists())
             self.assertTrue((tmp / "workspace/reports/c.json").exists())
             self.assertTrue((tmp / "workspace/rejected/d.json").exists(), "rejected not in default scope")
 
-    def test_default_clean_keeps_rejected_imports_review_and_formal(self):
+    def test_default_clean_preserves_sources_records_and_formal_data(self):
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
             _make(tmp)
             proc = _run(["--project-root", str(tmp)])
             self.assertEqual(proc.returncode, 0, proc.stderr)
-            for name in ("staging", "extracted", "reports"):
-                self.assertFalse((tmp / "workspace" / name).exists(), f"{name} should be cleaned")
+            self.assertFalse((tmp / "workspace/staging").exists())
+            self.assertEqual((tmp / "workspace/extracted/b.md").read_text(encoding="utf-8"), "x")
+            self.assertEqual((tmp / "workspace/reports/c.json").read_text(encoding="utf-8"), "{}")
             self.assertTrue((tmp / "workspace/rejected/d.json").exists(), "rejected kept by default")
             self.assertTrue((tmp / "workspace/imports/keep.json").exists())
             self.assertTrue((tmp / "workspace/review/e.md").exists())

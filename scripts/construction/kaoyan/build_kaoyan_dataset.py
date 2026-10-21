@@ -247,6 +247,17 @@ def make_answers(year):
             text = clean("\n\n".join(u["text"] if u["type"] not in {"image", "chart"}
                                       else f"![原解析图]({figure_path(u)})" for u in child["items"]))
             result[(year, major, child["number"])] = {"text": text, "items": child["items"]}
+    if year == 2021:
+        # The annual answer material orders these three worked responses as
+        # distance / double integral / series, unlike the question collection.
+        keys = [(2021, 3, number) for number in (18, 19, 20)]
+        current = [result[key] for key in keys]
+        if ("曲线" in current[0]["text"] and "I" in current[1]["text"]
+                and "级数" in current[2]["text"]):
+            result.update(zip(keys, (current[2], current[0], current[1])))
+        assert ("级数" in result[keys[0]]["text"]
+                and "曲线" in result[keys[1]]["text"]
+                and "I" in result[keys[2]]["text"]), "2021 answers 18--20 need content alignment review"
     return result
 
 

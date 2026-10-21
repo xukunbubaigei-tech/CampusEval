@@ -64,7 +64,9 @@ workspace/
 
 ## 清理
 
-默认清理脚本会删除 `staging/`、`extracted/` 和工作区 `reports/` 的内容，可能包含原始解析结果与迁移备份。日常应指定清理范围，并先预览。从项目父目录执行：
+2026-10-21 已清理 `tmp/` 与本工作区中完成任务后的重复草稿、生成分片、页面渲染缓存、临时依赖和发布暂存副本。正式 rubric 已保存在 `datasets/kaoyan/rubrics.jsonl`、`datasets/main/benchmark.rubrics.jsonl`、`datasets/main/training.rubrics.jsonl`。各生成目录保留日志、来源及复核记录；修订前的唯一快照与修订映射归入 `reports/repair_snapshots_2026-10-20/`。原始来源与迁移备份仍保留。清理结论与待处理问题合并至 [数据维护摘要](../datasets/MAINTENANCE.md)，一次性逐文件删除清单已移除。
+
+清理脚本默认只删除 `staging/` 的内容，保留 `extracted/` 原始解析材料及工作区 `reports/` 的维护记录和备份。其他可清理目录必须显式指定 `--scope`；不能把原始解析与唯一备份视为缓存。执行前先预览，从项目父目录执行：
 
 ```powershell
 .venv\Scripts\python.exe CampusEval\scripts\maintenance\clean_workspace.py --scope staging --dry-run

@@ -166,3 +166,84 @@ add(2022, 3, 21, r"$A=\begin{pmatrix}1&2&3\\2&4&6\\3&6&9\end{pmatrix}$；可取 
 add(2022, 3, 22, r"$\hat\theta=\frac{\sum_{i=1}^nX_i+\frac12\sum_{j=1}^mY_j}{n+m}$，$D(\hat\theta)=\frac{\theta^2}{n+m}$。",
     "对数似然=-(n+m)lnθ-[ΣXi+ΣYj/2]/θ+常数；独立性与指数分布方差求估计量方差。移除下一年度封面的“绝密★启用前”。",
     solution=r"记 $S=\sum X_i+\frac12\sum Y_j$。与θ有关的对数似然为 $-(n+m)\ln\theta-S/\theta$，其极大值点为 $\hat\theta=S/(n+m)$。由独立性，$D(S)=n\theta^2+\frac14m(2\theta)^2=(n+m)\theta^2$，故 $D(\hat\theta)=\theta^2/(n+m)$。")
+
+
+# User-supplied completion of all three subquestions.
+add(1990, 3, 0, "(1) $\\frac{1}{3}\\ln 2$。\n\n(2) $\\frac{\\partial^2 z}{\\partial x\\partial y}=-2f_{11}''+(2\\sin x-y\\cos x)f_{12}''+y\\sin x\\cos x\\,f_{22}''+\\cos x\\,f_2'$，其中各偏导数均在 $(u,v)=(2x-y,y\\sin x)$ 处取值。\n\n(3) $y=(C_1+C_2x)e^{-2x}+\\frac12x^2e^{-2x}$，其中 $C_1,C_2$ 为任意常数。",
+    '用户指出 final_answer 仅含第一问，补齐第二、三问；链式法则及混合偏导连续性验证第二问，将第三问通解代回原方程验证，第一问定积分亦符号复算通过。',
+    solution="(1) 分部积分法的关键是要选好谁先进入积分号的问题,如果选择不当可能引起更繁杂的计算,最后甚至算不出结果来。在做题的时候应该好好总结,积累经验。\n\n假定 $u = u(x)$ 与 $v = v(x)$ 均具有连续的导函数,则\n\n$\\int u v ^ {\\prime} d x = u v - \\int u ^ {\\prime} v d x,$\n\n或者 $\\int udv = uv - \\int vdu.$\n\n由 $\\frac{1}{(2 - x)^2} dx = -(2 - x)^{-2}d(2 - x) = d\\left(\\frac{1}{2 - x}\\right)$ 有\n\n原式 $= \\int_{0}^{1}\\ln (1 + x)d\\left(\\frac{1}{2 - x}\\right)$ 分部法 $\\frac{\\ln(1 + x)}{2 - x}\\bigg|_{0}^{1} - \\int_{0}^{1}\\frac{1}{2 - x}\\bullet \\frac{dx}{1 + x}$\n\n因为,由分项法 $\\frac{1}{2 - x} \\cdot \\frac{1}{1 + x} = \\frac{1}{3} \\left( \\frac{1}{2 - x} + \\frac{1}{1 + x} \\right)$\n\n所以,原式 $= \\ln 2 - \\frac{1}{3}\\int_{0}^{1}\\left(\\frac{1}{2 - x} +\\frac{1}{1 + x}\\right)dx$\n\n$= \\ln 2 - \\frac {1}{3} [ - \\ln (2 - x) \\left| _ {0} ^ {1} + \\ln (1 + x) \\right| _ {0} ^ {1} ] = \\frac {1}{3} \\ln 2.$\n\n(2) 令 $u=2x-y$，$v=y\\sin x$，则 $u_x=2$，$u_y=-1$，$v_x=y\\cos x$，$v_y=\\sin x$。由链式法则，$z_x=2f_1'+y\\cos x\\,f_2'$。再对 $y$ 求导得 $z_{xy}=2(-f_{11}''+\\sin x\\,f_{12}'')+\\cos x\\,f_2'+y\\cos x(-f_{21}''+\\sin x\\,f_{22}'')$。因 $f$ 具有连续的二阶偏导数，$f_{12}''=f_{21}''$，故 $z_{xy}=-2f_{11}''+(2\\sin x-y\\cos x)f_{12}''+y\\sin x\\cos x\\,f_{22}''+\\cos x\\,f_2'$。上述 $f$ 的各偏导数均在 $(u,v)=(2x-y,y\\sin x)$ 处取值。\n\n(3) 对应齐次方程的特征方程为 $r^2+4r+4=(r+2)^2=0$，有二重根 $r=-2$，所以齐次通解为 $Y=(C_1+C_2x)e^{-2x}$。非齐次项为 $e^{-2x}$，取特解 $y_p=ax^2e^{-2x}$。代入原方程得 $y_p''+4y_p'+4y_p=2ae^{-2x}=e^{-2x}$，故 $a=\\frac12$。因此通解为 $y=(C_1+C_2x)e^{-2x}+\\frac12x^2e^{-2x}$，其中 $C_1,C_2$ 为任意常数。")
+
+
+# User-authorized M4--M12 cleanup, including the two verified 1988 answer corrections.
+add(1988, 1, 0, '(1) 收敛域为 $[0,6)$。\n\n(2) $\\varphi(x)=\\sqrt{\\ln(1-x)}$，定义域为 $(-\\infty,0]$。\n\n(3) $I=\\frac{12\\pi}{5}$。',
+    '用户授权修正本次核对的问题：清理识别残片及评分标记，保留完整题意和各小问结论；相关计算、定义域或密度变换已复核。',
+    question='(1) 求幂级数 $\\sum_{n=1}^{\\infty}\\frac{(x-3)^{n}}{n3^{n}}$ 的收敛域.\n\n(2) 已知 $f(x) = \\mathrm{e}^{x^2}$ , $f[\\varphi(x)] = 1 - x$ 且 $\\varphi(x) \\geqslant 0$ , 求 $\\varphi(x)$ 并写出它的定义域.\n\n(3) 设 $\\Sigma$ 为曲面 $x^{2} + y^{2} + z^{2} = 1$ 的外侧, 计算曲面积分\n\n$I = \\oiint_ {\\Sigma} x ^ {3} \\mathrm{d} y \\mathrm{d} z + y ^ {3} \\mathrm{d} z \\mathrm{d} x + z ^ {3} \\mathrm{d} x \\mathrm{d} y.$',
+    solution='(1) 令 $t=(x-3)/3$，原级数为 $\\sum_{n=1}^{\\infty}t^n/n$。当 $|t|<1$ 即 $0<x<6$ 时绝对收敛；当 $x=0$ 时为收敛的交错调和级数，当 $x=6$ 时为发散的调和级数。因此收敛域为 $[0,6)$。\n\n(2) 由 $e^{\\varphi(x)^2}=1-x$ 及 $\\varphi(x)\\ge0$，得 $\\varphi(x)=\\sqrt{\\ln(1-x)}$。实数取值要求 $1-x\\ge1$，即 $x\\le0$；$x=0$ 时 $\\varphi(0)=0$ 成立，故定义域为 $(-\\infty,0]$。\n\n(3) 由高斯公式，设 $\\Omega$ 为单位球体，则 $I=3\\iiint_{\\Omega}(x^2+y^2+z^2)\\,dV=3\\int_0^{2\\pi}d\\theta\\int_0^\\pi\\sin\\phi\\,d\\phi\\int_0^1r^4\\,dr=\\frac{12\\pi}{5}$。')
+add(1988, 4, 0, '$0$',
+    '用户授权修正本次核对的问题：清理识别残片及评分标记，保留完整题意和各小问结论；相关计算、定义域或密度变换已复核。',
+    question='设 $u = yf\\left(\\frac{x}{y}\\right) + xg\\left(\\frac{y}{x}\\right)$ , 其中函数 $f, g$ 具有二阶连续导数, 求 $x \\frac{\\partial^2 u}{\\partial x^2} + y \\frac{\\partial^2 u}{\\partial x \\partial y}$ .',
+    solution="解: $\\frac{\\partial u}{\\partial x}=f'\\left(\\frac{x}{y}\\right)+g\\left(\\frac{y}{x}\\right)-\\frac{y}{x}g'\\left(\\frac{y}{x}\\right).$ \n $\\frac{\\partial^{2}u}{\\partial x^{2}}=\\frac{1}{y}f''\\left(\\frac{x}{y}\\right)+\\frac{y^{2}}{x^{3}}g''\\left(\\frac{y}{x}\\right).$ \n $\\frac{\\partial^{2}u}{\\partial x\\partial y}=-\\frac{x}{y^{2}}f''\\left(\\frac{x}{y}\\right)-\\frac{y}{x^{2}}g''\\left(\\frac{y}{x}\\right).$ \n所以 $x \\cdot \\frac{\\partial^{2}u}{\\partial x^{2}} + y \\cdot \\frac{\\partial^{2}u}{\\partial x\\partial y} = 0.$")
+add(1988, 6, 0, '$W=k\\left(1-\\frac{1}{\\sqrt5}\\right)$',
+    '用户授权修正本次核对的问题：清理识别残片及评分标记，保留完整题意和各小问结论；相关计算、定义域或密度变换已复核。',
+    question='设位于点(0,1)的质点 $A$ 对质点 $M$ 的引力大小为 $\\frac{k}{r^2} (k > 0$ 为常数, $r$ 为质点 $A$ 与 $M$ 之间的距离),质点 $M$ 沿曲线 $y = \\sqrt{2x - x^2}$ 自 $B(2,0)$ 运动到 $O(0,0)$ ,求在此运动过程中质点 $A$ 对质点 $M$ 的引力所作的功.',
+    solution='解: $\\overrightarrow{MA}=\\{0-x,1-y\\}$ \n $r=\\sqrt{x^{2}+(1-y)^{2}}.$ \n因引力 $\\overrightarrow{f}$ 的方向与 $\\overrightarrow{MA}$ 一致,\n故 $\\overrightarrow{f}=\\frac{k}{r^{3}}\\{-x,1-y\\}.$ \n从而 $W = \\int_{\\widehat{BO}}\\frac{k}{r^3} [-xdx + (1 - y)dy]$ $= k\\cdot (1 - \\frac{1}{\\sqrt{5}}).$\n\n![原解析图](data/images/kaoyan/answers_1988_p003_379_545_493_639.png)')
+add(1988, 7, 0, '$A=A^5=\\begin{pmatrix}1&0&0\\\\2&0&0\\\\6&-1&-1\\end{pmatrix}$',
+    '用户授权修正本次核对的问题：清理识别残片及评分标记，保留完整题意和各小问结论；相关计算、定义域或密度变换已复核。',
+    question='已知 $\\mathbf{A}\\mathbf{P} = \\mathbf{P}\\mathbf{B}$ ,其中 $\\pmb {B} = \\left( \\begin{array}{lll}1 & 0 & 0\\\\ 0 & 0 & 0\\\\ 0 & 0 & -1 \\end{array} \\right),\\pmb {P} = \\left( \\begin{array}{lll}1 & 0 & 0\\\\ 2 & -1 & 0\\\\ 2 & 1 & 1 \\end{array} \\right)$ ,求 $\\mathbf{A}$ 及 $A^5$',
+    solution='解:先求出 $P^{-1} = \\left( \\begin{array}{ccc}1 & 0 & 0\\\\ 2 & -1 & 0\\\\ -4 & 1 & 1 \\end{array} \\right).$\n\n因 $AP = PB$ ,故 $A = PBP^{-1} = \\begin{pmatrix} 1 & 0 & 0\\\\ 2 & -1 & 0\\\\ 2 & 1 & 1 \\end{pmatrix}\\begin{pmatrix} 1 & 0 & 0\\\\ 0 & 0 & 0\\\\ 0 & 0 & -1 \\end{pmatrix}\\begin{pmatrix} 1 & 0 & 0\\\\ 2 & -1 & 0\\\\ -4 & 1 & 1 \\end{pmatrix}$ $= \\begin{pmatrix} 1 & 0 & 0\\\\ 2 & 0 & 0\\\\ 2 & 0 & -1 \\end{pmatrix}\\begin{pmatrix} 1 & 0 & 0\\\\ 2 & -1 & 0\\\\ -4 & 1 & 1 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 & 0\\\\ 2 & 0 & 0\\\\ 6 & -1 & -1 \\end{pmatrix}.$ \n\n从而 $A^{5}=\\overbrace{A A A A A}^{5个}=\\overbrace{(P B P^{-1})\\quad(P B P^{-1})\\cdots(P B P^{-1})}^{5个}=P B^{5}P^{-1}=P B P^{-1}=A$')
+add(1988, 8, 0, '(1) $x=0,\\ y=1$。\n\n(2) 可取 $P=\\begin{pmatrix}1&0&0\\\\0&1&1\\\\0&1&-1\\end{pmatrix}$。',
+    '用户授权修正本次核对的问题：清理识别残片及评分标记，保留完整题意和各小问结论；相关计算、定义域或密度变换已复核。',
+    question='已知矩阵 $A = \\begin{pmatrix} 2 & 0 & 0 \\\\ 0 & 0 & 1 \\\\ 0 & 1 & x \\end{pmatrix}$ 与 $B = \\begin{pmatrix} 2 & 0 & 0 \\\\ 0 & y & 0 \\\\ 0 & 0 & -1 \\end{pmatrix}$ 相似.\n\n(1) 求 $x$ 与 $y$ ;\n\n(2)求一个满足 $P^{-1}AP = B$ 的可逆矩阵 $\\pmb{P}$ .',
+    solution='解:(1) 因 A 与 B 相似,故 $\\left|\\lambda E-A\\right|=\\left|\\lambda E-B\\right|$ ,即\n\n$\\left| \\begin{array}{c c c} \\lambda - 2 & 0 & 0 \\\\ 0 & \\lambda & - 1 \\\\ 0 & - 1 & \\lambda - x \\end{array} \\right| = \\left| \\begin{array}{c c c} \\lambda - 2 & 0 & 0 \\\\ 0 & \\lambda - y & 0 \\\\ 0 & 0 & \\lambda + 1 \\end{array} \\right|,$\n\n亦即 $(\\lambda - 2)(\\lambda^2 - x\\lambda - 1) = (\\lambda - 2)(\\lambda^2 + (1 - y)\\lambda - y)$ .\n\n比较两边的系数得 x=0, y=1. 此时 $A=\\begin{pmatrix}2&0&0\\\\0&0&1\\\\0&1&0\\end{pmatrix}$ , $B=\\begin{pmatrix}2&0&0\\\\0&1&0\\\\0&0&-1\\end{pmatrix}$ . \n(2) 从 B 可以看出 A 的特征值 $\\lambda=2,1,-1$ . \n对 $\\lambda=2$ ,可求得 A 的特征向量为 $p_{1}=\\begin{pmatrix}1\\\\0\\\\0\\end{pmatrix}$ .\n对 $\\lambda=1$ ,可求得 A 的特征向量为 $p_{2}=\\begin{pmatrix}0\\\\1\\\\1\\end{pmatrix}$ .\n对 $\\lambda=-1$ ,可求得 A 的特征向量为 $p_{3}=\\begin{pmatrix}0\\\\1\\\\-1\\end{pmatrix}$ . \n因上述 $p_{1}, p_{2}, p_{3}$ 是属于不同特征值的特征向量,故它们线性无关.\n令 $P=(p_{1},p_{2},p_{3})=\\begin{pmatrix}1&0&0\\\\0&1&1\\\\0&1&-1\\end{pmatrix}$ ,则 P 可逆,且有 $P^{-1}AP=B$ .')
+add(1988, 9, 0, '存在唯一的 $\\xi\\in(a,b)$，使 $S_1=3S_2$。',
+    '用户授权修正本次核对的问题：清理识别残片及评分标记，保留完整题意和各小问结论；相关计算、定义域或密度变换已复核。',
+    question="设函数 $f(x)$ 在区间 $[a, b]$ 上连续,且在 $(a, b)$ 内有 $f'(x) > 0$ . 证明:在 $(a, b)$ 内存在唯一的 $\\xi$ ,使曲线 $y = f(x)$ 与两直线 $y = f(\\xi), x = a$ 所围平面图形面积 $S_1$ 是曲线 $y = f(x)$ 与两直线 $y = f(\\xi), x = b$ 所围平面图形面积 $S_2$ 的3倍.",
+    solution='令 $F(t)=\\int_a^t[f(t)-f(x)]\\,dx-3\\int_t^b[f(x)-f(t)]\\,dx$。因 $f$ 连续且严格递增，$F$ 在 $[a,b]$ 上连续，并有 $F(a)=-3\\int_a^b[f(x)-f(a)]\\,dx<0$，$F(b)=\\int_a^b[f(b)-f(x)]\\,dx>0$。由介值定理，存在 $\\xi\\in(a,b)$ 使 $F(\\xi)=0$，即 $S_1=3S_2$。又 $F^{\\prime}(t)=f^{\\prime}(t)[(t-a)+3(b-t)]>0$，故零点唯一。\n\n![原解析图](data/images/kaoyan/answers_1988_p005_402_456_504_548.png)')
+add(1988, 11, 0, '$f_Y(y)=\\frac{3(1-y)^2}{\\pi[1+(1-y)^6]},\\quad y\\in\\mathbb R$。',
+    '用户授权修正本次核对的问题：清理识别残片及评分标记，保留完整题意和各小问结论；相关计算、定义域或密度变换已复核。',
+    question='设随机变量 $X$ 的概率密度函数为 $f_{X}(x) = \\frac{1}{\\pi(1 + x^{2})}$ , 求随机变量 $Y = 1 - \\sqrt[3]{X}$ 的概率密度函数 $f_{Y}(y)$ .',
+    solution='变换 $Y=1-\\sqrt[3]{X}$ 严格递减，其反函数为 $x=(1-y)^3$。因此 $\\left|dx/dy\\right|=3(1-y)^2$，由密度变换公式得 $f_Y(y)=f_X((1-y)^3)\\left|dx/dy\\right|=\\frac{3(1-y)^2}{\\pi[1+(1-y)^6]}$，适用于全部实数 $y$。也可由 $F_Y(y)=\\frac12-\\frac1\\pi\\arctan((1-y)^3)$ 求导得到同一结果。')
+add(1998, 2, 4, 'A',
+    '用户授权修正本次核对的问题：清理识别残片及评分标记，保留完整题意和各小问结论；相关计算、定义域或密度变换已复核。',
+    question='设矩阵 $\\begin{pmatrix} a_{1} & b_{1} & c_{1} \\\\ a_{2} & b_{2} & c_{2} \\\\ a_{3} & b_{3} & c_{3} \\end{pmatrix}$ 是满秩的,则直线 $\\frac{x - a_{3}}{a_{1} - a_{2}} = \\frac{y - b_{3}}{b_{1} - b_{2}} = \\frac{z - c_{3}}{c_{1} - c_{2}}$ 与直线 $\\frac{x - a_{1}}{a_{2} - a_{3}} = \\frac{y - b_{1}}{b_{2} - b_{3}} = \\frac{z-c_1}{c_2-c_3}$（ ）',
+    solution='记 $P_i=(a_i,b_i,c_i)$，$i=1,2,3$。满秩条件说明 $P_1,P_2,P_3$ 作为向量线性无关，从而 $P_1-P_2$ 与 $P_2-P_3$ 线性无关，两直线不平行。两直线分别可参数化为 $L_1:P=P_3+t(P_1-P_2)$ 和 $L_2:P=P_1+s(P_2-P_3)$。取 $t=1$、$s=-1$，两者均给出 $P=P_1-P_2+P_3$，即共同经过 $(a_1-a_2+a_3,b_1-b_2+b_3,c_1-c_2+c_3)$，故相交于一点，选 A。')
+add(2013, 2, 12, '$\\ln 2$',
+    '用户授权修正本次核对的问题：清理识别残片及评分标记，保留完整题意和各小问结论；相关计算、定义域或密度变换已复核。',
+    question='$\\int_{1}^{+\\infty}\\frac{\\ln x}{(1 + x)^{2}}\\mathrm{d}x =$',
+    solution='分部积分得 $I=\\left[-\\frac{\\ln x}{1+x}\\right]_1^{+\\infty}+\\int_1^{+\\infty}\\frac{1}{x(1+x)}\\,dx$。边界项为零，且 $\\frac{1}{x(1+x)}=\\frac1x-\\frac1{1+x}$，故 $I=\\left[\\ln x-\\ln(1+x)\\right]_1^{+\\infty}=\\ln2$。')
+add(2013, 2, 13, '$-1$',
+    '用户授权修正本次核对的问题：清理识别残片及评分标记，保留完整题意和各小问结论；相关计算、定义域或密度变换已复核。',
+    question='设 $A = (a_{ij})$ 是 3 阶非零矩阵, $|A|$ 为 A 的行列式, $A_{ij}$ 为 $a_{ij}$ 的代数余子式。若 $a_{ij} + A_{ij} = 0$ $(i, j = 1, 2, 3)$ ,则 $|A| =$ ____ 。',
+    solution='记 $C=(A_{ij})$ 为代数余子式矩阵，题设给出 $C=-A$，故伴随矩阵 $\\operatorname{adj}(A)=C^T=-A^T$。记 $d=\\det A$，对三阶矩阵有 $\\det\\operatorname{adj}(A)=d^2$，于是 $d^2=-d$，所以 $d=0$ 或 $d=-1$。又 $\\operatorname{rank}(\\operatorname{adj}(A))=\\operatorname{rank}(A)$；若 $\\operatorname{rank}(A)=2$，伴随矩阵的秩为1，矛盾；若秩为1，伴随矩阵为零，也矛盾。因 $A$ 非零，只能有 $\\operatorname{rank}(A)=3$，故 $d\\ne0$，最终 $\\det A=-1$。')
+add(2018, 2, 12, '$-\\frac{\\pi}{3}$',
+    '用户授权修正本次核对的问题：清理识别残片及评分标记，保留完整题意和各小问结论；相关计算、定义域或密度变换已复核。',
+    question='设 L 为球面 $x^{2} + y^{2} + z^{2} = 1$ 与平面 $x + y + z = 0$ 的交线,则 $\\oint_{L} xy \\, ds =$ ____ .',
+    solution='$L$ 是单位球面经过球心的平面截出的单位圆，长度为 $2\\pi$。由坐标置换对称性，令 $A=\\oint_Lx^2\\,ds=\\oint_Ly^2\\,ds=\\oint_Lz^2\\,ds$，则 $3A=2\\pi$；令 $B=\\oint_Lxy\\,ds=\\oint_Lyz\\,ds=\\oint_Lzx\\,ds$。在 $L$ 上 $(x+y+z)^2=0$，因此 $3A+6B=0$，从而 $B=-\\pi/3$。')
+add(2019, 2, 14, '$\\frac23$',
+    '用户授权修正本次核对的问题：清理识别残片及评分标记，保留完整题意和各小问结论；相关计算、定义域或密度变换已复核。',
+    question='设随机变量 $X$ 的概率密度为 $f(x) = \\begin{cases} \\frac{x}{2}, & 0 < x < 2, \\\\ 0, & \\text{其他}, \\end{cases}$ , $F(x)$ 为 $X$ 的分布函数, $E(X)$ 为 $X$ 的数学期望, 则 $P\\{F(X) > E(X) - 1\\} = \\_$ .',
+    solution='由密度积分得 $F(x)=\\begin{cases}0,&x<0,\\\\x^2/4,&0\\le x<2,\\\\1,&x\\ge2.\\end{cases}$，且 $E(X)=\\int_0^2x\\cdot\\frac{x}{2}\\,dx=\\frac43$。由于 $0<X<2$ 几乎处处成立，$P\\{F(X)>E(X)-1\\}=P\\{X^2/4>1/3\\}=P\\{X>2/\\sqrt3\\}=\\int_{2/\\sqrt3}^2\\frac{x}{2}\\,dx=\\frac23$。')
+add(1989, 10, 1, '$0.7$',
+    '用户授权修正本次核对的问题：清理识别残片及评分标记，保留完整题意和各小问结论；相关计算、定义域或密度变换已复核。',
+    question='已知随机事件 A 的概率 $P(A) = 0.5$ ,随机事件 B 的概率 $P(B) = 0.6$ 及条件概率 $P(B\\mid A)=0.8$， 则和事件 $A \\cup B$ 的概率 $P(A \\cup B) = \\underline{\\quad}$ .',
+    solution='$P(A\\cap B)=P(A)P(B\\mid A)=0.5\\times0.8=0.4$，由加法公式得 $P(A\\cup B)=P(A)+P(B)-P(A\\cap B)=0.5+0.6-0.4=0.7$。')
+add(2021, 2, 16, '$\\frac15$',
+    '用户授权修正本次核对的问题：清理识别残片及评分标记，保留完整题意和各小问结论；相关计算、定义域或密度变换已复核。',
+    question='甲、乙两个盒子中各装有 2 个红球和 2 个白球,先从甲盒中任取一球,观察颜色后放入乙盒中,再从乙盒中任取一球,令 X, Y 分别表示从甲盒和乙盒中取到的红球个数,则 X 与 Y 的相关系数为 $\\underline{\\quad}$。',
+    solution='$X,Y$ 均为红球个数的指示变量。$P(X=1)=1/2$，$P(Y=1\\mid X=1)=3/5$，$P(Y=1\\mid X=0)=2/5$，故 $P(Y=1)=1/2$，$E(XY)=P(X=1,Y=1)=3/10$。因此 $D(X)=D(Y)=1/4$，$\\operatorname{Cov}(X,Y)=3/10-1/4=1/20$，相关系数 $\\rho_{XY}=(1/20)/\\sqrt{(1/4)(1/4)}=1/5$。')
+add(2020, 2, 13, '$a^2(a^2-4)$',
+    '用户授权修正本次核对的问题：清理识别残片及评分标记，保留完整题意和各小问结论；相关计算、定义域或密度变换已复核。',
+    question='行列式 $\\begin{vmatrix} a & 0 & -1 & 1 \\\\ 0 & a & 1 & -1 \\\\ -1 & 1 & a & 0 \\\\ 1 & -1 & 0 & a \\end{vmatrix} =$ ____.',
+    solution='由行列式性质恒等变形,例如把2行加到1行,3行加到4行,再把1列的-1倍加到\n2列,4列的 — 1 倍加到3列\n\n$\\begin{array}{r l} \\left| \\begin{array}{c c c c} a & 0 & - 1 & 1 \\\\ 0 & a & 1 & - 1 \\\\ - 1 & 1 & a & 0 \\\\ 1 & - 1 & 0 & a \\end{array} \\right| & = \\left| \\begin{array}{c c c c} a & a & 0 & 0 \\\\ 0 & a & 1 & - 1 \\\\ - 1 & 1 & a & 0 \\\\ 0 & 0 & a & a \\end{array} \\right| = \\left| \\begin{array}{c c c c} a & 0 & 0 & 0 \\\\ 0 & a & 2 & - 1 \\\\ - 1 & 2 & a & 0 \\\\ 0 & 0 & 0 & a \\end{array} \\right| \\\\ & = a ^ {2} \\left| \\begin{array}{c c} a & 2 \\\\ 2 & a \\end{array} \\right| = a ^ {2} (a ^ {2} - 4) \\end{array}$\n\n【评注】 基本计算题,解法非常多,也可每列都加到第 1 列,再消 $0 , \\cdots$')
+
+
+# Correct the verified three-way 2021 answer alignment and retain readable final conclusions.
+add(2021, 3, 18, '收敛域为 $(0,1]$；和函数为 $S(x)=\\begin{cases}\\frac{1}{e^x-1}+(1-x)\\ln(1-x)+x,&0<x<1,\\\\\\frac{e}{e-1},&x=1.\\end{cases}$',
+    '用户指出2021年第18/19/20题的解析三循环错配；按题干内容配对并分别验证级数和函数、约束距离最值及二重/曲线积分。',
+    solution='拆为 $S_1(x)=\\sum_{n=1}^{\\infty}e^{-nx}$ 和 $S_2(x)=\\sum_{n=1}^{\\infty}\\frac{x^{n+1}}{n(n+1)}$。几何级数 $S_1$ 在 $x>0$ 时收敛，和为 $1/(e^x-1)$。幂级数 $S_2$ 的收敛域为 $[-1,1]$，端点由 $\\sum1/[n(n+1)]$ 的收敛性可知绝对收敛。故原级数在 $(0,1]$ 收敛；$x=0$ 时通项为1，$x>1$ 时第二项不趋于零，$x<0$ 时指数项增长快于幂项，通项也不趋于零。对 $0<x<1$，$S_2^{\\prime}(x)=\\sum_{n=1}^{\\infty}x^n/n=-\\ln(1-x)$，且 $S_2(0)=0$，积分得 $S_2(x)=(1-x)\\ln(1-x)+x$。在 $x=1$ 时 $S_2(1)=\\sum_{n=1}^{\\infty}[1/n-1/(n+1)]=1$。因此和函数为 $S(x)=\\frac{1}{e^x-1}+(1-x)\\ln(1-x)+x$（$0<x<1$），且 $S(1)=\\frac{e}{e-1}$。')
+add(2021, 3, 19, '最大距离为 $66$，在点 $(-8,-2,66)$ 处取得。',
+    '用户指出2021年第18/19/20题的解析三循环错配；按题干内容配对并分别验证级数和函数、约束距离最值及二重/曲线积分。',
+    solution='由两个约束消去 $z$ 得 $x^2+4x+2y^2+2y=36$，即 $(x+2)^2+2(y+\\frac12)^2=\\frac{81}{2}$。令 $u=x+2$、$v=y+\\frac12$，则 $z=30-4x-2y=39-4u-2v$。由柯西不等式，$|4u+2v|\\le\\sqrt{(u^2+2v^2)(16+2)}=27$，故 $12\\le z\\le66$。曲线上各点到 $xOy$ 平面的距离为 $|z|=z$，最大值为66。当 $u=-6,v=-\\frac32$，即 $(x,y,z)=(-8,-2,66)$ 时取得，且该点满足原约束。')
+add(2021, 3, 20, '$D_1=\\{(x,y):x^2+y^2\\le4\\}$；(I) $I(D_1)=8\\pi$；(II) 曲线积分为 $-\\pi$。',
+    '用户指出2021年第18/19/20题的解析三循环错配；按题干内容配对并分别验证级数和函数、约束距离最值及二重/曲线积分。',
+    solution='(I) 被积函数在 $x^2+y^2<4$ 内为正，在圆外为负，因此可取使积分最大的区域 $D_1=\\{(x,y):x^2+y^2\\le4\\}$。用极坐标得 $I(D_1)=\\int_0^{2\\pi}\\!\\int_0^2(4-r^2)r\\,dr\\,d\\theta=8\\pi$。\n\n(II) 记 $q=x^2+4y^2$。原微分形式可拆为 $\\frac{e^q}{2q}\\,dq+\\frac{y\\,dx-x\\,dy}{q}$。沿正向边界 $\\partial D_1$，$q>0$，第一项为单值原函数的全微分，闭路积分为0。第二项在原点以外的旋度为0，因此可将积分路径变形为原点附近的逆时针椭圆 $x=\\varepsilon\\cos t,y=\\frac{\\varepsilon}{2}\\sin t$（$0\\le t\\le2\\pi$）。此时 $q=\\varepsilon^2$，$y\\,dx-x\\,dy=-\\frac{\\varepsilon^2}{2}\\,dt$，故积分为 $-\\frac12\\int_0^{2\\pi}dt=-\\pi$。')

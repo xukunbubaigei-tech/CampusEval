@@ -6,12 +6,13 @@ idempotent and fully reproducible. Run from the project root::
     .venv/Scripts/python scripts/archive/migrate_add_source.py
 
 The four canonical datasets (benchmark, training, objective_70,
-subjective_50) are updated in place and ``datasets/RELEASE_MANIFEST.json``
-hashes/sizes are refreshed. The rubric file is intentionally untouched.
+subjective_50) are updated in place and ``datasets/README.md`` is refreshed.
+The rubric file is intentionally untouched.
 """
 from __future__ import annotations
 
-import hashlib
+import subprocess
+import sys
 import json
 from pathlib import Path
 
@@ -57,8 +58,6 @@ def write_jsonl(path: Path, records: list[dict]) -> None:
 
 
 def main() -> int:
-    manifest_path = DATASETS / "RELEASE_MANIFEST.json"
-    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     ok = True
     for label, path in FILES.items():
         records = read_jsonl(path)
@@ -72,16 +71,12 @@ def main() -> int:
             record["source"] = src
             dist[src] = dist.get(src, 0) + 1
         write_jsonl(path, records)
-        digest = hashlib.sha256(path.read_bytes()).hexdigest()
-        size = path.stat().st_size
-        manifest["files"][label]["sha256"] = digest
-        manifest["files"][label]["bytes"] = size
         print(f"[OK] {label}: {len(records)} records, sources={dist}")
     if ok:
-        manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        print("Manifest updated.")
+        subprocess.run([sys.executable, str(PROJECT_ROOT / "scripts/maintenance/update_dataset_readme.py")], check=True)
+        print("Dataset README updated.")
     else:
-        print("Aborted manifest update due to unknown sources.")
+        print("Aborted inventory update due to unknown sources.")
     return 0 if ok else 1
 
 

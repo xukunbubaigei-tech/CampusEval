@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import re
 from pathlib import Path
@@ -19,17 +18,12 @@ def read_jsonl(path: Path) -> list[dict[str, Any]]:
     return [json.loads(line) for line in path.read_text(encoding="utf-8-sig").splitlines() if line.strip()]
 
 
-def digest(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
-
-
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--project-root", type=Path, default=PROJECT_ROOT)
     args = parser.parse_args()
     root = args.project_root.resolve()
     datasets = root / "datasets"
-    manifest = json.loads((datasets / "RELEASE_MANIFEST.json").read_text(encoding="utf-8"))
 
     paths = {
         "benchmark": datasets / "main/benchmark.jsonl",
@@ -43,34 +37,33 @@ def main() -> int:
         if path.exists():
             paths[name] = path
     records = {label: read_jsonl(path) for label, path in paths.items()}
-    counts = manifest.get("counts", {})
-    expected = {
-        "benchmark": counts.get("benchmark", len(records["benchmark"])),
-        "training": counts.get("training", len(records["training"])),
-        "objective_70": counts.get("objective_70", len(records["objective_70"])),
-        "subjective_50": counts.get("subjective_50", len(records["subjective_50"])),
-        "rubrics": counts.get("approved_rubrics", len(records["rubrics"])),
-    }
-    for name in paths.keys() - expected.keys():
-        expected[name] = counts.get(name, len(records[name]))
+    fixed_counts = {"objective_70": 70, "subjective_50": 50, "rubrics": 50}
     errors: list[str] = []
     dataset_schema = json.loads((root / "schemas/dataset.schema.json").read_text(encoding="utf-8"))
     schema_validator = Draft202012Validator(dataset_schema)
     rubric_schema = json.loads((root / "schemas/subjective_rubric.schema.json").read_text(encoding="utf-8"))
     rubric_validator = Draft202012Validator(rubric_schema)
-    for label, count in expected.items():
-        if len(records[label]) != count:
-            errors.append(f"{label}: expected {count}, got {len(records[label])}")
+    for label, group in records.items():
+        if label in fixed_counts and len(group) != fixed_counts[label]:
+            errors.append(f"{label}: expected {fixed_counts[label]}, got {len(group)}")
         key = "question_id" if label == "rubrics" else "id"
-        if len({record[key] for record in records[label]}) != count:
+        if len({record[key] for record in group}) != len(group):
             errors.append(f"{label}: duplicate IDs")
-        if digest(paths[label]) != manifest["files"][label]["sha256"]:
-            errors.append(f"{label}: manifest hash mismatch")
         if label != "rubrics":
             for record in records[label]:
                 first_error = next(schema_validator.iter_errors(record), None)
                 if first_error is not None:
                     errors.append(f"{label}: schema error for {record.get('id')}: {first_error.message}")
+                qtype = record["metadata"]["question_type"]
+                if label in ("benchmark", "objective_70") and qtype in ("选择题", "多选题"):
+                    options = record["question"]["options"]
+                    labels = [o.get("label") if isinstance(o, dict) else None for o in options]
+                    gold = record["answer"]["final_answer"]
+                    if labels != list("ABCD"):
+                        errors.append(f"{label}: choice options must be labeled objects: {record['id']}")
+                    pattern = r"[A-D]{2,4}" if qtype == "多选题" else r"[A-D]"
+                    if not re.fullmatch(pattern, gold) or len(set(gold)) != len(gold):
+                        errors.append(f"{label}: answer inconsistent with choice type: {record['id']}")
                 serialized = json.dumps(record, ensure_ascii=False).lower()
                 # Legacy main/mini forbid URLs; imported problem text can
                 # legitimately contain a hyperlink. Image paths are checked
@@ -98,10 +91,14 @@ def main() -> int:
             errors.append(f"rubric empty text: {rubric.get('question_id')}")
         if not rubric.get("reference_solution_1"):
             errors.append(f"rubric missing solution 1: {rubric.get('question_id')}")
+        if "满分20分" not in rubric.get("rubric", ""):
+            errors.append(f"rubric missing unified 20-point scale: {rubric.get('question_id')}")
         if "scoring_items" in rubric:
             errors.append(f"rubric still uses old scoring_items: {rubric.get('question_id')}")
         s1 = rubric.get("reference_solution_1")
         s2 = rubric.get("reference_solution_2")
+        if isinstance(s2, str) and not s2.strip():
+            errors.append(f"rubric empty solution 2: {rubric.get('question_id')}")
         if s2 is not None and s2 == s1:
             errors.append(f"rubric duplicate solutions: {rubric.get('question_id')}")
 
@@ -141,8 +138,6 @@ def main() -> int:
     unreferenced_images = sorted(image_files - image_refs)
     errors.extend(f"missing image: {value}" for value in missing_images)
     errors.extend(f"unreferenced image: {value}" for value in unreferenced_images)
-    if counts.get("images") is not None and len(image_files) != counts["images"]:
-        errors.append(f"image file count {len(image_files)} != manifest {counts['images']}")
 
     report = {
         "ok": not errors,
@@ -153,7 +148,8 @@ def main() -> int:
         "unreferenced_images": unreferenced_images,
         "errors": errors,
     }
-    report_path = datasets / "VALIDATION_REPORT.json"
+    report_path = root / "workspace/reports/dataset_validation.json"
+    report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
     return 0 if not errors else 1

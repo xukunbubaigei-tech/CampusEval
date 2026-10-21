@@ -42,6 +42,8 @@ def equivalent(prediction: object, gold: object) -> tuple[bool, str]:
     alternatives = re.split(r"\s*或\s*", str(gold or ""))
     for answer in alternatives:
         target = normalize(answer)
+        if re.fullmatch(r"[a-d]{2,4}", target) and re.fullmatch(r"[a-d]{1,4}", pred):
+            return set(pred) == set(target), "choice_set_exact"
         if pred == target:
             return True, "normalized_exact"
         if pred.strip("()") == target.strip("()"):

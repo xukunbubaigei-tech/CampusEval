@@ -5,7 +5,7 @@ normalizes them into the canonical four-field shape (+ ``source``), auto-
 generates ids when missing, copies image files into ``data/images``, attaches
 rubrics for subjective questions, validates everything against a staging copy,
 and only then publishes to main/training, preserves the fixed mini datasets
-and their rubrics, refreshes ``RELEASE_MANIFEST.json`` and runs the
+and their rubrics, refreshes ``datasets/README.md`` and runs the
 offline release validation.
 
 Atomicity: all new files are written under ``workspace/staging`` first; if any
@@ -39,11 +39,11 @@ if str(ROOT.parent) not in sys.path:
     sys.path.insert(0, str(ROOT.parent))
 
 from jsonschema import Draft202012Validator  # noqa: E402
+from CampusEval.scripts.maintenance.update_dataset_readme import write_dataset_readme  # noqa: E402
 
 KNOWN_SOURCES = {"gaokao", "conic10k", "aime", "university_exam", "umath", "soa"}
 SUBJECTIVE_TYPES = {"解答题", "证明题", "综合题", "压轴题"}
 MINI_NAMES = ("objective_70", "subjective_50")
-MANIFEST_KEYS = ("benchmark", "training", "objective_70", "subjective_50", "rubrics")
 
 
 def read_jsonl(path: Path) -> list[dict]:
@@ -172,7 +172,8 @@ def normalize(entry: dict, root: Path, source_hint: str | None,
         "question": {
             "text": question_raw["text"].strip(),
             "images": images,
-            "options": question_raw.get("options") or [],
+            "options": [{"label": chr(65+i), "text": option} if isinstance(option, str) else option
+                        for i, option in enumerate(question_raw.get("options") or [])],
         },
         "answer": {
             "final_answer": answer_raw["final_answer"].strip(),
@@ -237,48 +238,6 @@ def staged_errors(root: Path, main_records: list[dict], training_records: list[d
     missing_images = sorted(img for img in refs if img not in image_files)
     errors.extend(f"missing image: {img}" for img in missing_images)
     return errors
-
-
-def refresh_manifest(root: Path, main_records: list[dict], training_records: list[dict],
-                     rubrics: list[dict], mini_counts: dict[str, int]) -> None:
-    manifest_path = root / "datasets/RELEASE_MANIFEST.json"
-    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    image_files = {p.relative_to(root).as_posix() for p in (root / "data/images").rglob("*") if p.is_file()}
-    counts = {
-        "benchmark": len(main_records),
-        "training": len(training_records),
-        "objective_70": mini_counts.get("objective_70", 0),
-        "subjective_50": mini_counts.get("subjective_50", 0),
-        "approved_rubrics": len(rubrics),
-        "images": len(image_files),
-    }
-    manifest["counts"] = counts
-    files = {
-        "benchmark": root / "datasets/main/benchmark.jsonl",
-        "training": root / "datasets/main/training.jsonl",
-        "objective_70": root / "datasets/objective_70/questions.jsonl",
-        "subjective_50": root / "datasets/subjective_50/questions.jsonl",
-        "rubrics": root / "datasets/subjective_50/rubrics.jsonl",
-    }
-    for name in ("kaoyan", "MIT", "U-MATH", "SOA"):
-        path = root / "datasets" / name / "questions.jsonl"
-        if path.exists():
-            files[name] = path
-            counts[name] = len(read_jsonl(path))
-    manifest["counts"] = counts
-    for key, path in files.items():
-        manifest["files"][key] = {
-            "path": path.relative_to(root).as_posix(),
-            "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
-            "bytes": path.stat().st_size,
-        }
-    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-
-def mini_counts(root: Path) -> dict[str, int]:
-    """Read fixed subsets without rewriting records or their order."""
-    return {name: len(read_jsonl(root / "datasets" / name / "questions.jsonl"))
-            for name in MINI_NAMES}
 
 
 def write_failure_report(root: Path, stage: str, failures: list[dict]) -> Path:
@@ -410,7 +369,7 @@ def main() -> int:
         # atomic jsonl replacement
         os.replace(staging / "datasets/main/benchmark.jsonl", main_path)
         os.replace(staging / "datasets/main/training.jsonl", training_path)
-        refresh_manifest(root, new_main, new_training, staged_rubrics, mini_counts(root))
+        write_dataset_readme(root)
 
         final = subprocess.run(
             [sys.executable, str(ROOT / "scripts/maintenance/validate_clean_release.py"), "--project-root", str(root)],

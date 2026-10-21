@@ -3,7 +3,7 @@
 Covers: deterministic auto-id, source inference, normalization rejection of
 empty question/answer, dry-run writing nothing, a real end-to-end import on a
 temporary project-root copy (auto id not used here; explicit id + rubric +
-image + fixed-mini preservation + manifest refresh + post-validation), and a failure
+image + fixed-mini preservation + README refresh + post-validation), and a failure
 case that leaves the formal data untouched.
 """
 import base64
@@ -16,7 +16,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 SCRIPT = ROOT / "scripts/maintenance/import_dataset.py"
 
 TINY_PNG = base64.b64decode(
@@ -62,6 +62,19 @@ def _load_jsonl(path: Path) -> list[dict]:
 
 
 class NormalizeUnitTests(unittest.TestCase):
+    def test_choice_import_normalizes_string_options(self):
+        mod = _import_script()
+        raw = {"id": "gaokao_math_fixture", "source": "gaokao",
+               "question": {"text": "选择所有正确选项。", "options": ["甲", "乙", "丙", "丁"]},
+               "answer": {"final_answer": "AC", "solution": "甲和丙正确。"},
+               "metadata": {"question_type": "多选题", "paper_name": "fixture"}}
+        record, errors = mod.normalize({"record": raw}, ROOT, None, {})
+        self.assertEqual(errors, [])
+        self.assertEqual(record["question"]["options"], [
+            {"label": k, "text": v} for k, v in zip("ABCD", ["甲", "乙", "丙", "丁"])])
+        validator, _ = mod.schema_validators(ROOT)
+        self.assertEqual(list(validator.iter_errors(record)), [])
+
     def test_umath_preserves_reference_answer_without_inventing_solution(self):
         mod = _import_script()
         raw = {"id": "umath_1",
@@ -176,6 +189,7 @@ class EndToEndTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
             imp = self._prepare(tmp, with_rubric=True)
+            expected_benchmark_count = len(_load_jsonl(tmp / "datasets/main/benchmark.jsonl")) + 1
             fixed_paths = [tmp / "datasets" / name / "questions.jsonl" for name in ("objective_70", "subjective_50")]
             fixed_paths.append(tmp / "datasets/subjective_50/rubrics.jsonl")
             before = {path: path.read_bytes() for path in fixed_paths}
@@ -190,7 +204,7 @@ class EndToEndTests(unittest.TestCase):
             self.assertTrue(report["ok"])
 
             bench = _load_jsonl(tmp / "datasets/main/benchmark.jsonl")
-            self.assertEqual(len(bench), 129)
+            self.assertEqual(len(bench), expected_benchmark_count)
             new_record = next(r for r in bench if r["id"] == self.NEW_ID)
             self.assertEqual(new_record["question"]["images"],
                              ["data/images/gaokao/" + self.NEW_ID + "_0.png"])
@@ -207,14 +221,15 @@ class EndToEndTests(unittest.TestCase):
             for path, content in before.items():
                 self.assertEqual(path.read_bytes(), content)
 
-            manifest = json.loads((tmp / "datasets/RELEASE_MANIFEST.json").read_text(encoding="utf-8"))
-            self.assertEqual(manifest["counts"]["benchmark"], 129)
-            self.assertEqual(manifest["counts"]["subjective_50"], 50)
-            self.assertEqual(manifest["counts"]["approved_rubrics"], 50)
-            self.assertEqual(manifest["counts"]["images"],
-                             json.loads((ROOT / "datasets/RELEASE_MANIFEST.json").read_text(encoding="utf-8"))["counts"]["images"] + 1)
-            # post-publish validation report exists and is ok
-            self.assertTrue((tmp / "datasets/VALIDATION_REPORT.json").exists())
+            readme = (tmp / "datasets/README.md").read_text(encoding="utf-8")
+            self.assertIn(f"[main/benchmark.jsonl](main/benchmark.jsonl) | 题目 | {expected_benchmark_count} |", readme)
+            self.assertIn("[subjective_50/rubrics.jsonl](subjective_50/rubrics.jsonl) | Rubric | 50 |", readme)
+            image_count = sum(p.is_file() for p in (ROOT / "data/images").rglob("*")) + 1
+            self.assertIn(f"规范图片 **{image_count} 个文件**", readme)
+            self.assertFalse((tmp / "datasets/RELEASE_MANIFEST.json").exists())
+            self.assertFalse((tmp / "datasets/VALIDATION_REPORT.json").exists())
+            validation = json.loads((tmp / "workspace/reports/dataset_validation.json").read_text(encoding="utf-8"))
+            self.assertTrue(validation["ok"])
 
     def test_missing_rubric_rejected_without_touching_data(self):
         with tempfile.TemporaryDirectory() as tmp:

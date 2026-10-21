@@ -1,6 +1,6 @@
-"""Import every row of a local U-MATH Parquet file without filtering.
+"""Import local U-MATH Parquet with reviewed corrections and exclusions.
 
-The complete golden_answer is preserved in final_answer. The input has no
+The golden_answer initializes final_answer before reviewed corrections. The input has no
 separate derivation field, so solution is left empty rather than fabricated.
 No provenance manifest or conversion report is written.
 """
@@ -17,6 +17,11 @@ from pathlib import Path
 import pyarrow.parquet as pq
 from jsonschema import Draft202012Validator
 from PIL import Image
+
+try:
+    from .corrections import curate
+except ImportError:  # Direct script execution.
+    from corrections import curate
 
 ROOT = Path(__file__).resolve().parents[3]
 
@@ -57,8 +62,10 @@ def build(parquet: Path, license_path: Path, output: Path) -> None:
             "answer": {"final_answer": row["golden_answer"], "solution": ""},
             "metadata": {"paper_name": "umath", "question_type": "解答题"},
         }
-        validator.validate(record)
-        records.append(record)
+        record = curate(record)
+        if record is not None:
+            validator.validate(record)
+            records.append(record)
 
     # Validate every row and image before publishing; do not silently overwrite edits.
     payload = ("\n".join(json.dumps(r, ensure_ascii=False) for r in records) + "\n").encode("utf-8")
@@ -71,12 +78,10 @@ def build(parquet: Path, license_path: Path, output: Path) -> None:
         if not target.exists():
             target.write_bytes(content)
 
-    # Round-trip equality checks preserve original strings, order, and image bytes.
+    # Round-trip checks preserve curated records, stable IDs and original image bytes.
     published = [json.loads(line) for line in (output / "questions.jsonl").read_text(encoding="utf-8").splitlines()]
     assert published == records
-    for row, record in zip(rows, published):
-        assert record["question"]["text"] == row["problem_statement"]
-        assert record["answer"]["final_answer"] == row["golden_answer"]
+    assert len(published) == 1099
     assert all(path.read_bytes() == data for path, data in images.items())
     print(json.dumps({"records": len(records), "images": len(images),
                       "subjects": dict(Counter(r["subject"] for r in rows)),

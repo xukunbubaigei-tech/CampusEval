@@ -111,7 +111,8 @@
       "1.0",
       "2.0"
     ],
-    "basis": "Transcribed and checked against original PDF question/solution 527; repairs OCR omissions or preserves diagram information as text."
+    "basis": "Transcribed and checked against original PDF question/solution 527; repairs OCR omissions or preserves diagram information as text. Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable.",
+    "solution": "Let $v=\\operatorname{Var}(X)=\\operatorname{Var}(Y)$ and $c=\\operatorname{Cov}(X,Y)$. The given variances imply $2v+2c=10$ and $5v-4c=16$. Substituting $v=5-c$ gives $25-9c=16$, hence $c=1$."
   },
   "531": {
     "body": "A policyholder is insured against both fire and theft claims. The probability of a fire\nclaim is 10%. The probability of a theft claim is 30%.\nLet p be the probability of having neither a fire nor a theft claim, assuming fire and theft\nclaims are independent.\nLet r be the probability of having neither a fire nor a theft claim, assuming fire and theft\nclaims are mutually exclusive.\nCalculate $p-r$.",
@@ -133,7 +134,8 @@
       "$1-r^7$",
       "$(1-r)^7$"
     ],
-    "basis": "Transcribed and checked against original PDF question/solution 646; repairs OCR omissions or preserves diagram information as text."
+    "basis": "Transcribed and checked against original PDF question/solution 646; repairs OCR omissions or preserves diagram information as text. Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable.",
+    "solution": "By independence, the probability of no claims during all seven days is $r^7$. Its complement, the probability of at least one claim, is $1-r^7$."
   },
   "660": {
     "body": "A motorist decides not to renew a car insurance policy. The number of months until the\nmotorist is charged for driving without insurance is exponentially distributed with mean\n2.50.\nCalculate the probability that the motorist lasts at least 2.50 months without being charged.",
@@ -218,7 +220,8 @@
   },
   "186": {
     "solution": "Let $T$ be the event that two red and two blue balls are transferred, and $B$ the event that a blue ball is drawn. Then $P(T\\mid B)=P(T\\cap B)/P(B)$. The numerator is $P(T\\cap B)=\\frac{\\binom82\\binom62}{\\binom{14}4}\\frac24=\\frac{840}{4004}$. The denominator is $$P(B)=\\frac{\\binom80\\binom64}{\\binom{14}4}\\frac44+\\frac{\\binom81\\binom63}{\\binom{14}4}\\frac34+\\frac{\\binom82\\binom62}{\\binom{14}4}\\frac24+\\frac{\\binom83\\binom61}{\\binom{14}4}\\frac14=\\frac{1716}{4004}.$$ Therefore $P(T\\mid B)=840/1716\\approx0.49$.",
-    "basis": "Transcribed and checked against original PDF question/solution 186; repairs OCR omissions or preserves diagram information as text."
+    "basis": "Transcribed and checked against original PDF question/solution 186; repairs OCR omissions or preserves diagram information as text. Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable.",
+    "body": "Bowl I contains eight red balls and six blue balls. Bowl II is empty. Four balls are\nselected at random, without replacement, and transferred from bowl I to bowl II. One\nball is then selected at random from bowl II.\nCalculate the conditional probability that two red balls and two blue balls were\ntransferred from bowl I to bowl II, given that the ball selected from bowl II is blue."
   },
   "312": {
     "solution": "Let $M$ denote medical and $P$ property insurance. We have $P(M)=0.30$, $P(P)=0.42$, and $P(M\\cup P)=0.60$. Thus $P(M\\cap P)=0.30+0.42-0.60=0.12$. Hence $$P(\\text{exactly one}\\mid\\text{not both})=\\frac{0.60-0.12}{1-0.12}=\\frac{0.48}{0.88}=0.54545.$$",
@@ -257,8 +260,8 @@
     "basis": "Transcribed and checked against original PDF question/solution 160; repairs OCR omissions or preserves diagram information as text."
   },
   "523": {
-    "body": "You are given the following information about two insurance policies:\ni) Losses covered by each policy follow a normal distribution with mean\n8000.\nii) Losses covered by Policy I have standard deviation k.\niii) Losses covered by Policy II have standard deviation 1.5k.\nThe $p ^ { \\mathrm { t h } }$ percentile of losses covered by Policy I is equal to the 81<sup>st</sup> percentile of losses\ncovered by Policy II.\nCalculate $p$.",
-    "basis": "Transcribed and checked against original PDF question/solution 523; repairs OCR omissions or preserves diagram information as text."
+    "body": "You are given the following information about two insurance policies:\ni) Losses covered by each policy follow a normal distribution with mean\n8000.\nii) Losses covered by Policy I have standard deviation k.\niii) Losses covered by Policy II have standard deviation 1.5k.\nThe $p ^ { \\mathrm { t h } }$ percentile of losses covered by Policy I is equal to the 81st percentile of losses\ncovered by Policy II.\nCalculate $p$.",
+    "basis": "Transcribed and checked against original PDF question/solution 523; repairs OCR omissions or preserves diagram information as text. Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
   },
   "610": {
     "body": "Losses are uniformly distributed on the interval [0, 2000]. An insurance policy pays the\namount of each loss up to a maximum of m. The expected value of the claim payment on\na random loss is 910.\nCalculate $m$.",
@@ -317,5 +320,254 @@
   "735": {
     "solution": "Set up a joint probability table and then a marginal function for X.\n|  |  | x |  |  |\n| --- | --- | --- | --- | --- |\n|  |  | 1 | 2 | 3 |\n| y | 1 | 2/60 | 3/60 | 4/60 |\n|  | 2 | 5/60 | 6/60 | 7/60 |\n|  | 3 | 10/60 | 11/60 | 12/60 |\n| $f_X(x)$ |  | 17/60 | 20/60 | 23/60 |\n$$0.44E(X)=0.44\\left[\\frac{17}{60}(1)+\\frac{20}{60}(2)+\\frac{23}{60}(3)\\right]=0.44(2.1)=0.924.$$",
     "basis": "Original PDF solution 735: replace scattered bracket glyphs and equation text by the exact expectation equation."
+  },
+  "104": {
+    "body": "An automobile insurance company issues a one-year policy with a deductible of 500.\nThe probability is 0.8 that the insured automobile has no accident and 0.0 that the\nautomobile has more than one accident. If there is an accident, the loss before\napplication of the deductible is exponentially distributed with mean 3000.\nCalculate the 95th percentile of the insurance company payout on this policy.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "108": {
+    "body": "In a certain game of chance, a square board with area 1 is colored with sectors of either\nred or blue. A player, who cannot see the board, must specify a point on the board by\ngiving an x-coordinate and a y-coordinate. The player wins the game if the specified\npoint is in a blue sector. The game can be arranged with any number of red sectors, and\nthe red sectors are designed so that\n$R _ { i } \\quad = \\quad \\left( { \\frac { 9 } { 20 } } \\right) ^ { i }$ , where $R _ { i }$ is the area of the $i ^ { t h }$ red sector.\nCalculate the minimum number of red sectors that makes the chance of a player winning\nless than 20%.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "175": {
+    "body": "At the start of a week, a coal mine has a high-capacity storage bin that is half full.\nDuring the week, 20 loads of coal are added to the storage bin. Each load of coal has a\nvolume that is normally distributed with mean 1.50 cubic yards and standard deviation\n0.25 cubic yards.\nDuring the same week, coal is removed from the storage bin and loaded into 4 railroad\ncars. The amount of coal loaded into each railroad car is normally distributed with mean\n7.25 cubic yards and standard deviation 0.50 cubic yards.\nThe amounts added to the storage bin or removed from the storage bin are mutually\nindependent.\nCalculate the probability that the storage bin contains more coal at the end of the week\nthan it had at the beginning of the week.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "199": {
+    "body": "An insurance company studies back injury claims from a manufacturing company. The\ninsurance company finds that 40% of workers do no lifting on the job, 50% do moderate\nlifting and 10% do heavy lifting.\nDuring a given year, the probability of filing a claim is 0.05 for a worker who does no\nlifting, 0.08 for a worker who does moderate lifting and 0.20 for a worker who does\nheavy lifting.\nA worker is chosen randomly from among those who have filed a back injury claim.\nCalculate the probability that the worker’s job involves moderate or heavy lifting.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "217": {
+    "solution": "Let $N\\sim\\operatorname{Poisson}(2)$. The retained benefit cost is $C=100\\min(N,4)$. Thus $E(C)=100P(N=1)+200P(N=2)+300P(N=3)+400P(N\\ge4)=400-\\frac{4600}{3}e^{-2}\\approx192.486$, so the nearest option is 192.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "222": {
+    "body": "Losses incurred by a policyholder follow a normal distribution with mean 20,000 and\nstandard deviation 4,500. The policy covers losses, subject to a deductible of 15,000.\nCalculate the 95th percentile of losses that exceed the deductible.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "242": {
+    "body": "Let X denote the loss amount sustained by an insurance company’s policyholder in an\nauto collision. Let Z denote the portion of X that the insurance company will have to pay.\nAn actuary determines that X and Z are independent with respective density and\nprobability functions\n$$\nf (x) = \\left\\{ \\begin{array}{l l} (1 / 8) e ^ {- x / 8}, & x > 0 \\\\ 0, & \\text { otherwise } \\end{array} \\right.\n$$\nand\n$$\nP [ Z = z ] = \\left\\{ \\begin{array}{l l} 0.45, & z = 1 \\\\ 0.55, & z = 0. \\end{array} \\right.\n$$\nCalculate the variance of the insurance company’s claim payment ZX.",
+    "solution": "By independence, $E(ZX)=E(Z)E(X)=0.45(8)=3.6$ and $E((ZX)^2)=E(Z^2)E(X^2)=0.45(128)=57.6$. Therefore $\\operatorname{Var}(ZX)=57.6-3.6^2=44.64$, corresponding to option E, 44.6.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "263": {
+    "solution": "By independence, the probability of exactly one loss is $P(F\\cap T^c)+P(F^c\\cap T)=0.2(0.7)+0.8(0.3)=0.14+0.24=0.38$.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "286": {
+    "options": [
+      "$\\frac16$",
+      "$\\frac14$",
+      "$\\frac13$",
+      "$\\frac12$",
+      "$\\frac23$"
+    ],
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "297": {
+    "body": "The lifetime of a machine part has a continuous distribution on the interval (0, 40) with\nprobability density function f, where f (x) is proportional to $(10+x)^{-2}$.\nCalculate the probability that the lifetime of the machine part is less than five.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "313": {
+    "body": "The probability that a homeowners policyholder reports a property claim in a year\nincreases by 25% per year. Conversely, the probability that a homeowners policyholder\nreports a liability claim in a year decreases by 25% per year.\nThe probability that a homeowners policyholder reports both a property claim and a\nliability claim in Year 1 is 0.01. The event that a homeowners policyholder reports a\nproperty claim is independent of the event that the policyholder reports a liability claim.\nCalculate the probability that a homeowners policyholder reports both a property claim\nand a liability claim in Year 9.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "351": {
+    "solution": "P(0 employees have accidents) = $0.6^2\\cdot0.9^2$ = 0.2916\nP(1 employee has accidents)\n= P(1 high-risk employee has accidents and 0 low-risk employees have accidents\nOR 0 high-risk employees have accidents and1 low-risk employee has accidents)\n= P(1 high-risk employee has accidents)P(0 low-risk employees have accidents)\n+ P(0 high-risk employees have accidents)P(1 low-risk employee has accidents)\n[combining the addition rule for a union of mutually exclusive events and the multiplication rule\nfor independent events]\n$$\n= (2) (0.4) (0.6) (0.9) ^ {2} + (0.6) ^ {2} (2) (0.1) (0.9) = 0.4536\n$$\nP(at most 1 employee has accidents) = 0.2916 + 0.4536 = 0.7452.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "352": {
+    "solution": "| Amt Paid | Prob |\n| --- | --- |\n| 0 | 0.70 |\n| 5000 | 0.11 |\n| 10000 | 0.08 |\n| 15000 | 0.07 |\n| 18000 | 0.04 |\n$E(X)=3120$, $E(X^2)=39{,}460{,}000$, and $\\operatorname{Var}(X)=39{,}460{,}000-3120^2=29{,}725{,}600$. Therefore $\\operatorname{SD}(X)=\\sqrt{29{,}725{,}600}\\approx5452$.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "361": {
+    "solution": "Let $Y=\\max(L-500,0)$ be the insurer payment for loss $L$. Then $E(Y)=500(0.12)+4500(0.08)+9500(0.04)+14500(0.01)=945$. The premium is $945+75=1020$.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "378": {
+    "body": "In a certain year, an insurance company’s profit is modeled by a normal distribution with\nmean 6.72. The 80th percentile of the profit is 8.40.\nCalculate the 90th percentile of the insurance company’s profit in the year.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "397": {
+    "body": "The combined results of employee satisfaction surveys taken at each of Store A and Store\nB are given in the following table, in which satisfaction is ranked from 0 to 5.\n| Satisfaction | Combined Frequencies over Stores A and B |\n| --- | --- |\n| 0 | 9 |\n| 1 | 6 |\n| 2 | 12 |\n| 3 | 6 |\n| 4 | 6 |\n| 5 | 9 |\nAmong only the employees of Store A, the frequency of each response is at least 4. Store\nA has three modes, each with a frequency of 8.\nCalculate the largest possible number of modes for Store B.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "398": {
+    "body": "Ten percent of homeowners in a certain city are classified as high-risk, and ninety percent\nare classified as low-risk. Each homeowner’s classification remains unchanged over the\nnext four years.\nIn any given year, each high-risk homeowner has probability 0.80 of experiencing no\nfires, and each low-risk homeowner has probability 0.99 of experiencing no fires. For\neach homeowner, the numbers of fires in different years are mutually independent.\nA randomly chosen homeowner experiences no fires in the first and second years.\nCalculate the probability that this homeowner will experience no fires in the third and\nfourth years.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "429": {
+    "body": "A baseball-pitching machine is used for batting practice. The machine is out of\nadjustment such that every pitched baseball arrives at the batter’s box between 0 and 2\nfeet higher than intended.\nLet X equal the difference, in feet, between the actual arrival height and the intended\narrival height of a pitched baseball.\nThe density of X, f(x), is proportional to x.\nCalculate the 80th percentile for X.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "432": {
+    "body": "A large life insurance company gets a steady inflow of new policyholders each month. In\nthe past, the number of new policyholders per month, $N _ { \\mathrm { p a s t } } ,$ , was normally distributed with\nmean 500, standard deviation $\\sigma$ , and $\\operatorname* { P } [ N _ { \\mathrm { p a s t } } < 400 ] = 0.1056$\nThe company has just undertaken a new marketing strategy, which is projected to have a\npositive effect on new sales. The projected number of new policyholders per month,\n$N _ { \\mathrm { f u t u r e } } .$ , is normally distributed with mean 550 and standard deviation 1.25σ .\nCalculate $\\mathrm { P } [ 370 < N _ { \\mathrm { f u t u r e } } < 730 ]$",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "464": {
+    "solution": "For a uniform distribution on $(a,b)$, $\\operatorname{SD}(X)=(b-a)/\\sqrt{12}$ and $\\operatorname{IQR}(X)=(b-a)/2$. Their ratio is $2/\\sqrt{12}=1/\\sqrt3$, independently of the interval endpoints. Thus the ratio is $1:\\sqrt3$, option A.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "483": {
+    "solution": "The number of patients with disease A is binomial with $n=100$, so $100p(1-p)=9$. Given $0\\le p\\le0.50$, $p=0.10$. Independence of the two diseases gives the probability of at least one disease as $q=1-(1-p)^2=0.19$. The required variance is $100q(1-q)=100(0.19)(0.81)=15.39$.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "484": {
+    "body": "An insurance company has customer service operations in Denver, Philadelphia, and Salt\nLake City.\nEmployee salaries in Denver are uniformly distributed from 25 to 90. Employee salaries\nin Philadelphia are uniformly distributed from 45 to x. Employee salaries in Salt Lake\nCity are uniformly distributed from 10 to x/3.\nThe 40th percentile of Denver salaries is equal to the 20th percentile of Philadelphia\nsalaries.\nCalculate the median of Salt Lake City employee salaries.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "495": {
+    "body": "The heights, in feet, of basketball players in a city league are modeled by a random\nvariable, X, with probability density function\n$$\nf (x) = \\left\\{ \\begin{array}{c l} \\frac {3 (x - 6) ^ {2}}{2}, & \\text { for } 5 <   x <   7 \\\\ 0, & \\text { otherwise. } \\end{array} \\right.\n$$\nCalculate $\\operatorname{Var}(X)$.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "504": {
+    "body": "A construction worker experiences a back injury resulting in a loss on an insurance\npolicy. Losses under the policy are uniformly distributed on the interval [2, 10]. The\ninsurer reimburses the worker for 60% of this loss.\nCalculate the 30th percentile of the construction worker’s unreimbursed loss from the\nback injury.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "507": {
+    "body": "The random variable $X$ has density function $$f(x)=\\begin{cases}cx^5e^{-0.01x},&x>0,\\\\0,&\\text{otherwise},\\end{cases}$$ where $c$ is a constant. Calculate $E(X)$.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "516": {
+    "body": "Let R be the proportion of right-handed babies among all newborns in a town each year.\nR has a beta distribution with density function\n$$\nf (r) = \\left\\{ \\begin{array}{l l} k \\left[ r ^ {\\alpha - 1} (1 - r) ^ {\\beta - 1} \\right], & \\text { for   } 0 <   r <   1 \\\\ 0, & \\text { otherwise }, \\end{array} \\right.\n$$\nwhere $\\alpha=13$, $\\beta=2$ , and k is a positive constant.\nCalculate P[R > 0.9].",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "538": {
+    "solution": "Let $N$ be the number of tests until the first positive result. Then $P(N=n)=(1-0.0625)^{n-1}(0.0625)$ for $n=1,2,\\ldots$. These probabilities decrease strictly with $n$, so the mode is 1.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "539": {
+    "body": "The random variables $X _ { 1 } , X _ { 2 } , X _ { 3 }$ represent the values of three independent investments.\nEach is normally distributed with $\\mathrm { E } ( X _ { i } ) = 100$ and $\\operatorname{Var}(X_i)=27i/2$, $i=1,2,3$. Let Φ(x)\ndenote the cumulative distribution function of the standard normal variable.\nDetermine the probability that the average value of the three investments exceeds 106.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "541": {
+    "solution": "Let $\\beta$ be the exponential mean. By memorylessness, $P(X>15\\mid X>5)=e^{-10/\\beta}=0.027$. Thus $P(X>25\\mid X>5)=e^{-20/\\beta}=(0.027)^2=0.000729$, corresponding to option A.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "544": {
+    "solution": "Let $A$ be the event that total claims are at least 2000 and $B$ the event of at least two claims. Then $P(A\\cap B)=0.2(0.5)^2+0.1[1-(0.5)^3]=0.05+0.0875=0.1375$, while $P(B)=0.2+0.1=0.3$. Hence $P(A\\mid B)=0.1375/0.3=11/24\\approx0.4583$.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "547": {
+    "solution": "Let $S_0$ be the event that 0 was sent and $R_1$ the event that 1 was received. Then $P(S_0)=0.7$, $P(R_1\\mid S_0)=0.2$, and $P(R_1\\mid S_0^c)=0.8$. Bayes theorem gives $P(S_0\\mid R_1)=\\frac{0.7(0.2)}{0.7(0.2)+0.3(0.8)}=\\frac7{19}\\approx0.37$.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "556": {
+    "body": "The profit on an individual insurance policy is normally distributed. The 60th percentile\nof the profit is 1000. The 80th percentile of the profit is 2000.\nCalculate the 95th percentile, to the nearest 100, of the profit.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "591": {
+    "solution": "Write the interval as $(\\mu-c,\\mu+c)$, where $\\mu=20$ and $\\sigma=4$. Standardization gives $0.25=P(-c/4<Z<c/4)=2\\Phi(c/4)-1$. Thus $\\Phi(c/4)=0.625$, so $c=4\\Phi^{-1}(0.625)\\approx1.2746$. The interval is approximately $(18.7254,21.2746)$, which rounds to option E, $(18.7,21.3)$.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "593": {
+    "body": "An insurance company’s annual profit is normally distributed with mean 39. The 28th\npercentile of the annual profit is 21.\nCalculate the percentile associated with an annual profit of 3 for this insurance company.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "599": {
+    "options": [
+      "$\\frac { \\ln 3 } { \\mu }$",
+      "$\\mu$",
+      "$\\mu\\ln2$",
+      "$\\mu$ ln 3",
+      "$\\mu ^ { 2 }$"
+    ],
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "604": {
+    "solution": "Let the monthly Poisson mean be $\\lambda$. Independence gives $P(\\text{no tornadoes in six months})=e^{-6\\lambda}=0.008$. Therefore $P(\\text{no tornadoes in July and August})=e^{-2\\lambda}=0.008^{1/3}=0.20$. Events in June are independent of July and August, so conditioning on a tornado in June does not change this probability.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "617": {
+    "body": "A policyholder owns two properties and has hurricane insurance on both properties. One\nproperty is located in Texas. The other property is located in Florida.\nLet T be the number of hurricane claims in a 5-year period for the Texas property, and let\nF be the number of hurricane claims in a 5-year period for the Florida property. The joint\nprobability function for T and F is given in the following table.\n| Number of Hurricane Claims in 5-year period |  |  |  |  |\n| --- | --- | --- | --- | --- |\n| Texas | Florida |  |  |  |\n|  | 0 | 1 | 2 | 3 |\n| 0 | 0.40 | 0.14 | 0.04 | 0.02 |\n| 1 | 0.16 | 0.08 | 0.04 | 0.02 |\n| 2 | 0.04 | 0.03 | 0.02 | 0.01 |\nCalculate $\\operatorname{Var}(T\\mid F=1)$.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "619": {
+    "body": "The numbers of hits received by a website during the 1st, 2nd, …, 1440th minutes of a\ngiven day are mutually independent Poisson random variables with common mean. The\nprobability that there are exactly four hits during the 1st minute is 54 times the probability\nthat there are no hits during the 1440th minute.\nCalculate the number of hits the website is expected to receive between in a 60-minute\nperiod.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "627": {
+    "body": "A policyholder owns a car and a truck. An auto insurer provides coverage on both\nvehicles.\nLet X be the number of claims incurred over a five-year period on the car.\nLet Y be the number of claims incurred over a five-year period on the truck.\nThe probability function of X and Y is shown in the table below:\n|  |  | Y |  |  |  |\n| --- | --- | --- | --- | --- | --- |\n|  |  | 0 | 1 | 2 | 3 |\n| X | 0 | 0.06 | 0.10 | 0.12 | 0.02 |\n|  | 1 | 0.08 | 0.11 | 0.15 | 0.06 |\n|  | 2 | 0.05 | 0.07 | 0.05 | 0.03 |\n|  | 3 | 0.01 | 0.02 | 0.03 | 0.04 |\nCalculate $E(Y\\mid X<2)$.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "653": {
+    "body": "Each of two fair six-sided dice has 1 on two faces and 2 on the other four faces. The two\ndice are rolled twice.\nCalculate the probability that the sum showing on the two dice is different on the two\nrolls.",
+    "options": [
+      "$\\frac{12}{27}$",
+      "$\\frac{14}{27}$",
+      "$\\frac{16}{27}$",
+      "$\\frac{18}{27}$",
+      "$\\frac{20}{27}$"
+    ],
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "667": {
+    "body": "Actuary Tong models claim size from a random sample using a normal distribution with\nmean 500. Actuary Bob models claim size from the same sample using an exponential\ndistribution with mean 500.\nThe 80th percentiles for the two distributions are the same.\nCalculate the second moment, to the nearest thousand, of the claim size according to\nTong’s model.",
+    "solution": "The exponential 80th percentile is $q=-500\\ln(0.2)\\approx804.7190$. For the normal model, $q=500+\\Phi^{-1}(0.8)\\sigma$, giving $\\sigma\\approx362.0621$. Thus $E(X^2)=\\sigma^2+500^2\\approx381{,}089$, which rounds to 381,000.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "668": {
+    "body": "The random variable X is uniformly distributed on an interval and has median 6 and 90th\npercentile 13.20.\nCalculate the second moment of X.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "672": {
+    "solution": "Let $\\mu$ be the exponential mean. Its median is $m=\\mu\\ln2$. Since $\\mu-m=3.80$, $\\mu=3.80/(1-\\ln2)\\approx12.3838$. Therefore $\\operatorname{Var}(X)=\\mu^2\\approx153.36$, corresponding to option D.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "686": {
+    "solution": "Let $p$ be the reimbursement proportion. Expected loss is $30(0.01)+10(0.05)=0.80$. Expected profit is $1-0.80p=0.25$, so $p=0.75/0.80=0.9375$.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "689": {
+    "options": [
+      "$1\\frac56$",
+      "$2$",
+      "$2\\frac18$",
+      "$2\\frac12$",
+      "$5\\frac23$"
+    ],
+    "solution": "Let $H$ and $Y$ be the durations of the morning and afternoon tasks. Given $H=h$, $Y$ is uniform on $\\{1,\\ldots,h-1\\}$, so $E(Y\\mid H=h)=h/2$. Since $H$ is equally likely to be 2, 4, or 5, $E(Y)=\\frac13(1+2+\\frac52)=\\frac{11}{6}=1\\frac56$, which is option A.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "690": {
+    "body": "Individual auto insurance policyholders have the following distribution for the number of\nclaims in a year:\n| Number of Claims | Observed Number of Policies |\n| --- | --- |\n| 0 | 0.8000 |\n| 1 | 0.0875 |\n| 2 | 0.0625 |\n| 3 | 0.0500 |\nAssume that the number of claims from any policy is independent of the number of\nclaims from any other policy.\nCalculate the probability that, during a given year, three randomly selected policyholders\nwill have exactly two claims among them.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "696": {
+    "body": "An airline luggage insurance company’s annual profit is normally distributed with mean\n250. The mean and standard deviation remain constant from year to year, and the yearly\nprofits are independent.\nThe probability that the company’s annual profits are positive in both of the next two\nyears is 0.9025.\nThe interquartile range of a random variable is defined as the difference between its 75th\nand 25th percentiles.\nCalculate the interquartile range of the insurance company’s annual profit.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "697": {
+    "solution": "Let $X$ and $Y$ be the independent exponential lifetimes of the primary and secondary blades, with means 3 and 4 years. The lathe works for at least five years exactly when both blades do, so $P(X\\ge5,Y\\ge5)=e^{-5/3}e^{-5/4}=e^{-35/12}\\approx0.0541$. This rounds to option B, 0.05. The source solution decimal 0.541 is an arithmetic typo.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "719": {
+    "body": "Let X represent the number of errors in chapter one of a textbook and let Y represent the\nnumber of errors in chapter two of the same textbook.\nYou are given:\ni. X and Y each follow a Poisson distribution.\nii. $E(X-Y)=3$.\niii. $\\operatorname{Var}(X)=2\\operatorname{Var}(Y)$.\nCalculate the second moment of Y.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "720": {
+    "body": "Random variable X follows a normal distribution. The 5th percentile of the distribution is\n−25 , and the 99th percentile of the distribution is 83.\nCalculate the absolute value of the ratio of the standard deviation of X to the mean of X.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "721": {
+    "body": "The annual dental claim amounts of the 49 employees at a company are mutually\nindependent and normally distributed with different means, but with common standard\ndeviation 700. The company expects the total of the 49 annual claim amounts of its\nemployees to be 122,500.\nCalculate the 90th percentile of the annual total dental claims, in thousands, for the\ncompany.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "722": {
+    "solution": "Let $N\\sim\\operatorname{Poisson}(2)$ and $C$ be the policy payout. Then $P(N=1)=P(N=2)=2e^{-2}$ and $P(N\\ge3)=1-5e^{-2}$. Hence $E(C)=200(2e^{-2})+500(2e^{-2})+1000(1-5e^{-2})\\approx512.7930$ and $E(C^2)=200^2(2e^{-2})+500^2(2e^{-2})+1000^2(1-5e^{-2})\\approx401{,}818.05$. Therefore $\\operatorname{Var}(C)=E(C^2)-E(C)^2\\approx138{,}861$, which rounds to 139,000.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "723": {
+    "solution": "Let $p_M$ be the medium-risk death probability. The low-risk probability is $p_M/2$, and the high-risk probability is $4p_M$. By total probability, $0.15(p_M/2)+0.55p_M+0.30(4p_M)=0.018$. Thus $1.825p_M=0.018$ and $p_M\\approx0.009863$, which rounds to option B, 0.010.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "724": {
+    "solution": "For $n$ employees, the total annual claim is normal with mean $2500n$ and variance $490{,}000n$. Using the rounded standard normal 90th percentile $z_{0.9}\\approx1.28$, the given percentile implies $167{,}168\\approx2500n+1.28\\sqrt{490{,}000n}$. Setting $x=\\sqrt n$ yields $2500x^2+896x-167{,}168\\approx0$, whose positive root is 8. Thus $n=64$.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
+  },
+  "727": {
+    "body": "A homeowner purchases a flood insurance policy. The loss due to a flood is\nexponentially distributed with mean $\\beta$\nThe policy has a deductible of $0.4 \\beta$ for each loss. The expected benefit paid per\nloss is 1200.\nCalculate $\\beta$ .",
+    "solution": "Let $X$ be the exponential loss with mean $\\beta$. The payout is $Y=(X-0.4\\beta)_+$. By memorylessness, $E(Y)=P(X>0.4\\beta)E(X-0.4\\beta\\mid X>0.4\\beta)=e^{-0.4}\\beta$. Thus $1200=e^{-0.4}\\beta$, so $\\beta=1200e^{0.4}\\approx1790$, option B.",
+    "basis": " Verified audit repair: targeted source boundaries/formula restoration or HTML normalization; original answer letter retained. Source question 689 mixed fractions restored; source 697 arithmetic typo corrected where applicable."
   }
 }

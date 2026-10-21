@@ -69,7 +69,8 @@ def main() -> int:
         "subjective_counts": actual_counts,
         "errors": errors,
     }
-    output = reports / "VALIDATION_REPORT.json"
+    output = ROOT / "workspace" / "reports" / "model_results_validation.json"
+    output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
     return 0 if not errors else 1

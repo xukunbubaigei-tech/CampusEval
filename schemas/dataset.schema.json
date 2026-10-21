@@ -53,7 +53,7 @@
       "properties": {
         "paper_name": {"type": "string"},
         "question_type": {
-          "enum": ["选择题", "填空题", "解答题", "证明题", "综合题", "压轴题"]
+          "enum": ["选择题", "多选题", "填空题", "解答题", "证明题", "综合题", "压轴题"]
         }
       },
       "additionalProperties": false

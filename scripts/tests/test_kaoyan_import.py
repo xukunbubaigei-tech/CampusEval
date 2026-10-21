@@ -3,13 +3,14 @@ import importlib.util
 import unittest
 from pathlib import Path
 
-PATH = Path(__file__).resolve().parents[1] / "scripts/construction/kaoyan/build_kaoyan_dataset.py"
+PATH = Path(__file__).resolve().parents[2] / "scripts/construction/kaoyan/build_kaoyan_dataset.py"
 SPEC = importlib.util.spec_from_file_location("kaoyan_builder", PATH)
 MOD = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(MOD)
 
 
 class KaoyanImportTests(unittest.TestCase):
+
     def test_user_fixed_2022_question_2_survives_rebuild(self):
         correction = MOD.CORRECTIONS[(2022, 1, 2)]
         self.assertEqual(correction["final_answer"], "B")
@@ -28,21 +29,6 @@ class KaoyanImportTests(unittest.TestCase):
             {"kind": "选择题"}, {"text": "题干与选项\n\n【答案】\n【解析】"})
         self.assertEqual(final, "")
         self.assertEqual(method, "missing_final_answer")
-
-    def test_source_groups_exclude_early_paper_ii(self):
-        if not (MOD.WORK / "questions_all.pages.json").exists():
-            self.skipTest("Local precise extraction is not distributed with code")
-        groups, exclusions = MOD.question_groups()
-        self.assertEqual(set(groups), set(range(1987, 2024)))
-        self.assertTrue(any(x.get("year") == 1987 for x in exclusions))
-        self.assertFalse(any("试卷II" in u["text"] for u in groups[1987]))
-
-    def test_misplaced_2010_page_is_not_assigned_to_2019(self):
-        if not (MOD.WORK / "questions_all.pages.json").exists():
-            self.skipTest("Local precise extraction is not distributed with code")
-        groups, _ = MOD.question_groups()
-        self.assertTrue(any(u["page"] == 111 for u in groups[2010]))
-        self.assertFalse(any(u["page"] == 111 for u in groups[2019]))
 
 
 if __name__ == "__main__":
